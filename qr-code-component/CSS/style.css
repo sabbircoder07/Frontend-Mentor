@@ -1,0 +1,94 @@
+/*
+
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+- White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 15px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 400, 700
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-color: hsl(212, 45%, 89%);
+}
+
+html {
+  /*font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Persentage of users browser font size setting */
+  font-size: 62.5%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.attribution a {
+  text-decoration: none;
+  font-size: 15px;
+  color: hsl(228, 45%, 44%);
+}
+.qr-code-section {
+  max-width: 144rem;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.qr-code-contanear {
+  background-color: #ffffff;
+  width: 30rem;
+  padding: 1.5rem;
+  border-radius: 11px;
+  text-align: center;
+}
+.qr-code-img {
+  width: 100%;
+  border-radius: 11px;
+  margin-bottom: 2rem;
+}
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(218, 44%, 22%);
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.qr-code-text {
+  font-size: 1.5rem;
+  color: hsl(220, 15%, 55%);
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
