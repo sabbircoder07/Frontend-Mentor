@@ -1,0 +1,156 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%)
+
+## Typography
+
+### Body Copy
+
+- Font size (name and stats): 18px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-color: hsl(185, 75%, 39%);
+}
+
+body::before {
+  content: "";
+  background: url(../images/bg-pattern-top.svg) no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: -60%;
+  right: 40%;
+  z-index: -1;
+  transform: rotate(180deg);
+}
+
+body::after {
+  content: "";
+  background: url(../images/bg-pattern-bottom.svg) no-repeat;
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  z-index: -2;
+}
+
+html {
+  /*font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Persentage of users browser font size setting */
+  font-size: 62.5%;
+}
+
+.profile-card-section {
+  max-width: 144rem;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.container {
+  width: 35rem;
+  background-color: #ffffff;
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.profile-card-header {
+  content: "";
+  background: url(../images/bg-pattern-card.svg) no-repeat;
+  width: 350px;
+  height: 140px;
+  position: relative;
+}
+
+.profile-img {
+  width: 9.6rem;
+  height: 9.6rem;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 60%;
+  left: 35%;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin-top: 7.2rem;
+  gap: 1.4rem;
+}
+
+.profile-name {
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+}
+
+.profile-name span {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+}
+
+.location {
+  font-size: 1.6rem;
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+  margin-bottom: 2.8rem;
+}
+
+.horizontal-rule {
+  border-top: 1px solid hsl(0, 0%, 59%);
+}
+
+.activity-list {
+  display: flex;
+  gap: 4.8rem;
+  padding: 2.4rem 4.8rem 0 4.8rem;
+}
+
+.activity-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
