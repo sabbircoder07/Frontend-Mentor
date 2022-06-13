@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Outfit:wght@200;300;400;500;600;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="card-information-section">
+        <div class="container">
+          <div class="card-information-header">
+            <img
+              class="card-img"
+              src="./images/image-equilibrium.jpg"
+              alt="card-img"
+            />
+          </div>
+          <img class="icon-hide" src="./images/icon-view.svg" />
+          <h2 class="card-heading">Equilibrium #3429</h2>
+          <p class="card-information-text">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+          <div class="card-add-information">
+            <div class="card-add-information-part-one">
+              <img calss="img-one" src="./images/icon-ethereum.svg" />
+              0.041 ETH
+            </div>
+            <div class="card-add-information-part-two">
+              <img calss="img-one" src="./images/icon-clock.svg" />
+              3 days left
+            </div>
+          </div>
+          <div class="horizontal-rule"><span></span></div>
+          <div class="author-info">
+            <div class="author-img">
+              <img class="avatar-image" src="./images/image-avatar1.jpg" />
+            </div>
+            <div class="author-details">
+              <p calss="author">Creation of <span>Sabbir Ahmed</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      const card_img = document.querySelector(".card-img");
+      const hide_icon = document.querySelector(".icon-hide");
+      function handleMouseOver() {
+        hide_icon.classList.add("icon-view");
+        card_img.classList.add("card-img--opacity");
+      }
+      function handleMouseOverOut() {
+        hide_icon.classList.remove("icon-view");
+        card_img.classList.remove("card-img--opacity");
+      }
+      card_img.addEventListener("mouseover", handleMouseOver);
+      card_img.addEventListener("mouseout", handleMouseOverOut);
+    </script>
+  </body>
+</html>
