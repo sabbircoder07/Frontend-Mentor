@@ -1,0 +1,160 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Very dark blue (main background): hsl(233, 47%, 7%)
+- Dark desaturated blue (card background): hsl(244, 38%, 16%)
+- Soft violet (accent): hsl(277, 64%, 61%)
+
+### Neutral
+
+- White (main heading, stats): hsl(0, 0%, 100%)
+- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
+- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 700
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-color: hsl(233, 47%, 7%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.card-section {
+  max-width: 144rem;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.container {
+  width: 80%;
+  background-color: hsl(244, 38%, 16%);
+  display: grid;
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.stats-card-img {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(170, 92, 219, 0.65),
+      rgba(170, 92, 219, 0.65)
+    ),
+    url("../images/image-header-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.stats-card-info {
+  padding: 5.8rem 7.8rem 4.8rem 5.8rem;
+}
+
+.stats-card-heading {
+  font-size: 3.2rem;
+  line-height: 1.1;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  margin-bottom: 2.8rem;
+}
+
+.stats-card-heading span {
+  color: hsl(277, 64%, 61%);
+}
+
+.stats-card-text {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 6.2rem;
+}
+.state-lists {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sate-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.state-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+.state-description {
+  font-size: 1.5rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  text-transform: uppercase;
+}
+@media screen and (min-width: 402px) and (max-width: 1440px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .stats-card-img {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(170, 92, 219, 0.65),
+        rgba(170, 92, 219, 0.65)
+      ),
+      url("../images/image-header-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .state-lists {
+    flex-direction: column;
+    gap: 2.8rem;
+  }
+}
