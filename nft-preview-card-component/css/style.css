@@ -1,0 +1,168 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  line-height: 1;
+  font-weight: 300;
+  background-color: hsl(217, 54%, 11%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.card-information-section {
+  max-width: 144rem;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.container {
+  width: 35rem;
+  height: auto;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 11px;
+  padding: 1.8rem;
+}
+.card-information-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-img {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  border-radius: 11px;
+  margin-bottom: 2rem;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.card-img--opacity {
+  background-color: hsl(178, 100%, 50%);
+  opacity: 0.5;
+}
+
+.icon-hide {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 48%;
+  transition: all 0.3s;
+}
+
+.icon-view {
+  display: block;
+}
+
+.card-heading {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.card-heading:hover {
+  color: hsl(178, 100%, 50%);
+}
+.card-information-text {
+  font-size: 1.8rem;
+  color: hsl(215, 51%, 70%);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+.card-add-information {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-add-information-part-one,
+.card-add-information-part-two {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.card-add-information-part-one {
+  color: hsl(178, 100%, 50%);
+}
+
+.card-add-information-part-two {
+  color: hsl(215, 51%, 70%);
+}
+
+.horizontal-rule {
+  border-top: 1px solid hsl(215, 51%, 70%);
+  margin-bottom: 2rem;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar-image {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.author-info .author-details {
+  font-size: 1.8rem;
+  color: hsl(215, 51%, 70%);
+}
+
+.author-info .author-details p span {
+  color: #ffffffff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.author-info .author-details p span:hover {
+  color: hsl(178, 100%, 50%);
+}
