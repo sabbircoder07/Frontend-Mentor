@@ -1,0 +1,183 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-color: hsla(0, 0%, 100%, 0.75);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.card-section {
+  max-width: 144rem;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.container {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 11px;
+  overflow: hidden;
+}
+.card {
+  padding: 3.2rem;
+}
+.card-img {
+  width: 4.2rem;
+  height: auto;
+  margin-bottom: 2rem;
+}
+.card-header {
+  font-size: 2rem;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2.2rem;
+}
+.card-text {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 4.8rem;
+}
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  background-color: hsl(0, 0%, 95%);
+  padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  transition: all 0.3s;
+}
+
+.btn-sedans:link,
+.btn-sedans:visited {
+  color: hsl(31, 77%, 52%);
+  transition: all 0.3s;
+}
+
+.btn-sedans:hover,
+.btn-sedans:active {
+  background-color: hsl(31, 77%, 52%);
+  color: hsla(0, 0%, 100%, 0.75);
+  box-shadow: inset 0 0 0 2px hsla(0, 0%, 100%, 0.75);
+}
+
+.btn-suvs:link,
+.btn-suvs:visited {
+  color: hsl(184, 100%, 22%);
+  transition: all 0.3s;
+}
+
+.btn-suvs:hover,
+.btn-suvs:active {
+  background-color: hsl(184, 100%, 22%);
+  color: hsla(0, 0%, 100%, 0.75);
+  box-shadow: inset 0 0 0 2px hsla(0, 0%, 100%, 0.75);
+}
+
+.btn-luxury:link,
+.btn-luxury:visited {
+  color: hsl(179, 100%, 13%);
+  transition: all 0.3s;
+}
+
+.btn-luxury:hover,
+.btn-luxury:active {
+  background-color: hsl(179, 100%, 13%);
+  color: hsla(0, 0%, 100%, 0.75);
+  box-shadow: inset 0 0 0 2px hsla(0, 0%, 100%, 0.75);
+}
+
+.card-sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card-suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card-luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+  }
+  .card-sedans {
+    grid-area: a;
+  }
+  .card-suvs {
+    grid-area: b;
+  }
+  .card-luxury {
+    grid-area: c;
+  }
+  html {
+    font-size: 55.5%;
+  }
+  .container {
+    width: 90%;
+  }
+}
