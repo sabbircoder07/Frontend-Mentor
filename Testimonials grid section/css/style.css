@@ -1,0 +1,226 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Moderate violet: hsl(263, 55%, 52%)
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
+
+### Neutral
+
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%)
+
+Note for text colors:
+
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+
+## Typography
+
+### Body Copy
+
+- Font size: 13px
+
+### Font
+
+- Family: [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed)
+- Weights: 500, 600
+
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+  line-height: 1;
+  font-weight: 500;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.testimonilas-section {
+  max-width: 144rem;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  overflow: hidden;
+  gap: 2rem;
+}
+
+.testimonial {
+  padding: 1.6rem;
+  border-radius: 11px;
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-img {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+}
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.testimonial-author-name {
+  font-size: 1.3rem;
+  color: hsl(219, 29%, 14%);
+  font-weight: 700;
+}
+.testimonial-author-name-extend {
+  color: hsl(210, 46%, 95%) !important;
+}
+.author-status {
+  font-size: 1.3rem;
+  color: hsl(0, 0%, 81%);
+}
+
+.testimonial-header {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: hsl(219, 29%, 14%);
+  margin-bottom: 1rem;
+}
+
+.testimonial-header-extend {
+  color: hsl(0, 0%, 100%);
+}
+
+.testimonial-text {
+  font-size: 1.3rem;
+  color: hsl(0, 0%, 55%);
+  line-height: 1.4;
+}
+.testimonial-text-extend {
+  color: hsl(210, 46%, 80%);
+}
+
+.testimonilas-part-one {
+  gap: 0;
+}
+
+.testimonilas-one {
+  display: grid;
+  grid-template-columns: 2.6fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.testimonial-daniel {
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-position: 85% 0;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: hsl(263, 55%, 52%);
+}
+
+.testimonial-jonathan {
+  background-color: hsl(217, 19%, 35%);
+}
+.testimonilas-two {
+  display: grid;
+  grid-template-columns: 1fr 2.6fr;
+  gap: 1rem;
+}
+
+.testimonial-jeanette {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.testimonial-patrick {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.testimonial-kira {
+  background-color: hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e";
+    width: 90%;
+  }
+  .testimonilas-one {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .testimonilas-two {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .container,
+  .testimonilas-part-one,
+  .testimonilas-one,
+  .testimonial .testimonial-daniel {
+    grid-area: a;
+  }
+  .container,
+  .testimonilas-part-one,
+  .testimonilas-one,
+  .testimonial .testimonial-jonathan {
+    grid-area: b;
+  }
+  .container,
+  .testimonilas-part-one,
+  .testimonilas-two,
+  .testimonial .testimonial-jeanette {
+    grid-area: c;
+  }
+  .container,
+  .testimonilas-part-one,
+  .testimonilas-two,
+  .testimonial .testimonial-patrick {
+    grid-area: d;
+  }
+  .container,
+  .testimonilas-part-two,
+  .testimonial .testimonial-kira {
+    grid-area: e;
+  }
+
+  html {
+    font-size: 35%;
+  }
+}
