@@ -74,35 +74,6 @@
         </div>
       </section>
     </main>
-    <script type="text/javascript">
-      const submitBtn = document.querySelector(".submit-button");
-      const ratingDetails = document.querySelector(".rating-details");
-      const thankyou = document.querySelector(".thank-you");
-      const allRating = document.querySelectorAll(".rating");
-
-      allRating.forEach((rating) => {
-        rating.addEventListener("click", function handleToClick(event) {
-          allRating.forEach(function (element) {
-            element.classList.remove("selected-rating");
-          });
-          event.currentTarget.classList.toggle("selected-rating");
-        });
-      });
-
-      function handleToClick(event) {
-        const selectedRating = document.querySelector(".selected-rating");
-        if (selectedRating != null) {
-          ratingDetails.classList.remove("active");
-          thankyou.classList.remove("deactive");
-          ratingDetails.classList.add("deactive");
-          thankyou.classList.add("active");
-          const givenRating = document.querySelector(".given-rating");
-          givenRating.innerHTML = selectedRating.value;
-        } else {
-          alert("Please select a rating");
-        }
-      }
-      submitBtn.addEventListener("click", handleToClick);
-    </script>
+    <script type="text/javascript" src="./js/script.js"></script>
   </body>
 </html>
