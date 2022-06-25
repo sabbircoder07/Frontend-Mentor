@@ -60,7 +60,7 @@ html {
   justify-content: center;
 }
 .container {
-  width: 37.5rem;
+  width: 28rem;
   display: grid;
   grid-template-columns: 1fr;
   background-color: hsl(213, 19%, 18%);
