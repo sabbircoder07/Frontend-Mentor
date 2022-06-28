@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Sabbir Ahmed | Frontend Mentor | Tip calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css"
+  </head>
+  <body>
+    <header class="header">
+      <main class="main">
+        <section class="tip-calculator-section">
+          <div class="logo">
+            <img class="logo-img" src="./images/logo.svg" alt="LOGO" />
+          </div>
+          <div class="contanier">
+            <section class="calculation-call-to-action">
+              <div class="tip-calculation-call-to-action">
+                <form class="call-to-action-form" action="#">
+                  <div>
+                    <div class="person-level">
+                      <label for="total-bill">Bill</label>
+                      <p class="error-message-total"></p>
+                    </div>
+                    <div class="input-container">
+                      <img
+                        class="text-img"
+                        src="./images/icon-dollar.svg"
+                        alt="Dollar"
+                      />
+                      <input
+                        id="total-bill"
+                        class="total-bill"
+                        type="text"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '1');"
+                        placeholder="0.00"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label for="full-name">Select Tip %</label>
+                    <div class="input-container input-container-extend">
+                      <section class="tip-rate-one">
+                        <button
+                          type="submit"
+                          class="tip-rate selected-tip"
+                          value="5"
+                        >
+                          5%
+                        </button>
+                        <button type="submit" class="tip-rate" value="10">
+                          10%
+                        </button>
+                        <button type="submit" class="tip-rate" value="15">
+                          15%
+                        </button>
+                      </section>
+                      <section class="tip-rate-two">
+                        <button type="submit" class="tip-rate" value="25">
+                          25%
+                        </button>
+                        <button type="submit" class="tip-rate" value="50">
+                          50%
+                        </button>
+                        <input
+                          class="tip-rate"
+                          id="custom-trip"
+                          type="text"
+                          oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '1');"
+                          placeholder="Custom"
+                        />
+                      </section>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="person-level">
+                      <label for="total-person">Number of People</label>
+                      <p class="error-message-person"></p>
+                    </div>
+                    <div class="input-container">
+                      <img
+                        class="text-img"
+                        src="./images/icon-person.svg"
+                        alt="Dollar"
+                      />
+                      <input
+                        id="total-person"
+                        class="total-person"
+                        type="text"
+                        value="1"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '1');"
+                        placeholder="0"
+                        required
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </section>
+            <section class="tip-information">
+              <div class="tip-result">
+                <div class="amount-info">
+                  <div class="amount-tile">
+                    <h1 class="title">Tip Amount</h1>
+                    <p class="for-which">/person</p>
+                  </div>
+                  <div class="tip-amount">$0.00</div>
+                </div>
+                <div class="amount-info">
+                  <div class="amount-tile">
+                    <h1 class="title">Total</h1>
+                    <p class="for-which">/person</p>
+                  </div>
+                  <div class="tip-amount total-amout">$0.00</div>
+                </div>
+                <!--
+                <div class="logo">
+                  <img class="logo-img" src="./images/Healthy.jpg" alt="LOGO" />
+                </div>
+                -->
+                <button type="submit" class="btn btn-reset">RESET</button>
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+    </header>
+    <script type="text/javascript" src="./js/script.js"></script>
+  </body>
+</html>
