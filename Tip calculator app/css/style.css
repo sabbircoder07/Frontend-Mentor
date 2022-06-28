@@ -1,0 +1,284 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Strong cyan: hsl(172, 67%, 45%)
+
+### Neutral
+
+- Very dark cyan: hsl(183, 100%, 15%)
+- Dark grayish cyan: hsl(186, 14%, 43%)
+- Grayish cyan: hsl(184, 14%, 56%)
+- Light grayish cyan: hsl(185, 41%, 84%)
+- Very light grayish cyan: hsl(189, 41%, 97%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (form inputs): 24px
+
+### Font
+
+- Family: [Space Mono](https://fonts.google.com/specimen/Space+Mono)
+- Weights: 700
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px hsl(172, 67%, 45%);
+  background-color: hsl(185, 41%, 84%);
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  line-height: 1;
+  font-weight: 500;
+  background-color: hsl(185, 41%, 84%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.tip-calculator-section {
+  max-width: 144rem;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  margin-bottom: 4.8rem;
+}
+.logo-img {
+  width: 6rem;
+  height: auto;
+}
+.contanier {
+  width: 48%;
+  background-color: hsl(0, 0%, 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 11px;
+}
+
+.call-to-action-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2rem;
+  padding: 1.8rem;
+}
+
+.call-to-action-form label {
+  display: block;
+  font-size: 1.3rem;
+  color: hsl(186, 14%, 43%);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.text-img {
+  width: 18px;
+  position: absolute;
+  padding: 0 0 0 1.2rem;
+}
+
+.call-to-action-form input,
+.call-to-action-form select {
+  background-color: hsl(185, 41%, 84%);
+  border: none;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  text-align: right;
+  padding: 0.2rem 1.2rem 0.2rem 0rem;
+  width: 100%;
+}
+
+input::placeholder {
+  color: hsl(186, 14%, 43%);
+  font-family: monospace;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.call-to-action-form input,
+.call-to-action-form select,
+text {
+  font-family: "Space Mono", monospace;
+  color: hsl(183, 100%, 15%);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+#custom-trip {
+  display: block;
+  font-weight: 600;
+  width: 32%;
+  text-align: center;
+  padding: 2px;
+}
+
+.input-container-extend {
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.tip-rate-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0.5rem;
+}
+.tip-rate {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: hsl(189, 41%, 97%);
+  background-color: hsl(183, 100%, 15%);
+  width: 32%;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tip-rate:hover {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+}
+
+.tip-rate-two {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.tip-information {
+  padding: 1.4rem 1.4rem 1.4rem 0;
+}
+
+.tip-result {
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 11px;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.amount-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.amount-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.title {
+  font-size: 1.3rem;
+  color: hsl(189, 41%, 97%);
+}
+.for-which {
+  font-size: 1rem;
+  color: hsl(184, 14%, 56%);
+}
+
+.tip-amount {
+  font-size: 2.4rem;
+  color: hsl(172, 67%, 45%);
+}
+.btn {
+  border: none;
+  margin: 6.8rem 0 0 0;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.8em;
+  color: hsl(183, 100%, 15%);
+  display: block;
+  width: 100%;
+  background-color: hsl(172, 67%, 45%);
+  text-transform: uppercase;
+  padding: 0.8rem 0 0.8rem 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.selected-tip {
+  border: none;
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+}
+.person-level {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.error-message-person,
+.error-message-total {
+  color: #fa5252;
+}
+.zero-value:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #fa5252;
+  background-color: hsl(185, 41%, 84%);
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 70.5%;
+  }
+  .contanier {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "a"
+      "b";
+    width: 90%;
+  }
+  .calculation-call-to-action {
+    grid-area: a;
+  }
+  .tip-information {
+    grid-area: b;
+  }
+  .btn {
+    border: none;
+    margin: 0;
+  }
+  .tip-information {
+    padding: 1.4rem;
+  }
+  .logo {
+    margin-bottom: 1.8rem;
+  }
+}
