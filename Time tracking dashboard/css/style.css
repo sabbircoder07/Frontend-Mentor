@@ -1,0 +1,264 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Blue: hsl(246, 80%, 60%)
+
+- Light red (work): hsl(15, 100%, 70%)
+- Soft blue (play): hsl(195, 74%, 62%)
+- Light red (study): hsl(348, 100%, 68%)
+- Lime green (exercise): hsl(145, 58%, 55%)
+- Violet (social): hsl(264, 64%, 52%)
+- Soft orange (self care): hsl(43, 84%, 65%)
+
+### Neutral
+
+- Very dark blue: hsl(226, 43%, 10%)
+- Dark blue: hsl(235, 46%, 20%)
+- Desaturated blue: hsl(235, 45%, 61%)
+- Pale Blue: hsl(236, 100%, 87%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px (card titles e.g. Work, Play)
+
+### Font
+
+- Family: [Rubik](https://fonts.google.com/specimen/Rubik)
+- Weights: 300, 400, 500
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  outline: 1px solid #40c057;
+  outline-offset: 3px;
+}
+
+.body {
+  font-family: "Rubik", sans-serif;
+  background-color: hsl(226, 43%, 10%);
+  line-height: 1;
+  font-weight: 300;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.time-traking-section {
+  max-width: 144rem;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 2rem;
+}
+.author-detals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.author-information-details {
+  background-color: hsl(246, 80%, 60%);
+  padding: 1.8rem;
+  border-radius: 10px;
+  margin-top: -6%;
+  z-index: 99;
+}
+
+.author-img {
+  width: 4.8rem;
+  height: auto;
+  border: 1px solid hsl(236, 100%, 87%);
+  border-radius: 50%;
+  margin-bottom: 1.8rem;
+}
+.author-information {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.which-for {
+  font-size: 1.2rem;
+  color: hsl(236, 100%, 87%);
+}
+.author-name {
+  font-size: 3.2rem;
+  color: hsl(236, 100%, 87%);
+  font-weight: 300;
+  padding-bottom: 3.2rem;
+}
+
+.author-report-option {
+  background-color: hsl(235, 46%, 20%);
+  width: 100%;
+  padding: 1.8rem;
+  padding-top: 3.2rem;
+  border-radius: 10px;
+  margin-top: -10%;
+}
+.option-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.option-item a:link,
+.option-item a:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: hsl(235, 45%, 61%);
+}
+
+.option-item a:hover,
+.option-item a:active {
+  color: hsl(236, 100%, 87%);
+  transform: scale(1.5);
+}
+
+.time-tracking-information {
+  display: block;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.work-header,
+.play-header,
+.study-header,
+.exercise-header,
+.social-header,
+.self-care-header {
+  background-color: hsl(15, 100%, 70%);
+  background-image: url("../images/icon-work.svg");
+  background-position: 95% -5px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 3.6rem;
+  border-radius: 10px;
+}
+
+.play-header {
+  background-color: hsl(195, 74%, 62%);
+  background-image: url("../images/icon-play.svg");
+}
+
+.study-header {
+  background-color: hsl(348, 100%, 68%);
+  background-image: url("../images/icon-study.svg");
+}
+
+.exercise-header {
+  background-color: hsl(145, 58%, 55%);
+  background-image: url("../images/icon-exercise.svg");
+}
+
+.social-header {
+  background-color: hsl(264, 64%, 52%);
+  background-image: url("../images/icon-social.svg");
+}
+
+.self-care-header {
+  background-color: hsl(43, 84%, 65%);
+  background-image: url("../images/icon-self-care.svg");
+}
+
+.category-details {
+  width: 100%;
+  background-color: hsl(235, 46%, 20%);
+  padding: 1.8rem;
+  border-radius: 10px;
+  margin-top: -5%;
+}
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.6rem;
+}
+.category-name {
+  font-size: 1.8rem;
+  color: hsl(236, 100%, 87%);
+  font-weight: 300;
+}
+
+.actvity-time {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.total-current-hours {
+  font-size: 3.2rem;
+  color: hsl(236, 100%, 87%);
+  font-weight: 300;
+}
+.previous-hours {
+  font-size: 1.2rem;
+  color: hsl(236, 100%, 87%);
+  font-weight: 300;
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 62.5%;
+  }
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "a"
+      "b";
+    width: 90%;
+  }
+  .author-detals {
+    grid-area: a;
+  }
+  .time-tracking-information {
+    grid-area: b;
+  }
+
+  .column {
+    flex: 1;
+  }
+}
