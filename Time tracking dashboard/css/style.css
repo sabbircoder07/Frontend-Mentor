@@ -74,9 +74,9 @@ html {
 }
 
 .container {
-  width: 70%;
+  width: 60%;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 3fr;
   gap: 2rem;
 }
 .author-detals {
