@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Sabbir Ahmed | Frontend Mentor | Time tracking dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="time-traking-section">
+        <div class="container">
+          <div class="author-detals">
+            <div class="author-information-details">
+              <div class="author-img-part">
+                <img
+                  class="author-img"
+                  src="./images/image-sabbir.jpg"
+                  alt="Sabbir Ahmed"
+                />
+              </div>
+              <div class="author-information">
+                <p class="which-for">Report for</p>
+                <h1 class="author-name">Sabbir Ahmed</h1>
+              </div>
+            </div>
+            <div class="author-report-option">
+              <ul class="option-list">
+                <li class="option-item">
+                  <a class="daily-report" data="daily" href="#">Daily</a>
+                </li>
+                <li class="option-item">
+                  <a class="weekly-report" data="weekly" href="#">Weekly</a>
+                </li>
+                <li class="option-item">
+                  <a class="monthly-report" data="monthly" href="#">Monthly</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="time-tracking-information">
+            <div class="row">
+              <div class="column">
+                <div class="work">
+                  <div class="work-header"></div>
+                  <div class="category-details work-details">
+                    <div class="category category-work">
+                      <div class="category-name">Work</div>
+                      <div class="category-icon">
+                        <img
+                          clss="category-img"
+                          src="images/icon-ellipsis.svg"
+                          alt="ellipsis"
+                        />
+                      </div>
+                    </div>
+                    <div class="actvity-time">
+                      <p class="total-current-hours work-current-hours"></p>
+                      <p class="previous-hours work-previous-hours"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="play">
+                  <div class="play-header"></div>
+                  <div class="category-details play-details">
+                    <div class="category category-play">
+                      <div class="category-name">Play</div>
+                      <div class="category-icon">
+                        <img
+                          clss="category-img"
+                          src="images/icon-ellipsis.svg"
+                          alt="ellipsis"
+                        />
+                      </div>
+                    </div>
+                    <div class="actvity-time">
+                      <p class="total-current-hours play-current-hours"></p>
+                      <p class="previous-hours play-previous-hours"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="study">
+                  <div class="study-header"></div>
+                  <div class="category-details study-details">
+                    <div class="category category-study">
+                      <div class="category-name">Study</div>
+                      <div class="category-icon">
+                        <img
+                          clss="category-img"
+                          src="images/icon-ellipsis.svg"
+                          alt="ellipsis"
+                        />
+                      </div>
+                    </div>
+                    <div class="actvity-time">
+                      <p class="total-current-hours study-current-hours"></p>
+                      <p class="previous-hours study-previous-hours"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">
+                <div class="exercise">
+                  <div class="exercise-header"></div>
+                  <div class="category-details exercise-details">
+                    <div class="category category-exercise">
+                      <div class="category-name">Exercise</div>
+                      <div class="category-icon">
+                        <img
+                          clss="category-img"
+                          src="images/icon-ellipsis.svg"
+                          alt="ellipsis"
+                        />
+                      </div>
+                    </div>
+                    <div class="actvity-time">
+                      <p class="total-current-hours exercise-current-hours"></p>
+                      <p class="previous-hours exercise-previous-hours"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="social">
+                  <div class="social-header"></div>
+                  <div class="category-details social-details">
+                    <div class="category category-social">
+                      <div class="category-name">Social</div>
+                      <div class="category-icon">
+                        <img
+                          clss="category-img"
+                          src="images/icon-ellipsis.svg"
+                          alt="ellipsis"
+                        />
+                      </div>
+                    </div>
+                    <div class="actvity-time">
+                      <p class="total-current-hours social-current-hours"></p>
+                      <p class="previous-hours social-previous-hours"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="self-care">
+                  <div class="self-care-header"></div>
+                  <div class="category-details self-care-details">
+                    <div class="category category-self-care">
+                      <div class="category-name">Self Care</div>
+                      <div class="category-icon">
+                        <img
+                          clss="category-img"
+                          src="images/icon-ellipsis.svg"
+                          alt="ellipsis"
+                        />
+                      </div>
+                    </div>
+                    <div class="actvity-time">
+                      <p
+                        class="total-current-hours self-care-current-hours"
+                      ></p>
+                      <p class="previous-hours self-care-previous-hours"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript" src="./js/script.js"></script>
+  </body>
+</html>
