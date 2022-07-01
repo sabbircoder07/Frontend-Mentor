@@ -53,7 +53,7 @@ The designs were created to the following widths:
   outline-offset: 3px;
 }
 
-.body {
+body {
   font-family: "Rubik", sans-serif;
   background-color: hsl(226, 43%, 10%);
   line-height: 1;
