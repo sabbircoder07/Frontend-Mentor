@@ -88,8 +88,9 @@ html {
 .author-information-details {
   background-color: hsl(246, 80%, 60%);
   padding: 1.8rem;
+  padding-top: 2.8rem;
   border-radius: 10px;
-  margin-top: -6%;
+  margin-top: -10%;
   z-index: 99;
 }
 
@@ -113,7 +114,7 @@ html {
   font-size: 3.2rem;
   color: hsl(236, 100%, 87%);
   font-weight: 300;
-  padding-bottom: 3.2rem;
+  padding-bottom: 3.8rem;
 }
 
 .author-report-option {
@@ -175,7 +176,7 @@ html {
   background-position: 95% -5px;
   background-repeat: no-repeat;
   background-size: auto;
-  height: 5.4rem;
+  height: 5.2rem;
   border-radius: 10px;
 }
 
