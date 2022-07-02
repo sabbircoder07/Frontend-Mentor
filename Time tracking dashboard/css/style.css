@@ -47,12 +47,6 @@ The designs were created to the following widths:
   box-sizing: border-box;
 }
 
-*:focus {
-  outline: none;
-  outline: 1px solid #40c057;
-  outline-offset: 3px;
-}
-
 body {
   font-family: "Rubik", sans-serif;
   background-color: hsl(226, 43%, 10%);
@@ -77,12 +71,11 @@ html {
   width: 60%;
   display: grid;
   grid-template-columns: 1fr 3fr;
-  gap: 2rem;
+  gap: 1.8rem;
 }
 .author-detals {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 .author-information-details {
@@ -107,11 +100,11 @@ html {
   gap: 0.2rem;
 }
 .which-for {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: hsl(236, 100%, 87%);
 }
 .author-name {
-  font-size: 3.2rem;
+  font-size: 3.8rem;
   color: hsl(236, 100%, 87%);
   font-weight: 300;
   padding-bottom: 3.8rem;
@@ -119,9 +112,10 @@ html {
 
 .author-report-option {
   background-color: hsl(235, 46%, 20%);
-  width: 100%;
+  display: flex;
   padding: 1.8rem;
-  padding-top: 3.2rem;
+  padding-top: 4.8rem;
+  padding-bottom: 2rem;
   border-radius: 10px;
   margin-top: -10%;
 }
@@ -132,18 +126,23 @@ html {
   gap: 1.8rem;
 }
 
-.option-item a:link,
-.option-item a:visited {
+.option-item .btn {
+  border: none;
+  background-color: transparent;
   text-decoration: none;
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 500;
   color: hsl(235, 45%, 61%);
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-.option-item a:hover,
-.option-item a:active {
+.option-item .btn:hover {
   color: hsl(236, 100%, 87%);
-  transform: scale(1.5);
+}
+
+.selectedbtn {
+  color: hsl(236, 100%, 87%) !important;
 }
 
 .time-tracking-information {
@@ -158,6 +157,7 @@ html {
   gap: 1.6rem;
   margin-bottom: 1.6rem;
 }
+
 .column {
   display: flex;
   flex-direction: column;
@@ -231,26 +231,34 @@ html {
 }
 
 .total-current-hours {
-  font-size: 3.2rem;
+  font-size: 3.8rem;
   color: hsl(236, 100%, 87%);
   font-weight: 300;
 }
 .previous-hours {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: hsl(236, 100%, 87%);
   font-weight: 300;
 }
 
 @media screen and (max-width: 550px) {
   html {
-    font-size: 62.5%;
+    font-size: 55.5%;
   }
   .container {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 65% 0%;
+    grid-template-rows: min-content 1fr;
     grid-template-areas:
-      "a"
-      "b";
+      "a a"
+      "b b";
     width: 90%;
+  }
+
+  .time-traking-section {
+    height: auto;
+  }
+  .author-information-details {
+    margin-top: 5%;
   }
   .author-detals {
     grid-area: a;
@@ -258,8 +266,11 @@ html {
   .time-tracking-information {
     grid-area: b;
   }
-
+  .row {
+    flex-shrink: 2;
+  }
   .column {
+    flex-shrink: 2;
     flex: 1;
   }
 }
