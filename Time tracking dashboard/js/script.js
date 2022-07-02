@@ -1,4 +1,4 @@
-const roportTypeLink = document.querySelectorAll("a");
+const roportTypeLink = document.querySelectorAll("button");
 const workCurrentHours = document.querySelector(".work-current-hours");
 const workPreviousHours = document.querySelector(".work-previous-hours");
 const playCurrentHours = document.querySelector(".play-current-hours");
@@ -105,7 +105,11 @@ const fetchData = async () => {
 fetchData();
 
 function handleToclick(event) {
-  let timesStamp = event.currentTarget.innerHTML.toLowerCase();
+  roportTypeLink.forEach(function (element) {
+    element.classList.remove("selectedbtn");
+  });
+  event.currentTarget.classList.add("selectedbtn");
+  let timesStamp = event.currentTarget.value;
   displayData(timesStamp, data);
   console.log(timesStamp);
 }
