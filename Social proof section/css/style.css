@@ -173,17 +173,17 @@ html {
   gap: 0.2rem;
 }
 .author-name {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: hsl(0, 0%, 100%);
 }
 .author-class {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: hsl(333, 80%, 67%);
 }
 
 .testimonial-text {
-  font-size: 1.3rem;
-  line-height: 1.3;
+  font-size: 1.5rem;
+  line-height: 1.5;
   color: hsl(0, 0%, 100%);
 }
 
