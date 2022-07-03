@@ -1,0 +1,246 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+
+### Neutral
+
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
+- Weights: 400, 500, 700
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 1.5rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 60%;
+}
+
+.grid {
+  display: grid;
+  column-gap: 2.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 2.8rem;
+}
+
+.grid--1-cols {
+  grid-template-columns: 1fr;
+}
+
+.grid--2-cols {
+  grid-template-columns: 1fr 2fr;
+}
+
+.social-proof-section {
+  max-width: 144rem;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.heding-section {
+  display: block;
+}
+.main-heading {
+  font-size: 3.8rem;
+  color: hsl(300, 43%, 22%);
+  line-height: 3.6rem;
+  letter-spacing: -0.5px;
+  margin-bottom: 1.8rem;
+}
+.heading-text {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: hsl(300, 43%, 22%);
+}
+.review-rating-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+}
+.rated-reviw {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  background-color: hsl(300, 24%, 96%);
+  padding: 0.8rem;
+  padding-left: 1.8rem;
+  padding-right: 3.8rem;
+  gap: 1.8rem;
+  border-radius: 5px;
+}
+.rated-img {
+  width: 1.2rem;
+  height: auto;
+}
+.rated-text {
+  font-size: 1.5rem;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+
+.margin-right-one {
+  margin-right: 3.2rem;
+}
+
+.margin-right-two {
+  margin-right: 3.2rem;
+}
+
+.margin-left-one {
+  margin-left: 3.2rem;
+}
+
+.margin-left-two {
+  margin-left: 9.8rem;
+}
+
+.testimonial-section {
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+  justify-items: center;
+}
+.testimonial {
+  background-color: hsl(300, 43%, 22%);
+  padding: 1.8rem;
+  border-radius: 5px;
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1.8rem;
+}
+.testimonial-img {
+  width: 4.2rem;
+  height: auto;
+  border-radius: 50%;
+}
+.author-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+}
+.author-name {
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+}
+.author-class {
+  font-size: 1.2rem;
+  color: hsl(333, 80%, 67%);
+}
+
+.testimonial-text {
+  font-size: 1.3rem;
+  line-height: 1.3;
+  color: hsl(0, 0%, 100%);
+}
+
+.testimonial-margin-top-one {
+  margin-top: 2rem;
+}
+
+.testimonial-margin-top-two {
+  margin-top: 4rem;
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 55.5%;
+  }
+  .container {
+    width: 90%;
+  }
+  .grid {
+    display: grid;
+    column-gap: 2.4rem;
+    row-gap: 2.4rem;
+  }
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a"
+      "b";
+  }
+
+  .grid--1-cols {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "c";
+  }
+  .heding-section {
+    grid-area: a;
+  }
+  .review-rating-section {
+    grid-area: b;
+    align-items: normal;
+    justify-content: normal;
+  }
+
+  .testimonial-section {
+    grid-area: c;
+  }
+  .margin-right-one,
+  .margin-left-one,
+  .margin-left-two,
+  .testimonial-margin-top-one,
+  .testimonial-margin-top-two {
+    margin: 0;
+  }
+  .testimonial-section {
+    flex-direction: column;
+  }
+  .rated-reviw {
+    padding: 0.8rem;
+  }
+}
