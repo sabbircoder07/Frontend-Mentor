@@ -1,0 +1,200 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+
+### Neutral
+
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Fonts
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 200, 400, 600
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 144rem;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  line-height: 1.2;
+  font-weight: 200;
+  background-color: #f1f3f5;
+}
+
+.container {
+  width: 70%;
+}
+
+.grid {
+  display: grid;
+  column-gap: 2.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 2.8rem;
+}
+
+.grid--1-cols {
+  grid-template-columns: 1fr;
+}
+
+.grid--3-cols {
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.header-section {
+  max-width: 144rem;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+.main-heading {
+  font-size: 2rem;
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
+  margin-top: 3.2rem;
+}
+.sub-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 1.2rem;
+}
+.header-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 600;
+  color: hsl(229, 6%, 66%);
+  text-align: center;
+}
+.card-section {
+  max-width: 144rem;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.card-details-information {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+}
+.card {
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: 0 1.4rem 1.4rem hsl(234, 12%, 35%);
+  padding: 1.8rem;
+  border-radius: 10px;
+  width: 25rem;
+}
+.two-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.card-supervisor {
+  border-top: 3px solid hsl(180, 62%, 55%);
+}
+.card-team-builder {
+  border-top: 3px solid hsl(0, 78%, 62%);
+}
+.card-Karma {
+  border-top: 3px solid hsl(34, 97%, 64%);
+}
+.card-calculator {
+  border-top: 3px solid hsl(212, 86%, 64%);
+}
+.card-header {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 0.8rem;
+}
+.card-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
+  margin-bottom: 2.8rem;
+}
+
+.card-img {
+  width: 3.2rem;
+  height: auto;
+  margin-left: 80%;
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 60.5%;
+  }
+  body {
+    margin-bottom: 3.2rem;
+  }
+  .container {
+    width: 90%;
+  }
+  .grid {
+    column-gap: 0;
+    row-gap: 0;
+  }
+  .grid--3-cols {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "a";
+  }
+  .header {
+    grid-row: a;
+  }
+  .card-details-information {
+    flex-direction: column;
+  }
+  .card {
+    width: 30rem;
+  }
+}
