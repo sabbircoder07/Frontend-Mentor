@@ -57,6 +57,10 @@ body {
 
 .container {
   width: 70%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
 }
 
 .grid {
@@ -110,6 +114,7 @@ body {
   font-weight: 600;
   color: hsl(229, 6%, 66%);
   text-align: center;
+  margin-bottom: 3.2rem;
 }
 .card-section {
   max-width: 144rem;
