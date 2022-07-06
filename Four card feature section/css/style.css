@@ -93,13 +93,13 @@ body {
   justify-content: center;
 }
 .main-heading {
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: 400;
   color: hsl(229, 6%, 66%);
-  margin-top: 3.2rem;
+  margin-top: 4.8rem;
 }
 .sub-heading {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   font-weight: 600;
   color: hsl(234, 12%, 34%);
   margin-bottom: 1.2rem;
@@ -124,19 +124,19 @@ body {
   align-items: center;
   justify-items: center;
   justify-content: center;
-  gap: 1.8rem;
+  gap: 2rem;
 }
 .card {
   background-color: hsl(0, 0%, 98%);
   box-shadow: 0 1.4rem 1.4rem hsl(234, 12%, 35%);
-  padding: 1.8rem;
+  padding: 2rem;
   border-radius: 10px;
   width: 25rem;
 }
 .two-cards {
   display: flex;
   flex-direction: column;
-  gap: 1.8rem;
+  gap: 2rem;
 }
 .card-supervisor {
   border-top: 3px solid hsl(180, 62%, 55%);
@@ -161,7 +161,7 @@ body {
   line-height: 1.6;
   font-weight: 400;
   color: hsl(229, 6%, 66%);
-  margin-bottom: 2.8rem;
+  margin-bottom: 3.2rem;
 }
 
 .card-img {
@@ -195,6 +195,6 @@ body {
     flex-direction: column;
   }
   .card {
-    width: 30rem;
+    width: 35rem;
   }
 }
