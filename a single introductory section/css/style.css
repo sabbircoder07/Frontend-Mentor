@@ -43,24 +43,24 @@ For the social icons, you can use a font icon library. Some suggestions can be f
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background-image: url("../images/bg-desktop.svg");
   background-position: unset;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 100vh;
   line-height: 1.2;
   font-weight: 400;
   background-color: hsl(257, 40%, 49%);
-}
-
-html {
-  font-size: 62.5%;
+  height: 100vh;
 }
 
 .container {
-  width: 90%;
+  max-width: 144rem;
 }
 
 .grid {
@@ -76,14 +76,18 @@ html {
 .grid--1-cols {
   grid-template-columns: 1fr;
 }
-
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .header {
   display: flex;
   justify-content: space-between;
   justify-items: center;
   align-items: center;
   height: 10.8rem;
-  padding: 0 6.8rem;
+  padding: 0 5.8rem;
 }
 
 .logo {
@@ -91,35 +95,28 @@ html {
   height: auto;
 }
 
-.hero-section {
-  max-width: 144rem;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5.8rem;
+  gap: 7.2rem;
 }
 
 .hero-img {
-  width: 58rem;
+  width: 60rem;
   height: auto;
+  padding-left: 5.8rem;
+  margin-top: 3.8rem;
 }
 .hero-details {
-  padding-bottom: 9.8rem;
-  padding-right: 3.8rem;
+  padding-bottom: 2.8rem;
+  padding-right: 8.8rem;
 }
 .main-header {
   font-family: "Poppins", sans-serif;
   font-size: 3.8rem;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.4;
   color: #ffffff;
   margin-bottom: 1.8rem;
 }
@@ -146,19 +143,11 @@ html {
   color: #ffffff;
 }
 
-.footer-section {
-  max-width: 144rem;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 .footer {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-right: 4.8rem;
+  margin-right: 9.8rem;
 }
 .social-icon {
   display: flex;
@@ -187,9 +176,6 @@ html {
 @media screen and (max-width: 550px) {
   html {
     font-size: 50.5%;
-  }
-  .container {
-    width: 90%;
   }
   body {
     background-image: url("../images/bg-mobile.svg");
