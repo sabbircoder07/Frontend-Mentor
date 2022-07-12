@@ -47,7 +47,6 @@ html {
 }
 
 body {
-  max-width: 144rem;
   font-family: "Poppins", sans-serif;
   height: 100vh;
   line-height: 1.2;
@@ -56,11 +55,7 @@ body {
 }
 
 .container {
-  width: 70%;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
+  max-width: 144rem;
 }
 
 .grid {
@@ -78,22 +73,13 @@ body {
 }
 
 .grid--3-cols {
-  grid-template-columns: 1fr 2fr 1fr;
-}
-
-.header-section {
-  max-width: 144rem;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-items: center;
   justify-content: center;
 }
 .main-heading {
@@ -115,13 +101,6 @@ body {
   color: hsl(229, 6%, 66%);
   text-align: center;
   margin-bottom: 3.2rem;
-}
-.card-section {
-  max-width: 144rem;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
 }
 
 .card-details-information {
