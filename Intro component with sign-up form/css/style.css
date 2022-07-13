@@ -1,0 +1,208 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Red: hsl(0, 100%, 74%) 
+- Green: hsl(154, 59%, 51%)
+
+### Accent
+
+- Blue: hsl(248, 32%, 49%)
+
+### Neutral
+
+- Dark Blue: hsl(249, 10%, 26%) 
+- Grayish Blue: hsl(246, 25%, 77%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 500, 600, 700
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(../images/bg-intro-desktop.png);
+  background-position: unset;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(0, 100%, 74%);
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 4.8rem;
+}
+.intro-component {
+  width: 45.5rem;
+}
+.sign-up-component {
+  width: 37.5rem;
+}
+
+.main-header {
+  font-size: 4.2rem;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 2.8rem;
+  font-weight: 700;
+}
+.into-text {
+  font-size: 1.4rem;
+  color: #ffffff;
+  line-height: 1.6;
+  margin-bottom: 2.8rem;
+}
+.call-to-action-sign-up-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+  background-color: #ffffff;
+  padding: 2.8rem;
+  border-radius: 11px;
+}
+
+.call-to-action-sign-up-form input,
+.call-to-action-sign-up-form select {
+  width: 100%;
+  padding: 5px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: inherit;
+  color: hsl(249, 10%, 26%);
+  box-shadow: 0 0 0 1px hsl(246, 25%, 77%);
+  border: none;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+
+.call-to-action-sign-up-form input::placeholder {
+  font-size: 1.4rem;
+  color: hsl(246, 25%, 77%);
+  font-weight: 300;
+}
+
+.call-to-action-sign-up-form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px hsl(249, 10%, 26%);
+  border: none;
+}
+.input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 0.3rem;
+}
+.error-icon-email,
+.error-icon-first-name,
+.error-icon-last-name,
+.error-icon-password {
+  width: 1.8rem;
+  height: auto;
+  position: absolute;
+  left: 90%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  display: none;
+}
+.error-message-email,
+.error-message-first-name,
+.error-message-last-name,
+.error-message-password {
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(0, 100%, 74%);
+  text-align: right;
+}
+.btn {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn-try-free {
+  font-size: 1.6rem;
+  background-color: hsl(248, 32%, 49%);
+  margin-bottom: 1.4rem;
+}
+
+.btn-sign-up {
+  font-size: 1.6rem;
+  background-color: hsl(154, 59%, 51%);
+}
+
+.terms-services {
+  font-size: 8px;
+  color: hsl(246, 25%, 77%);
+  margin-top: -5px;
+}
+
+.term-link {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.invalid-focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #fa5252 !important;
+  border: none;
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 52.5%;
+  }
+  body {
+    background-image: url(../images/bg-intro-mobile.png);
+  }
+  .container {
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+  .intro-component {
+    text-align: center;
+  }
+}
