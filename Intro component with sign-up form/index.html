@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>
+      Sabbir Ahmed | Frontend Mentor | Intro component with sign up form
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="sign-up-section">
+        <div class="container">
+          <div class="intro-component">
+            <h1 class="main-header">Learn to code by watching others</h1>
+            <p class="into-text">
+              See how experienced developers solve problems in real-time.
+              Watching scripted tutorials is great, but understanding how
+              developers think is invaluable.
+            </p>
+          </div>
+          <div class="sign-up-component">
+            <button class="btn btn-try-free">
+              Try it free 7 days then $20/mo. thereafter
+            </button>
+            <div class="sign-up-form">
+              <form class="call-to-action-sign-up-form" action="#">
+                <div class="input-container">
+                  <input id="first-name" type="text" placeholder="First Name" />
+                  <p class="error-message-first-name"></p>
+                  <img
+                    class="error-icon-first-name"
+                    src="./images/icon-error.svg"
+                    alt="error-icon"
+                  />
+                </div>
+                <div class="input-container">
+                  <input id="last-name" type="text" placeholder="Last Name" />
+                  <p class="error-message-last-name"></p>
+                  <img
+                    class="error-icon-last-name"
+                    src="./images/icon-error.svg"
+                    alt="error-icon"
+                  />
+                </div>
+                <div class="input-container">
+                  <input
+                    id="email-id"
+                    type="text"
+                    autocomplete="email"
+                    placeholder="Email Address"
+                  />
+                  <p class="error-message-email"></p>
+                  <img
+                    class="error-icon-email"
+                    src="./images/icon-error.svg"
+                    alt="error-icon"
+                  />
+                </div>
+                <div class="input-container">
+                  <input
+                    id="password"
+                    type="password"
+                    autocomplete="new-password"
+                    placeholder="Password"
+                  />
+                  <p class="error-message-password"></p>
+                  <img
+                    class="error-icon-password"
+                    src="./images/icon-error.svg"
+                    alt="error-icon"
+                  />
+                </div>
+                <button class="btn btn-sign-up">Claim your free trial</button>
+                <p class="terms-services">
+                  By clicking the button, you are agreeing to our
+                  <span class="term-link">Terms and Services</span>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript" src="./js/script.js"></script>
+  </body>
+</html>
