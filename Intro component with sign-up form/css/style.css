@@ -102,8 +102,8 @@ body {
 .call-to-action-sign-up-form input,
 .call-to-action-sign-up-form select {
   width: 100%;
-  padding: 5px;
-  font-size: 1.4rem;
+  padding: 0.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
   font-family: inherit;
   color: hsl(249, 10%, 26%);
@@ -114,9 +114,9 @@ body {
 }
 
 .call-to-action-sign-up-form input::placeholder {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: hsl(246, 25%, 77%);
-  font-weight: 300;
+  font-weight: 600;
 }
 
 .call-to-action-sign-up-form *:focus {
@@ -139,8 +139,8 @@ body {
   height: auto;
   position: absolute;
   left: 90%;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: none;
 }
 .error-message-email,
@@ -154,8 +154,8 @@ body {
 }
 .btn {
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   border: none;
   border-radius: 5px;
   color: #ffffff;
