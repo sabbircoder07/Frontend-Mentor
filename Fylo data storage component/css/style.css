@@ -1,0 +1,195 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%)
+
+### Neutral
+
+- Pale Blue: hsl(243, 100%, 93%)
+- Grayish Blue: hsl(229, 7%, 55%)
+- Dark Blue: hsl(228, 56%, 26%)
+- Very Dark Blue: hsl(229, 57%, 11%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 14px
+
+### Font
+
+- Family: [Raleway](https://fonts.google.com/specimen/Raleway)
+- Weights: 400, 700
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  font-family: "Raleway", sans-serif;
+  background-image: url("../images/bg-desktop.png");
+  background-position: bottom -30% right 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(229, 57%, 11%);
+  line-height: 1;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 144rem;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.8rem;
+}
+
+.storage-component-information {
+  width: 35.8rem;
+  height: auto;
+  background-color: hsl(228, 56%, 26%);
+  padding: 2.8rem;
+  border-radius: 11px;
+  border-top-right-radius: 7rem;
+}
+.logo {
+  width: 12.8rem;
+  height: auto;
+  margin-bottom: 1.8rem;
+}
+.storage-component {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+li {
+  background-color: hsl(229, 57%, 11%);
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+.component {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.data-storage-information {
+  width: 35.8rem;
+  height: auto;
+  background-color: hsl(228, 56%, 26%);
+  padding: 2.8rem;
+  border-radius: 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 3%;
+  position: relative;
+}
+
+.storage-used-information h4 {
+  font-size: 1.4rem;
+  color: hsl(243, 100%, 93%);
+  font-weight: 400;
+}
+.storage-used-information span {
+  font-weight: 700;
+}
+.main-bar {
+  height: 12px;
+  width: 100%;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 5px;
+  position: relative;
+}
+.storage-limit {
+  display: flex;
+  justify-content: space-between;
+  color: hsl(243, 100%, 93%);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.progress-bar {
+  height: 8px;
+  width: 80%;
+  background: linear-gradient(
+    to left top,
+    hsl(335, 100%, 65%),
+    hsl(6, 100%, 80%)
+  );
+  border-radius: 5px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+.progress-bar-extend {
+  height: 8px;
+  width: 8px;
+  background-color: hsl(243, 100%, 93%);
+  border-radius: 50%;
+  position: absolute;
+  left: 97%;
+}
+
+.tooltip {
+  display: inline-flex;
+  background: hsl(243, 100%, 93%);
+  color: hsl(229, 57%, 11%);
+  position: absolute;
+  line-height: 1;
+  padding: 1.2rem;
+  border-radius: 8px;
+  top: -1rem;
+  right: -5rem;
+}
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.big-text {
+  font-size: 2.6rem;
+  color: hsl(229, 57%, 11%);
+  font-weight: 700;
+}
+.small-text {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    background-image: url("../images/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .tooltip {
+    top: 8rem;
+    right: 13rem;
+  }
+}
