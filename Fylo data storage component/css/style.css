@@ -48,7 +48,7 @@ body {
   height: 100vh;
   font-family: "Raleway", sans-serif;
   background-image: url("../images/bg-desktop.png");
-  background-position: bottom -30% right 20px;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
   background-color: hsl(229, 57%, 11%);
@@ -67,7 +67,7 @@ body {
 }
 
 .storage-component-information {
-  width: 35.8rem;
+  width: 28.8rem;
   height: auto;
   background-color: hsl(228, 56%, 26%);
   padding: 2.8rem;
@@ -75,18 +75,18 @@ body {
   border-top-right-radius: 7rem;
 }
 .logo {
-  width: 12.8rem;
+  width: 14.8rem;
   height: auto;
   margin-bottom: 1.8rem;
 }
 .storage-component {
   list-style: none;
   display: flex;
-  gap: 1.2rem;
+  gap: 1.8rem;
 }
 li {
   background-color: hsl(229, 57%, 11%);
-  padding: 8px 10px;
+  padding: 10px 12px;
   border-radius: 5px;
 }
 .component {
@@ -95,10 +95,10 @@ li {
   cursor: pointer;
 }
 .data-storage-information {
-  width: 35.8rem;
+  width: 37.5rem;
   height: auto;
   background-color: hsl(228, 56%, 26%);
-  padding: 2.8rem;
+  padding: 3.2rem;
   border-radius: 11px;
   display: flex;
   flex-direction: column;
@@ -132,7 +132,7 @@ li {
 }
 .progress-bar {
   height: 8px;
-  width: 80%;
+  width: 75%;
   background: linear-gradient(
     to left top,
     hsl(335, 100%, 65%),
