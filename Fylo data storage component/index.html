@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Sabbir Ahmed | Frontend Mentor | Fylo data storage component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="data-storage-componet">
+        <div class="container">
+          <div class="storage-component-information">
+            <img class="logo" src="./images/logo.svg" alt="logo" />
+            <div class="storage-components">
+              <ul class="storage-component">
+                <li>
+                  <img
+                    class="component"
+                    src="./images/icon-document.svg"
+                    alt="document"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="component"
+                    src="./images/icon-folder.svg"
+                    alt="folder"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="component"
+                    src="./images/icon-upload.svg"
+                    alt="upload"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="data-storage-information">
+            <div class="storage-used-information">
+              <h4>You’ve used <span>815 GB</span> of your storage</h4>
+            </div>
+            <div class="storage-bar">
+              <div class="main-bar">
+                <div class="progress-bar">
+                  <span class="progress-bar-extend"></span>
+                </div>
+              </div>
+            </div>
+            <div class="storage-limit">
+              <div class="lower-limit">0 GB</div>
+              <div class="lower-limit">1000 GB</div>
+            </div>
+            <div class="tooltip caret-bottom-right">
+              <div class="text">
+                <span class="big-text">185</span>
+                <span class="small-text">GB Left</span>
+              </div>
+              <div class="foreground">
+                <div class="background"></div>
+                <div class="caret"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
