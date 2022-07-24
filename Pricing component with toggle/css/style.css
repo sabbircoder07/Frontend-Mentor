@@ -99,7 +99,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: hsl(236, 72%, 79%);
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -117,7 +117,7 @@ body {
 }
 
 input:checked + .slider {
-  background-color: hsl(237, 63%, 64%);
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 }
 
 input:focus + .slider {
