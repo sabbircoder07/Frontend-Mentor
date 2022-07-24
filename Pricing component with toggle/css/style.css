@@ -78,7 +78,7 @@ body {
   justify-content: center;
   gap: 2.4rem;
   color: hsl(234, 14%, 74%);
-  margin-bottom: 10.2rem;
+  margin-bottom: 6.8rem;
 }
 .switch {
   position: relative;
@@ -150,7 +150,7 @@ input:checked + .slider:before {
   text-align: center;
   background-color: #ffffff;
   width: 34rem;
-  padding: 3.8rem;
+  padding: 2.8rem;
   border-radius: 11px;
   color: hsl(232, 13%, 33%);
 }
@@ -209,7 +209,7 @@ hr {
     hsl(236, 72%, 79%),
     hsl(237, 63%, 64%)
   );
-  transform: scale(1.2);
+  transform: scale(1.1);
   color: hsl(240, 78%, 98%) !important;
 }
 
