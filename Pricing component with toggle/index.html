@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>
+      Sabbir Ahmed | Frontend Mentor | pricing component with toggle
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="main-header">Our Pricing</h1>
+      <div class="pricing-option">
+        <div class="annually">Annually</div>
+        <div class="toggle-element">
+          <label class="switch">
+            <input class="check-box" type="checkbox" checked />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div calss="monthly">Monthly</div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="pricing-section">
+        <div class="pricing pricing-basic">
+          <h3 class="title-pricing">Basic</h3>
+          <p class="price">
+            <span class="unit">$</span><span class="basic-price">19.99</span>
+          </p>
+          <div class="features">
+            <hr />
+            <p class="feature">500 GB Storage</p>
+            <hr />
+            <p class="feature">2 Users Allowed</p>
+            <hr />
+            <p class="feature">Send up to 3 GB</p>
+            <hr />
+          </div>
+          <button class="btn btn-basic">Learn More</button>
+        </div>
+        <div class="pricing pricing-professional">
+          <h3 class="title-pricing">Professional</h3>
+          <p class="price">
+            <span class="unit">$</span
+            ><span class="professional-price">24.99</span>
+          </p>
+          <div class="features features-professional">
+            <hr />
+            <p class="feature">1 TB Storage</p>
+            <hr />
+            <p class="feature">5 Users Allowed</p>
+            <hr />
+            <p class="feature">Send up to 10 GB</p>
+            <hr />
+          </div>
+          <button class="btn btn-professional">Learn More</button>
+        </div>
+        <div class="pricing pricing-master">
+          <h3 class="title-pricing">Master</h3>
+          <p class="price">
+            <span class="unit">$</span><span class="master-price">39.99</span>
+          </p>
+          <div class="features">
+            <hr />
+            <p class="feature">2 TB Storage</p>
+            <hr />
+            <p class="feature">10 Users Allowed</p>
+            <hr />
+            <p class="feature">Send up to 20 GB</p>
+            <hr />
+          </div>
+          <button class="btn btn-master">Learn More</button>
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript" src="./js/script.js"></script>
+  </body>
+</html>
