@@ -64,7 +64,7 @@ body {
 }
 
 .main-header {
-  font-size: 4.2rem;
+  font-size: 3.8rem;
   color: hsl(233, 13%, 49%);
   margin-top: 2.8rem;
   margin-bottom: 3.2rem;
@@ -143,13 +143,13 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.8rem;
+  gap: 2.8rem;
 }
 
 .pricing {
   text-align: center;
   background-color: #ffffff;
-  width: 34rem;
+  width: 35rem;
   padding: 2.8rem;
   border-radius: 11px;
   color: hsl(232, 13%, 33%);
@@ -159,6 +159,12 @@ input:checked + .slider:before {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
+
+.title-pricing-professional {
+  font-size: 1.8rem;
+  margin-top: 1.8rem;
+  margin-bottom: 1rem;
+}
 .price {
   display: flex;
   align-items: center;
@@ -166,6 +172,26 @@ input:checked + .slider:before {
   gap: 0.8rem;
   margin-bottom: 2rem;
 }
+
+.price-professional {
+  margin-bottom: 0.8rem;
+}
+
+.unit {
+  font-size: 3.2rem;
+}
+.unit-professional {
+  font-size: 3rem;
+}
+.basic-price,
+.master-price {
+  font-size: 6.2rem;
+}
+
+.professional-price {
+  font-size: 6rem;
+}
+
 hr {
   border-top: 0.5px solid hsl(232, 13%, 33%);
   width: 100%;
@@ -173,14 +199,7 @@ hr {
 .features-professional hr {
   border-top: 0.5px solid #ffffff;
 }
-.unit {
-  font-size: 3.2rem;
-}
-.basic-price,
-.professional-price,
-.master-price {
-  font-size: 5.8rem;
-}
+
 .features {
   display: flex;
   flex-direction: column;
@@ -188,10 +207,16 @@ hr {
   justify-content: center;
   font-size: 2rem;
   gap: 1.8rem;
-  margin-bottom: 2.8rem;
+  margin-bottom: 3.2rem;
 }
+
+.features-professional {
+  font-size: 1.8rem;
+  gap: 1.6rem;
+}
+
 .btn {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   width: 100%;
@@ -209,13 +234,15 @@ hr {
     hsl(236, 72%, 79%),
     hsl(237, 63%, 64%)
   );
-  transform: scale(1.1);
+  transform: scale(1.2);
   color: hsl(240, 78%, 98%) !important;
 }
 
 .btn-professional {
+  font-size: 1.2rem;
   background: hsl(240, 78%, 98%);
   color: hsl(237, 63%, 64%);
+  padding: 1.2rem 1.6rem;
 }
 
 .btn:hover {
