@@ -1,0 +1,242 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Linear Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%)
+
+### Neutral
+
+- Very Light Grayish Blue: hsl(240, 78%, 98%)
+- Light Grayish Blue: hsl(234, 14%, 74%)
+- Grayish Blue: hsl(233, 13%, 49%)
+- Dark Grayish Blue: hsl(232, 13%, 33%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weight: 700
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 144rem;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-image: url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right, bottom left;
+  padding: 1.5rem;
+  background-color: hsl(240, 78%, 98%);
+  font-weight: 700;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-header {
+  font-size: 4.2rem;
+  color: hsl(233, 13%, 49%);
+  margin-top: 2.8rem;
+  margin-bottom: 3.2rem;
+  margin-top: 4.8rem;
+}
+
+.pricing-option {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  color: hsl(234, 14%, 74%);
+  margin-bottom: 10.2rem;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 6rem;
+  height: 3.4rem;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(236, 72%, 79%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 2.6rem;
+  width: 2.6rem;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: hsl(237, 63%, 64%);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px hsl(237, 63%, 64%);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(2.6rem);
+  -ms-transform: translateX(2.6rem);
+  transform: translateX(2.6rem);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 3.4rem;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.pricing-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+}
+
+.pricing {
+  text-align: center;
+  background-color: #ffffff;
+  width: 34rem;
+  padding: 3.8rem;
+  border-radius: 11px;
+  color: hsl(232, 13%, 33%);
+}
+
+.title-pricing {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+hr {
+  border-top: 0.5px solid hsl(232, 13%, 33%);
+  width: 100%;
+}
+.features-professional hr {
+  border-top: 0.5px solid #ffffff;
+}
+.unit {
+  font-size: 3.2rem;
+}
+.basic-price,
+.professional-price,
+.master-price {
+  font-size: 5.8rem;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  gap: 1.8rem;
+  margin-bottom: 2.8rem;
+}
+.btn {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  width: 100%;
+  color: hsl(240, 78%, 98%);
+  border: none;
+  padding: 1.6rem 2rem;
+  border-radius: 11px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.pricing-professional {
+  background: linear-gradient(
+    to bottom,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  transform: scale(1.2);
+  color: hsl(240, 78%, 98%) !important;
+}
+
+.btn-professional {
+  background: hsl(240, 78%, 98%);
+  color: hsl(237, 63%, 64%);
+}
+
+.btn:hover {
+  color: hsl(237, 63%, 64%);
+  background: transparent;
+  box-shadow: 0 0 0 1px hsl(237, 63%, 64%);
+}
+.btn-professional:hover {
+  color: #ffffff;
+  background: transparent;
+  box-shadow: 0 0 0 1px #ffffff;
+}
+
+@media screen and (max-width: 550px) {
+  .pricing-section {
+    flex-direction: column;
+  }
+  .pricing-professional {
+    transform: scale(1);
+  }
+  .pricing-master {
+    margin-bottom: 4.8rem;
+  }
+}
