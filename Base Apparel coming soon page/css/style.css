@@ -49,10 +49,6 @@ html {
 
 body {
   font-family: "Josefin Sans", sans-serif;
-  background-image: url("../images/bg-pattern-desktop.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   line-height: 1;
   font-weight: 300;
   height: 100vh;
@@ -84,16 +80,19 @@ body {
   background-position: top;
 }
 .hero-details-informations {
-  padding: 4.2em 15rem;
+  background-image: url("../images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 5.8em 17rem;
 }
 .logo-img {
-  width: 35%;
+  width: 30%;
   height: auto;
-  margin-bottom: 9.4rem;
+  margin-bottom: 10rem;
 }
 
 .hero-heading {
-  font-size: 5.4rem;
+  font-size: 5.8rem;
   text-transform: uppercase;
   letter-spacing: 1.6rem;
   line-height: 1.2;
@@ -103,11 +102,12 @@ body {
 }
 
 .hero-heading span {
+  font-weight: 300;
   color: hsl(0, 36%, 70%);
 }
 
 .hero-text {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.6;
   font-weight: 500;
   color: hsl(0, 36%, 70%);
@@ -136,7 +136,7 @@ body {
 .error-icon {
   position: absolute;
   padding: 0 0 0 1.2rem;
-  left: 68%;
+  left: 65%;
   display: none;
 }
 .btn--form {
@@ -159,7 +159,7 @@ body {
   background-color: hsl(0, 74%, 74%);
   color: #fff4e6;
   align-self: end;
-  padding: 1.2rem 5.2rem;
+  padding: 1.2rem 4rem;
   transition: all 1s;
   border-radius: 4.2rem;
   cursor: pointer;
