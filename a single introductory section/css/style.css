@@ -73,7 +73,7 @@ body {
 .logo {
   width: 15%;
   height: auto;
-  padding-top: 3.8rem;
+  padding-top: 4.8rem;
 }
 
 .hero {
@@ -83,7 +83,7 @@ body {
   gap: 2.8rem;
 }
 .hero-image {
-  width: 85rem;
+  width: 80rem;
 }
 .hero-img {
   width: 100%;
@@ -91,7 +91,7 @@ body {
   padding: 10rem 0 0 5.8rem;
 }
 .hero-details {
-  width: 60rem;
+  width: 65rem;
   padding-right: 5.8rem;
 }
 .main-header {
