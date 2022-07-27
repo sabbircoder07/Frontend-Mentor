@@ -117,7 +117,7 @@ body {
 .call-to-action-form input,
 .call-to-action-form select {
   width: 90%;
-  padding: 2rem;
+  padding: 1.8rem;
   font-size: 1.8rem;
   font-family: inherit;
   color: inherit;
@@ -159,7 +159,7 @@ body {
   background: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   color: #fff4e6;
   align-self: end;
-  padding: 1.6rem 5rem;
+  padding: 1.35rem 4rem;
   transition: all 1s;
   border-radius: 4.2rem;
   cursor: pointer;
