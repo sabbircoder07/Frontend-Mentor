@@ -11,11 +11,12 @@ function isValidEmail(email) {
     errorIcon.style.display = "none";
     errorMessage.innerHTML = "Your email address is valid";
     errorMessage.style.color = "#2f9e44";
-    totalBill.classList.remove("invalid-email-id");
+    emailID.classList.remove("invalid-email-id");
   } else {
     emailID.classList.add("invalid-email-id");
     emailID.focus();
     errorIcon.style.display = "block";
+    errorMessage.style.color = "#c92a2a";
     errorMessage.innerHTML = "Please enter a valid email address";
   }
 }
