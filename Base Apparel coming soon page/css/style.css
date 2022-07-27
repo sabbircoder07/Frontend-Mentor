@@ -55,11 +55,13 @@ body {
   background-size: cover;
   line-height: 1;
   font-weight: 300;
+  height: 100vh;
 }
 
 .container {
   max-width: 144rem;
   margin: 0 auto;
+  height: 100vh;
 }
 
 .grid {
@@ -76,27 +78,28 @@ body {
 }
 
 .hero-image {
-  height: auto;
+  height: 100vh;
   background-image: url("../images/hero-desktop.jpg");
   background-size: cover;
   background-position: top;
 }
 .hero-details-informations {
-  padding: 4.8em 15rem;
+  padding: 4.2em 15rem;
 }
 .logo-img {
-  width: 40%;
+  width: 35%;
   height: auto;
-  margin-bottom: 16rem;
+  margin-bottom: 9.4rem;
 }
 
 .hero-heading {
-  font-size: 6.2rem;
+  font-size: 5.4rem;
   text-transform: uppercase;
-  letter-spacing: 1.5rem;
+  letter-spacing: 1.6rem;
+  line-height: 1.2;
   font-weight: 600;
   color: hsl(0, 6%, 24%);
-  margin-bottom: 2.8rem;
+  margin-bottom: 1.6rem;
 }
 
 .hero-heading span {
@@ -105,7 +108,7 @@ body {
 
 .hero-text {
   font-size: 1.8rem;
-  line-height: 1.8;
+  line-height: 1.6;
   font-weight: 500;
   color: hsl(0, 36%, 70%);
   margin-bottom: 4.2rem;
@@ -113,9 +116,9 @@ body {
 
 .call-to-action-form input,
 .call-to-action-form select {
-  width: 100%;
-  padding: 2rem 1.8rem;
-  font-size: 2.4rem;
+  width: 90%;
+  padding: 1.8rem;
+  font-size: 1.6rem;
   font-family: inherit;
   color: inherit;
   box-shadow: 0 0 0 1px hsl(0, 36%, 70%);
@@ -138,11 +141,11 @@ body {
 }
 .btn--form {
   position: absolute;
-  left: 76%;
+  left: 75%;
 }
 .call-to-action-form input::placeholder {
   color: hsl(0, 36%, 70%);
-  font-size: 2.4rem;
+  font-size: 1.6rem;
 }
 
 .call-to-action-form *:focus {
@@ -153,10 +156,10 @@ body {
 
 .btn {
   border: none;
-  background-color: hsl(0, 93%, 68%);
+  background-color: hsl(0, 74%, 74%);
   color: #fff4e6;
   align-self: end;
-  padding: 1.6rem 6.2rem;
+  padding: 1.2rem 5.2rem;
   transition: all 1s;
   border-radius: 4.2rem;
   cursor: pointer;
@@ -166,15 +169,14 @@ body {
   background-color: hsl(0, 74%, 74%);
 }
 .icon-arrow {
-  width: 1.8rem;
+  width: 1.6rem;
   height: auto;
 }
 .error-message {
   padding: 10px;
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
   color: #c92a2a;
-  margin-bottom: 12.6rem;
 }
 
 .invalid-email-id:focus {
