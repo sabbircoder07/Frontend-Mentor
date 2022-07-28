@@ -104,8 +104,8 @@ body {
 .call-to-action-sign-up-form input,
 .call-to-action-sign-up-form select {
   width: 100%;
-  padding: 1.8rem;
-  font-size: 2rem;
+  padding: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 600;
   font-family: inherit;
   color: hsl(249, 10%, 26%);
@@ -117,7 +117,7 @@ body {
 
 .call-to-action-sign-up-form input::placeholder {
   font-size: 1.8rem;
-  color: hsl(246, 25%, 77%);
+  color: hsl(249, 10%, 26%);
   font-weight: 500;
 }
 
@@ -141,8 +141,8 @@ body {
   height: auto;
   position: absolute;
   left: 92%;
-  padding-top: 2.6rem;
-  padding-bottom: 2.6rem;
+  padding-top: 2.2rem;
+  padding-bottom: 2.2rem;
   display: none;
 }
 .error-message-email,
