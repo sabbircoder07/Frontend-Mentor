@@ -70,12 +70,12 @@ body {
   width: 33.8rem;
   height: auto;
   background-color: hsl(228, 56%, 26%);
-  padding: 4.8rem;
+  padding: 5.2rem;
   border-radius: 11px;
   border-top-right-radius: 7rem;
 }
 .logo {
-  width: 14.8rem;
+  width: 15rem;
   height: auto;
   margin-bottom: 1.8rem;
 }
@@ -95,21 +95,21 @@ li {
   cursor: pointer;
 }
 .data-storage-information {
-  width: 37.5rem;
+  width: 50rem;
   height: auto;
   background-color: hsl(228, 56%, 26%);
-  padding: 4.8rem;
+  padding: 5.2rem;
   border-radius: 11px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 0.8rem;
+  gap: 1.2rem;
   margin-top: 3%;
   position: relative;
 }
 
 .storage-used-information h4 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: hsl(243, 100%, 93%);
   font-weight: 400;
 }
@@ -127,7 +127,7 @@ li {
   display: flex;
   justify-content: space-between;
   color: hsl(243, 100%, 93%);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 .progress-bar {
@@ -160,8 +160,8 @@ li {
   line-height: 1;
   padding: 1.2rem;
   border-radius: 8px;
-  top: -1rem;
-  right: -5rem;
+  top: 0rem;
+  right: 0rem;
 }
 .text {
   display: flex;
