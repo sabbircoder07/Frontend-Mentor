@@ -95,9 +95,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.8rem;
   background-color: #ffffff;
-  padding: 4.4rem;
+  padding: 3.6rem;
   border-radius: 11px;
 }
 
@@ -173,6 +173,8 @@ body {
 .btn-sign-up {
   font-size: 2rem;
   background-color: hsl(154, 59%, 51%);
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .terms-services {
