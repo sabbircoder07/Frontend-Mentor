@@ -68,21 +68,24 @@ body {
   gap: 4.8rem;
 }
 .intro-component {
-  width: 45.5rem;
+  width: 70rem;
+  padding-left: 15rem;
 }
 .sign-up-component {
-  width: 37.5rem;
+  width: 70rem;
+  padding-right: 15rem;
 }
 
 .main-header {
-  font-size: 4.2rem;
+  font-size: 4.8rem;
   color: #ffffff;
   line-height: 1;
   margin-bottom: 2.8rem;
   font-weight: 700;
+  margin-right: 6.2rem;
 }
 .into-text {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: #ffffff;
   line-height: 1.6;
   margin-bottom: 2.8rem;
@@ -93,30 +96,30 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.4rem;
+  gap: 2rem;
   background-color: #ffffff;
-  padding: 2.8rem;
+  padding: 4.4rem;
   border-radius: 11px;
 }
 
 .call-to-action-sign-up-form input,
 .call-to-action-sign-up-form select {
   width: 100%;
-  padding: 0.8rem;
-  font-size: 1.6rem;
-  font-weight: 500;
+  padding: 1.8rem;
+  font-size: 2rem;
+  font-weight: 600;
   font-family: inherit;
   color: hsl(249, 10%, 26%);
   box-shadow: 0 0 0 1px hsl(246, 25%, 77%);
   border: none;
   background-color: #ffffff;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .call-to-action-sign-up-form input::placeholder {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   color: hsl(246, 25%, 77%);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .call-to-action-sign-up-form *:focus {
@@ -129,33 +132,33 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  gap: 0.3rem;
+  gap: 0.5rem;
 }
 .error-icon-email,
 .error-icon-first-name,
 .error-icon-last-name,
 .error-icon-password {
-  width: 1.8rem;
+  width: 2rem;
   height: auto;
   position: absolute;
-  left: 90%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  left: 92%;
+  padding-top: 2.6rem;
+  padding-bottom: 2.6rem;
   display: none;
 }
 .error-message-email,
 .error-message-first-name,
 .error-message-last-name,
 .error-message-password {
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 500;
   color: hsl(0, 100%, 74%);
   text-align: right;
 }
 .btn {
   width: 100%;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
   border: none;
   border-radius: 5px;
   color: #ffffff;
@@ -163,18 +166,18 @@ body {
 }
 
 .btn-try-free {
-  font-size: 1.6rem;
+  font-size: 2rem;
   background-color: hsl(248, 32%, 49%);
   margin-bottom: 1.4rem;
 }
 
 .btn-sign-up {
-  font-size: 1.6rem;
+  font-size: 2rem;
   background-color: hsl(154, 59%, 51%);
 }
 
 .terms-services {
-  font-size: 8px;
+  font-size: 1.2rem;
   color: hsl(246, 25%, 77%);
   margin-top: -5px;
 }
@@ -200,7 +203,7 @@ body {
   }
   .container {
     flex-direction: column;
-    gap: 1.4rem;
+    gap: 1.8rem;
   }
   .intro-component {
     text-align: center;
