@@ -80,7 +80,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3.2rem;
+  gap: 4.2rem;
 }
 .hero-image {
   width: 80rem;
@@ -88,11 +88,11 @@ body {
 .hero-img {
   width: 100%;
   height: auto;
-  padding: 8rem 0 0 5.8rem;
+  padding: 8rem 0 0 6rem;
 }
 .hero-details {
   width: 65rem;
-  padding-right: 5.8rem;
+  padding-right: 6rem;
 }
 .main-header {
   font-family: "Poppins", sans-serif;
@@ -135,13 +135,13 @@ body {
 .social-icon {
   display: flex;
   text-align: bottom;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 1.6rem;
-  margin-top: 4rem;
+  margin-right: 4rem;
 }
 .fa {
-  padding: 1.2rem;
-  font-size: 1.8rem;
+  padding: 1.4rem;
+  font-size: 2rem;
   text-align: center;
   text-decoration: none;
   border: 1px solid #ffffff;
