@@ -68,14 +68,13 @@ html {
   justify-content: center;
 }
 .logo {
-  margin-bottom: 4.8rem;
+  margin-bottom: 5.8rem;
 }
 .logo-img {
-  width: 6rem;
+  width: 10rem;
   height: auto;
 }
 .contanier {
-  width: 48%;
   background-color: hsl(0, 0%, 100%);
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -86,16 +85,16 @@ html {
   display: grid;
   grid-template-columns: 1fr;
   column-gap: 3.2rem;
-  row-gap: 2rem;
-  padding: 1.8rem;
+  row-gap: 3.2rem;
+  padding: 3.2rem;
 }
 
 .call-to-action-form label {
   display: block;
-  font-size: 1.3rem;
+  font-size: 2.4rem;
   color: hsl(186, 14%, 43%);
-  font-weight: 400;
-  margin-bottom: 0.5rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
   font-family: inherit;
 }
 .input-container {
@@ -104,7 +103,7 @@ html {
 }
 
 .text-img {
-  width: 18px;
+  width: 2.4rem;
   position: absolute;
   padding: 0 0 0 1.2rem;
 }
@@ -113,18 +112,18 @@ html {
 .call-to-action-form select {
   background-color: hsl(185, 41%, 84%);
   border: none;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   border-radius: 5px;
   text-align: right;
-  padding: 0.2rem 1.2rem 0.2rem 0rem;
+  padding: 1rem 1.2rem 1rem 0rem;
   width: 100%;
 }
 
 input::placeholder {
   color: hsl(186, 14%, 43%);
   font-family: monospace;
-  font-size: 1.6rem;
-  font-weight: 400;
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
 .call-to-action-form input,
@@ -132,20 +131,21 @@ input::placeholder {
 text {
   font-family: "Space Mono", monospace;
   color: hsl(183, 100%, 15%);
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   font-weight: 700;
 }
 #custom-trip {
+  font-size: 2.4rem;
   display: block;
   font-weight: 600;
-  width: 32%;
+  width: 50%;
   text-align: center;
-  padding: 2px;
+  padding: 0.8rem;
 }
 
 .input-container-extend {
   flex-direction: column;
-  gap: 1.8rem;
+  gap: 2.4rem;
 }
 .tip-rate-one {
   display: flex;
@@ -160,11 +160,11 @@ text {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   color: hsl(189, 41%, 97%);
   background-color: hsl(183, 100%, 15%);
-  width: 32%;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  width: 50%;
+  padding: 1.2rem 1.2rem 1.2rem 1.2rem;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -183,16 +183,16 @@ text {
 }
 
 .tip-information {
-  padding: 1.4rem 1.4rem 1.4rem 0;
+  padding: 2.8rem 2.4rem 2.4rem 0;
 }
 
 .tip-result {
   background-color: hsl(183, 100%, 15%);
   border-radius: 11px;
-  padding: 1.6rem;
+  padding: 3.8rem;
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
+  gap: 5.8rem;
 }
 
 .amount-info {
@@ -206,24 +206,24 @@ text {
   gap: 0.5rem;
 }
 .title {
-  font-size: 1.3rem;
+  font-size: 2.4rem;
   color: hsl(189, 41%, 97%);
 }
 .for-which {
-  font-size: 1rem;
+  font-size: 2rem;
   color: hsl(184, 14%, 56%);
 }
 
 .tip-amount {
-  font-size: 2.4rem;
+  font-size: 3.2rem;
   color: hsl(172, 67%, 45%);
 }
 .btn {
   border: none;
-  margin: 6.8rem 0 0 0;
+  margin: 8rem 0 0 0;
   text-decoration: none;
   text-align: center;
-  font-size: 1.8em;
+  font-size: 2.4em;
   color: hsl(183, 100%, 15%);
   display: block;
   width: 100%;
@@ -256,7 +256,7 @@ text {
 
 @media screen and (max-width: 550px) {
   html {
-    font-size: 70.5%;
+    font-size: 62.5%;
   }
   .contanier {
     grid-template-columns: repeat(1, 1fr);
