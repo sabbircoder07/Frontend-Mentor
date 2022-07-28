@@ -48,10 +48,9 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  height: 100vh;
   line-height: 1.2;
   font-weight: 200;
-  background-color: #f1f3f5;
+  background-color: hsl(0, 0%, 98%);
 }
 
 .container {
@@ -60,12 +59,6 @@ body {
 
 .grid {
   display: grid;
-  column-gap: 2.4rem;
-  row-gap: 9.6rem;
-}
-
-.grid:not(:last-child) {
-  margin-bottom: 2.8rem;
 }
 
 .grid--1-cols {
@@ -73,7 +66,7 @@ body {
 }
 
 .grid--3-cols {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1.8fr 1fr;
 }
 
 .header {
@@ -83,19 +76,20 @@ body {
   justify-content: center;
 }
 .main-heading {
-  font-size: 2.8rem;
+  font-size: 3.8rem;
   font-weight: 400;
   color: hsl(229, 6%, 66%);
-  margin-top: 4.8rem;
+  margin-top: 5.8rem;
+  margin-bottom: 0.5rem;
 }
 .sub-heading {
-  font-size: 2.4rem;
+  font-size: 3.8rem;
   font-weight: 600;
   color: hsl(234, 12%, 34%);
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.8rem;
 }
 .header-text {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   line-height: 1.6;
   font-weight: 600;
   color: hsl(229, 6%, 66%);
@@ -108,55 +102,55 @@ body {
   align-items: center;
   justify-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 2.8rem;
 }
 .card {
   background-color: hsl(0, 0%, 98%);
   box-shadow: 0 1.4rem 1.4rem hsl(234, 12%, 35%);
-  padding: 2rem;
+  padding: 2.8rem;
   border-radius: 10px;
-  width: 25rem;
+  width: 37.5rem;
 }
 .two-cards {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.8rem;
 }
 .card-supervisor {
-  border-top: 3px solid hsl(180, 62%, 55%);
+  border-top: 5px solid hsl(180, 62%, 55%);
 }
 .card-team-builder {
-  border-top: 3px solid hsl(0, 78%, 62%);
+  border-top: 5px solid hsl(0, 78%, 62%);
 }
 .card-Karma {
-  border-top: 3px solid hsl(34, 97%, 64%);
+  border-top: 5px solid hsl(34, 97%, 64%);
 }
 .card-calculator {
-  border-top: 3px solid hsl(212, 86%, 64%);
+  border-top: 5px solid hsl(212, 86%, 64%);
 }
 .card-header {
-  font-size: 1.4rem;
+  font-size: 3.2rem;
   font-weight: 600;
   color: hsl(234, 12%, 34%);
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.8rem;
 }
 .card-text {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   line-height: 1.6;
   font-weight: 400;
   color: hsl(229, 6%, 66%);
-  margin-bottom: 3.2rem;
+  margin-bottom: 4.8rem;
 }
 
 .card-img {
   width: 3.2rem;
   height: auto;
-  margin-left: 80%;
+  margin-left: 90%;
 }
 
 @media screen and (max-width: 550px) {
   html {
-    font-size: 60.5%;
+    font-size: 50%;
   }
   body {
     margin-bottom: 5.2rem;
