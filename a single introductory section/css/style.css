@@ -71,16 +71,16 @@ body {
 }
 
 .logo {
-  width: 15%;
+  width: 18%;
   height: auto;
-  padding-top: 4.8rem;
+  padding-top: 5.2rem;
 }
 
 .hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.8rem;
+  gap: 3.2rem;
 }
 .hero-image {
   width: 80rem;
@@ -88,7 +88,7 @@ body {
 .hero-img {
   width: 100%;
   height: auto;
-  padding: 10rem 0 0 5.8rem;
+  padding: 8rem 0 0 5.8rem;
 }
 .hero-details {
   width: 65rem;
@@ -110,12 +110,13 @@ body {
 }
 
 .btn {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  font-weight: 400;
   border: none;
   background-color: #ffffff;
-  padding: 1.2rem 3.8rem 1.2rem 3.8rem;
+  padding: 1.4rem 4.2rem 1.4rem 4.2rem;
   color: hsl(257, 40%, 49%);
-  border-radius: 20px;
+  border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -133,13 +134,14 @@ body {
 }
 .social-icon {
   display: flex;
-  text-align: center;
+  text-align: bottom;
   justify-content: center;
-  gap: 1.2rem;
+  gap: 1.6rem;
+  margin-top: 4rem;
 }
 .fa {
-  padding: 0.8rem;
-  font-size: 1.2rem;
+  padding: 1.2rem;
+  font-size: 1.8rem;
   text-align: center;
   text-decoration: none;
   border: 1px solid #ffffff;
