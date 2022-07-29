@@ -38,41 +38,24 @@ Dark gray: hsl(0, 0%, 59%)
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Outfit", sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  background-color: hsl(185, 75%, 39%);
-}
-
-body::before {
-  content: "";
-  background: url(../images/bg-pattern-top.svg) no-repeat;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: -60%;
-  right: 40%;
-  z-index: -1;
-  transform: rotate(180deg);
-}
-
-body::after {
-  content: "";
-  background: url(../images/bg-pattern-bottom.svg) no-repeat;
-  width: 50vw;
-  height: 50vh;
-  position: absolute;
-  bottom: 0%;
-  right: 0%;
-  z-index: -2;
-}
-
 html {
   /*font-size: 10px; */
   /* 10px / 16px = 0.625 = 62.5% */
   /* Persentage of users browser font size setting */
   font-size: 62.5%;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-image: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left -100px top -150px, right -100px bottom -150px;
+  background-origin: padding-box;
+  background-size: 50%, 50%;
+  line-height: 1;
+  font-weight: 400;
+  background-color: hsl(185, 75%, 39%);
 }
 
 .profile-card-section {
@@ -95,8 +78,8 @@ html {
 .profile-card-header {
   content: "";
   background: url(../images/bg-pattern-card.svg) no-repeat;
-  width: 350px;
-  height: 140px;
+  width: 35rem;
+  height: 14rem;
   position: relative;
 }
 
@@ -120,9 +103,13 @@ html {
 }
 
 .profile-name {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: hsl(229, 23%, 23%);
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 0.8rem;
 }
 
 .profile-name span {
