@@ -50,7 +50,7 @@ body {
   background-image: url("../images/bg-pattern-top.svg"),
     url("../images/bg-pattern-bottom.svg");
   background-repeat: no-repeat, no-repeat;
-  background-position: left -100px top -150px, right -100px bottom -150px;
+  background-position: left -80px top -300px, right -80px bottom -300px;
   background-origin: padding-box;
   background-size: 50%, 50%;
   line-height: 1;
@@ -98,7 +98,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  margin-top: 7.2rem;
+  margin-top: 6.8rem;
   gap: 1.4rem;
 }
 
@@ -121,7 +121,7 @@ body {
   font-size: 1.6rem;
   color: hsl(227, 10%, 46%);
   font-weight: 400;
-  margin-bottom: 2.8rem;
+  margin-bottom: 2.6rem;
 }
 
 .horizontal-rule {
