@@ -92,7 +92,7 @@ body {
   height: auto;
   border: 1px solid hsl(236, 100%, 87%);
   border-radius: 50%;
-  margin-bottom: 3.8rem;
+  margin-bottom: 4.8rem;
 }
 .author-information {
   display: flex;
@@ -216,34 +216,34 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2.8rem;
+  margin-bottom: 3.2rem;
 }
 .category-name {
   font-size: 1.8rem;
   color: hsl(236, 100%, 87%);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .actvity-time {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 1.8rem;
 }
 
 .total-current-hours {
-  font-size: 3.8rem;
+  font-size: 5.2rem;
   color: hsl(236, 100%, 87%);
-  font-weight: 300;
+  font-weight: 400;
 }
 .previous-hours {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: hsl(236, 100%, 87%);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 550px) {
   html {
-    font-size: 55.5%;
+    font-size: 50%;
   }
   .container {
     grid-template-columns: 65% 0%;
