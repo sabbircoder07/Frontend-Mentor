@@ -42,21 +42,15 @@ Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
-  font-family: "Inter", sans-serif;
-  font-family: "Outfit", sans-serif;
-  font-family: "Rubik", sans-serif;
-  font-family: "Inter", sans-serif;
   font-family: "Lexend Deca", sans-serif;
-  font-family: "Outfit", sans-serif;
-  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   background-color: hsla(0, 0%, 100%, 0.75);
-}
-
-html {
-  font-size: 62.5%;
 }
 
 .card-section {
@@ -69,40 +63,53 @@ html {
   position: relative;
 }
 .container {
-  width: 60%;
+  width: 100rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border-radius: 11px;
   overflow: hidden;
 }
+
 .card {
-  padding: 3.2rem;
+  padding: 5.2rem;
+}
+.card-sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card-suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card-luxury {
+  background-color: hsl(179, 100%, 13%);
 }
 .card-img {
-  width: 4.2rem;
+  width: 4.8rem;
   height: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 3.8rem;
 }
 .card-header {
-  font-size: 2rem;
-  color: hsl(0, 0%, 95%);
-  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 3.8rem;
   font-weight: 700;
-  margin-bottom: 2.2rem;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  margin-bottom: 3.8rem;
 }
 .card-text {
   font-size: 1.5rem;
-  line-height: 1.5;
+  line-height: 1.6;
   color: hsla(0, 0%, 100%, 0.75);
-  margin-bottom: 4.8rem;
+  margin-bottom: 10rem;
 }
 .btn:link,
 .btn:visited {
   text-decoration: none;
   background-color: hsl(0, 0%, 95%);
-  padding: 0.8rem 1.6rem 0.8rem 1.6rem;
-  border-radius: 20px;
-  font-size: 1.5rem;
+  padding: 1.2rem 2.4rem;
+  border-radius: 25px;
+  font-size: 1.8rem;
   transition: all 0.3s;
 }
 
@@ -145,19 +152,13 @@ html {
   box-shadow: inset 0 0 0 2px hsla(0, 0%, 100%, 0.75);
 }
 
-.card-sedans {
-  background-color: hsl(31, 77%, 52%);
-}
-
-.card-suvs {
-  background-color: hsl(184, 100%, 22%);
-}
-
-.card-luxury {
-  background-color: hsl(179, 100%, 13%);
-}
-
 @media screen and (max-width: 450px) {
+  .container {
+    width: 90%;
+  }
+  html {
+    font-size: 50%;
+  }
   .container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas:
@@ -173,11 +174,5 @@ html {
   }
   .card-luxury {
     grid-area: c;
-  }
-  html {
-    font-size: 55.5%;
-  }
-  .container {
-    width: 90%;
   }
 }
