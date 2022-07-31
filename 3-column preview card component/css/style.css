@@ -50,7 +50,7 @@ body {
   font-family: "Lexend Deca", sans-serif;
   line-height: 1;
   font-weight: 400;
-  background-color: hsla(0, 0%, 100%, 0.75);
+  background-color: hsl(0, 0%, 95%);
 }
 
 .card-section {
@@ -85,13 +85,13 @@ body {
   background-color: hsl(179, 100%, 13%);
 }
 .card-img {
-  width: 4.8rem;
+  width: 5.8rem;
   height: auto;
-  margin-bottom: 3.8rem;
+  margin-bottom: 3.2rem;
 }
 .card-header {
   font-family: "Big Shoulders Display", cursive;
-  font-size: 3.8rem;
+  font-size: 3.2rem;
   font-weight: 700;
   text-transform: uppercase;
   color: hsl(0, 0%, 95%);
