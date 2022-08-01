@@ -40,6 +40,10 @@ The designs were created to the following widths:
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Red Hat Display", sans-serif;
   background: url(../images/pattern-background-desktop.svg);
@@ -48,10 +52,6 @@ body {
   background-color: hsl(225, 100%, 94%);
   line-height: 1;
   font-weight: 500;
-}
-
-html {
-  font-size: 62.5%;
 }
 
 .order-summary-section {
@@ -65,7 +65,7 @@ html {
 }
 
 .container {
-  width: 30%;
+  width: 40rem;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   border-radius: 11px;
@@ -87,10 +87,11 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 2.8rem;
 }
 .order-header-text {
-  font-size: 2rem;
+  font-size: 3.2rem;
+  font-weight: 900;
   color: hsl(223, 47%, 23%);
 }
 .order-text {
@@ -98,46 +99,48 @@ html {
   line-height: 1.6;
   text-align: center;
   color: hsl(224, 23%, 55%);
-  margin-bottom: 1rem;
+  margin-bottom: 2.6rem;
 }
 .price-plan-details {
   background-color: hsl(225, 100%, 98%);
-  padding: 1.8rem;
+  padding: 2.4rem;
   border-radius: 11px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2.8rem;
+  margin-bottom: 2.6rem;
 }
 .price-plan-icon {
-  height: 2.8rem;
-  width: 2.8rem;
+  width: 3.2rem;
+  height: auto;
   display: flex;
   align-items: center;
 }
 .plan {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 .details-price {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 5px;
   align-items: center;
 }
 .price-header {
-  font-size: 1.2rem;
-  color: hsl(223, 47%, 23%);
+  font-size: 1.6rem;
   font-weight: 700;
+  color: hsl(223, 47%, 23%);
 }
 .price-text {
+  font-size: 1.6rem;
+  font-weight: 700;
   color: hsl(224, 23%, 55%);
 }
 
 .option:link,
 .option:visited {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: hsl(223, 47%, 23%);
   font-weight: 700;
   transition: all 0.3s;
@@ -148,19 +151,19 @@ html {
 }
 .btn:link,
 .btn:visited {
+  font-size: 1.6rem;
+  font-weight: 700;
   text-decoration: none;
   display: block;
   width: 100%;
   background-color: hsl(245, 75%, 52%);
   border-radius: 11px;
   text-align: center;
-  padding: 1rem;
+  padding: 1.8rem 0;
   color: hsl(225, 100%, 98%);
-  font-weight: 700;
-  font-size: 1.6rem;
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
   transition: all 0.3s;
-  margin-bottom: 2.8rem;
+  margin-bottom: 2.6rem;
 }
 
 .btn:hover,
@@ -174,22 +177,22 @@ html {
   display: block;
   width: 100%;
   color: hsl(224, 23%, 55%);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-align: center;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 550px) {
+  html {
+    font-size: 55.5%;
+  }
+  .container {
+    width: 90%;
+  }
   body {
     background: url(../images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
     background-size: auto;
     background-color: hsl(225, 100%, 94%);
-  }
-
-  html {
-    font-size: 58.5%;
-  }
-  .container {
-    width: 90%;
   }
 }
