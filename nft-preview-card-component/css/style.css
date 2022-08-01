@@ -60,11 +60,11 @@ body {
   position: relative;
 }
 .container {
-  width: 30rem;
+  width: 32rem;
   height: auto;
   background-color: hsl(216, 50%, 16%);
   border-radius: 11px;
-  padding: 1.4rem;
+  padding: 2.6rem;
 }
 .card-information-header {
   display: flex;
