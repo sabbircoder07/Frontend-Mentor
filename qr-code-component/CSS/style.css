@@ -59,8 +59,8 @@ body {
 }
 .qr-code-container {
   background-color: #ffffff;
-  width: 32rem;
-  padding: 2.4rem;
+  width: 30rem;
+  padding: 1.8rem;
   border-radius: 11px;
   text-align: center;
 }
