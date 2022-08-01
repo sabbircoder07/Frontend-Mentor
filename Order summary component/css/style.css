@@ -65,7 +65,7 @@ body {
 }
 
 .container {
-  width: 40rem;
+  width: 45rem;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   border-radius: 11px;
@@ -79,7 +79,7 @@ body {
 }
 
 .order-details {
-  padding: 3.2rem;
+  padding: 6.2rem;
 }
 
 .order-header {
