@@ -37,16 +37,15 @@ The designs were created to the following widths:
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 
 body {
   font-family: "Karla", sans-serif;
   line-height: 1;
   font-weight: 400;
   background-color: hsl(204, 43%, 93%);
-}
-
-html {
-  font-size: 62.5%;
 }
 
 .card-section {
@@ -57,8 +56,9 @@ html {
   align-items: center;
   justify-content: center;
 }
+
 .container {
-  width: 50%;
+  width: 65rem;
   border-radius: 11px;
   overflow: hidden;
 }
@@ -70,20 +70,18 @@ html {
   background-color: #ffffff;
 }
 .community-header {
-  font-size: 2rem;
+  font-size: 3.4rem;
   font-weight: 700;
   color: hsl(179, 62%, 43%);
-  margin-bottom: 3.2rem;
+  margin-bottom: 2.8rem;
 }
 .community-sub-header {
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 2.2rem;
   color: hsl(71, 73%, 54%);
-  margin-bottom: 2.4rem;
+  margin-bottom: 2rem;
 }
 .community-text {
   font-size: 1.6rem;
-  font-weight: 600;
   line-height: 1.6;
   color: hsl(218, 22%, 67%);
 }
@@ -98,18 +96,18 @@ html {
   padding: 3.8rem;
 }
 .card-header {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   color: hsl(204, 43%, 93%);
   font-weight: 600;
-  margin-bottom: 1.8rem;
+  margin-bottom: 2.4rem;
 }
 .price {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   color: hsl(203, 44%, 95%);
   display: flex;
   align-items: center;
-  gap: 1.6rem;
-  margin-bottom: 1.2rem;
+  gap: 1rem;
+  margin-bottom: 1.8rem;
 }
 .price span {
   color: hsl(204, 43%, 93%);
@@ -120,21 +118,21 @@ html {
   font-size: 1.6rem;
   color: hsl(204, 43%, 93%);
   line-height: 1.6rem;
-  margin-bottom: 3.2rem;
+  margin-bottom: 4.2rem;
 }
 
 .btn:link,
 .btn:visited {
   background-color: hsl(71, 73%, 54%);
   color: hsl(204, 43%, 93%);
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 600;
   text-decoration: none;
   display: block;
   width: 100%;
   text-align: center;
   padding: 1.8rem;
-  border-radius: 11px;
+  border-radius: 5px;
 }
 .why-us {
   background-color: hsla(179, 62%, 43%, 0.699);
@@ -142,7 +140,7 @@ html {
 }
 
 .why-us-header {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: hsl(204, 43%, 93%);
   font-weight: 600;
   margin-bottom: 1.8rem;
@@ -154,10 +152,16 @@ html {
   color: hsl(204, 43%, 93%);
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 @media screen and (max-width: 450px) {
+  html {
+    font-size: 60%;
+  }
+  .container {
+    width: 90%;
+  }
   .card-details {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas:
@@ -169,11 +173,5 @@ html {
   }
   .why-us {
     grid-area: b;
-  }
-  html {
-    font-size: 45.5%;
-  }
-  .container {
-    width: 90%;
   }
 }
