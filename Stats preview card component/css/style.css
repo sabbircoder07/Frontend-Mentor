@@ -65,7 +65,7 @@ body {
   position: relative;
 }
 .container {
-  width: 115rem;
+  width: 100rem;
   background-color: hsl(244, 38%, 16%);
   display: grid;
   border-radius: 11px;
@@ -84,16 +84,16 @@ body {
 }
 
 .stats-card-info {
-  padding: 7.8rem 7.8rem 7.8rem 5rem;
+  padding: 4.6rem 10rem 4.6rem 4.6rem;
 }
 
 .stats-card-heading {
   font-family: "Inter", sans-serif;
-  font-size: 3.8rem;
+  font-size: 3.2rem;
   font-weight: 700;
   line-height: 1.4;
   color: hsl(0, 0%, 100%);
-  margin-bottom: 3.8rem;
+  margin-bottom: 2.4rem;
 }
 
 .stats-card-heading span {
@@ -101,16 +101,16 @@ body {
 }
 
 .stats-card-text {
-  font-size: 1.8rem;
-  line-height: 1.6;
+  font-size: 1.5rem;
+  line-height: 1.5;
   color: hsla(0, 0%, 100%, 0.75);
-  margin-bottom: 7.2rem;
+  margin-bottom: 7rem;
 }
 .state-lists {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-right: 4.2rem;
+  padding-right: 2rem;
 }
 .sate-list {
   display: flex;
