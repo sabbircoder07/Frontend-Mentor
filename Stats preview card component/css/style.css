@@ -12,50 +12,51 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Very dark blue (main background): hsl(233, 47%, 7%)
-- Dark desaturated blue (card background): hsl(244, 38%, 16%)
-- Soft violet (accent): hsl(277, 64%, 61%)
+Moderate violet: hsl(263, 55%, 52%)
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
 
 ### Neutral
 
-- White (main heading, stats): hsl(0, 0%, 100%)
-- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
-- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6)
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%)
+
+Note for text colors:
+
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
 
 ## Typography
 
 ### Body Copy
 
-- Font size: 15px
+- Font size: 13px
 
 ### Font
 
-- Family: [Inter](https://fonts.google.com/specimen/Inter)
-- Weights: 400, 700
-
-- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
-- Weights: 400
+- Family: [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed)
+- Weights: 500, 600
 
 */
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+  line-height: 1;
+  font-weight: 500;
+}
+
 html {
   font-size: 62.5%;
 }
 
-body {
-  font-family: "Lexend Deca", sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  background-color: hsl(233, 47%, 7%);
-}
-
-.card-section {
+.testimonilas-section {
   max-width: 144rem;
   height: 100vh;
   margin: 0 auto;
@@ -64,107 +65,169 @@ body {
   justify-content: center;
   position: relative;
 }
+
 .container {
-  width: 110rem;
-  background-color: hsl(244, 38%, 16%);
+  width: 120rem;
   display: grid;
-  border-radius: 11px;
+  grid-template-columns: 3fr 1fr;
   overflow: hidden;
+  gap: 2.2rem;
 }
 
-.stats-card-img {
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(170, 92, 219, 0.5),
-      rgba(170, 92, 219, 0.5)
-    ),
-    url("../images/image-header-desktop.jpg");
-  background-size: cover;
-  background-position: center;
+.testimonial {
+  padding: 2.4rem;
+  border-radius: 11px;
 }
 
-.stats-card-info {
-  padding: 5.8rem 10rem 5.8rem 5.8rem;
-}
-
-.stats-card-heading {
-  font-family: "Inter", sans-serif;
-  font-size: 3.2rem;
-  font-weight: 700;
-  line-height: 1.4;
-  color: hsl(0, 0%, 100%);
-  margin-bottom: 2.4rem;
-}
-
-.stats-card-heading span {
-  color: hsl(277, 64%, 61%);
-}
-
-.stats-card-text {
-  font-size: 1.5rem;
-  line-height: 1.5;
-  color: hsla(0, 0%, 100%, 0.75);
-  margin-bottom: 7rem;
-}
-.state-lists {
+.testimonial-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-right: 2rem;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
-.sate-list {
+
+.testimonial-img {
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 50%;
+}
+.testimonial-author {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
 }
-.state-name {
-  font-size: 2.4rem;
-  font-weight: 700;
+.testimonial-author-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: hsl(219, 29%, 14%);
+}
+.testimonial-author-name-extend {
+  color: hsl(210, 46%, 95%) !important;
+}
+.author-status {
+  font-size: 1.3rem;
+  color: hsl(0, 0%, 81%);
+}
+
+.testimonial-header {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: hsl(219, 29%, 14%);
+  margin-bottom: 2rem;
+}
+
+.testimonial-header-extend {
   color: hsl(0, 0%, 100%);
 }
-.state-description {
-  font-size: 1.5rem;
-  color: hsla(0, 0%, 100%, 0.75);
-  text-transform: uppercase;
+
+.testimonial-text {
+  font-size: 1.3rem;
+  color: hsl(0, 0%, 55%);
+  line-height: 1.6;
 }
-@media screen and (min-width: 475px) and (max-width: 1440px) {
-  .container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.testimonial-text-extend {
+  color: hsl(210, 46%, 80%);
 }
+
+.testimonilas-part-one {
+  gap: 0;
+}
+
+.testimonilas-one {
+  display: grid;
+  grid-template-columns: 2.25fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.testimonial-daniel {
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-position: 85% 0;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: hsl(263, 55%, 52%);
+}
+
+.testimonial-jonathan {
+  background-color: hsl(217, 19%, 35%);
+}
+.testimonilas-two {
+  display: grid;
+  grid-template-columns: 1fr 2.6fr;
+  gap: 1rem;
+}
+
+.testimonial-jeanette {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.testimonial-patrick {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.testimonial-kira {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.testimonial-kira .testimonial-header {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: hsl(219, 29%, 14%);
+  margin-bottom: 2.8rem;
+}
+
 @media screen and (max-width: 450px) {
   html {
-    font-size: 55.5%;
+    font-size: 35%;
   }
   .container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas:
+      "a"
       "b"
-      "a";
+      "c"
+      "d"
+      "e";
     width: 90%;
   }
-  .stats-card-info {
+  .testimonilas-one {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .testimonilas-two {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .container,
+  .testimonilas-part-one,
+  .testimonilas-one,
+  .testimonial .testimonial-daniel {
     grid-area: a;
-    padding: 2.8rem;
   }
-  .stats-card-img {
+  .container,
+  .testimonilas-part-one,
+  .testimonilas-one,
+  .testimonial .testimonial-jonathan {
     grid-area: b;
-    height: 30.75rem;
   }
-  .stats-card-img {
-    background-image: linear-gradient(
-        to right bottom,
-        rgba(170, 92, 219, 0.5),
-        rgba(170, 92, 219, 0.5)
-      ),
-      url("../images/image-header-mobile.jpg");
-    background-size: cover;
-    background-position: center;
+  .container,
+  .testimonilas-part-one,
+  .testimonilas-two,
+  .testimonial .testimonial-jeanette {
+    grid-area: c;
   }
-  .state-lists {
-    flex-direction: column;
-    gap: 2.8rem;
+  .container,
+  .testimonilas-part-one,
+  .testimonilas-two,
+  .testimonial .testimonial-patrick {
+    grid-area: d;
+  }
+  .container,
+  .testimonilas-part-two,
+  .testimonial .testimonial-kira {
+    grid-area: e;
   }
 }
