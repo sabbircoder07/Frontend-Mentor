@@ -9,31 +9,53 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <title>Sabbir Ahmed | Frontend Mentor | QR code component</title>
+    <title>Sabbir Ahmed | Frontend Mentor | Order summary card</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <main class="main">
-      <section class="qr-code-section">
-        <div class="qr-code-container">
+      <section class="order-summary-section">
+        <div class="container">
           <img
-            class="qr-code-img"
-            src="images/image-qr-code.png"
-            alt="QR code imqaage"
+            class="order-summary-img"
+            src="./images/illustration-hero.svg"
+            alt="Order Summary"
           />
-          <h3 class="heading">
-            Improve your front-end skills by building projects
-          </h3>
-          <p class="qr-code-text">
-            San the QR code to visit Frontend Mentor and take you coding shills
-            to the next level.
-          </p>
+          <div class="order-details">
+            <header class="order-header">
+              <h1 class="order-header-text">Order Summary</h1>
+              <p class="order-text">
+                You can now listion to millions of songs,audiobooks and podcasts
+                on any device anywhere you like.
+              </p>
+            </header>
+            <div class="price-plan-details">
+              <div class="plan">
+                <img
+                  class="price-plan-icon"
+                  src="./images/icon-music.svg"
+                  alt="Price Plan"
+                />
+                <div class="details-price">
+                  <p class="price-header">Annual Plan</p>
+                  <p class="price-text">$59.99/year</p>
+                </div>
+              </div>
+              <div class="price-plan-option">
+                <a href="#" class="option">Change</a>
+              </div>
+            </div>
+            <div class="call-to-action">
+              <a class="btn btn-payment" href="#">Proceed to Payment</a>
+              <a class="btn-cancel" href="#">Cancel Order</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
