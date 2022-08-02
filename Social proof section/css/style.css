@@ -40,30 +40,24 @@ White: hsl(0, 0%, 100%)
   box-sizing: border-box;
 }
 
-body {
-  font-family: "League Spartan", sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  font-size: 1.5rem;
-  background-color: hsl(0, 0%, 100%);
-}
-
 html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: "League Spartan", sans-serif;
+  line-height: 1;
+  font-weight: 500;
+  font-size: 1.5rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
 .container {
-  width: 60%;
+  width: 100rem;
 }
 
 .grid {
   display: grid;
-  column-gap: 2.4rem;
-  row-gap: 9.6rem;
-}
-
-.grid:not(:last-child) {
-  margin-bottom: 2.8rem;
 }
 
 .grid--1-cols {
@@ -71,7 +65,7 @@ html {
 }
 
 .grid--2-cols {
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .social-proof-section {
@@ -85,45 +79,46 @@ html {
 }
 .heding-section {
   display: block;
+  padding-right: 10rem;
 }
 .main-heading {
-  font-size: 3.8rem;
+  font-size: 5.2rem;
   color: hsl(300, 43%, 22%);
-  line-height: 3.6rem;
-  letter-spacing: -0.5px;
-  margin-bottom: 1.8rem;
+  letter-spacing: -3px;
+  margin-bottom: 2.8rem;
 }
 .heading-text {
   font-size: 1.5rem;
   line-height: 1.8rem;
   color: hsl(300, 43%, 22%);
+  margin-bottom: 4.2rem;
 }
 .review-rating-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.8rem;
+  gap: 2rem;
 }
 .rated-reviw {
   display: flex;
   align-items: center;
   justify-items: center;
   background-color: hsl(300, 24%, 96%);
-  padding: 0.8rem;
+  padding: 1rem;
   padding-left: 1.8rem;
   padding-right: 3.8rem;
   gap: 1.8rem;
   border-radius: 5px;
 }
 .rated-img {
-  width: 1.2rem;
+  width: 1.5rem;
   height: auto;
 }
 .rated-text {
   font-size: 1.5rem;
-  color: hsl(300, 43%, 22%);
   font-weight: 700;
+  color: hsl(300, 43%, 22%);
 }
 
 .margin-right-one {
@@ -147,10 +142,11 @@ html {
   gap: 1.8rem;
   align-items: center;
   justify-items: center;
+  margin-right: 4rem;
 }
 .testimonial {
   background-color: hsl(300, 43%, 22%);
-  padding: 1.8rem;
+  padding: 2.8rem;
   border-radius: 5px;
 }
 
@@ -182,17 +178,17 @@ html {
 }
 
 .testimonial-text {
-  font-size: 1.5rem;
-  line-height: 1.5;
+  font-size: 1.4rem;
+  line-height: 1.4;
   color: hsl(0, 0%, 100%);
 }
 
 .testimonial-margin-top-one {
-  margin-top: 2rem;
+  margin-top: 2.4rem;
 }
 
 .testimonial-margin-top-two {
-  margin-top: 4rem;
+  margin-top: 4.8rem;
 }
 
 @media screen and (max-width: 550px) {
@@ -241,6 +237,6 @@ html {
     flex-direction: column;
   }
   .rated-reviw {
-    padding: 0.8rem;
+    padding: 1rem;
   }
 }
