@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Sabbir Ahmed | Frontend Mentor | Ping coming soon page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="ping-logo">
+        <img class="logo" src="./images/logo.svg" alt="logo" />
+      </div>
+      <h1 class="main-heading">We are launching <span>soon!</span></h1>
+      <p class="header-text">Subscribe and get notified</p>
+    </header>
+    <main class="main">
+      <div class="call-to-action">
+        <form class="call-to-action-form" action="#">
+          <div class="input-container">
+            <input
+              id="email-id"
+              type="text"
+              placeholder="Your email address..."
+              required=""
+              oninvalid="this.setCustomValidity('Enter Your Email Address Here')"
+              oninput="this.setCustomValidity('')"
+            />
+            <img
+              class="error-icon"
+              src="./images/icon-error.svg"
+              alt="error-icon"
+            />
+            <button class="btn btn--form btn-submit">Notify Me</button>
+          </div>
+        </form>
+        <p class="error-message"></p>
+      </div>
+      <div class="illustration-dashboard">
+        <img
+          class="img-illustration-dashboard"
+          src="./images/illustration-dashboard.png"
+          alt="illustration dashboard"
+        />
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="social-icon">
+        <a
+          href="#"
+          class="fa fa-twitter"
+          aria-label="Read more about Seminole's new baby mayor"
+        ></a>
+        <a
+          href="#"
+          class="fa fa-facebook"
+          aria-label="Read more about Seminole's new baby mayor"
+        ></a>
+        <a
+          href="#"
+          class="fa fa-instagram"
+          aria-label="Read more about Seminole's new baby mayor"
+        ></a>
+        <a
+          href="#"
+          class="fa fa-linkedin"
+          aria-label="Read more about Seminole's new baby mayor"
+        ></a>
+        <a
+          href="#"
+          class="fa fa-pinterest"
+          aria-label="Read more about Seminole's new baby mayor"
+        ></a>
+        <a
+          href="#"
+          class="fa fa-youtube"
+          aria-label="Read more about Seminole's new baby mayor"
+        ></a>
+      </div>
+      <div class="copyright">&copy; Copyright Ping. All rights reserved.</div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
