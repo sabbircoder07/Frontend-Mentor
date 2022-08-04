@@ -66,7 +66,7 @@ body {
 }
 
 .img-illustration-dashboard {
-  width: 60rem;
+  width: 65rem;
   height: auto;
 }
 
@@ -81,14 +81,14 @@ body {
   width: 100%;
   height: auto;
   margin-top: 8.8rem;
-  margin-bottom: 3.2rem;
+  margin-bottom: 4.8rem;
 }
 
 .main-heading {
   font-size: 4.8rem;
   font-weight: 300;
   color: hsl(0, 0%, 59%);
-  margin-bottom: 2rem;
+  margin-bottom: 2.6rem;
 }
 span {
   font-weight: 700;
@@ -96,7 +96,7 @@ span {
 }
 .header-text {
   font-size: 2rem;
-  margin-bottom: 3.8rem;
+  margin-bottom: 4.8rem;
 }
 
 .main {
@@ -104,10 +104,10 @@ span {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5.8rem;
+  margin-bottom: 6.8rem;
 }
 .call-to-action {
-  margin-bottom: 5.8rem;
+  margin-bottom: 6.8rem;
 }
 .call-to-action-form input,
 .call-to-action-form select {
@@ -150,7 +150,7 @@ span {
   background: hsl(223, 87%, 63%);
   color: #fff4e6;
   font-size: 1.8rem;
-  padding: 1.4rem 3.4rem;
+  padding: 1.6rem 3.8rem;
   transition: all 1s;
   border-radius: 5.2rem;
   cursor: pointer;
