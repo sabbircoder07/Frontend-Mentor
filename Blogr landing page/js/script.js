@@ -1,7 +1,6 @@
 const allMenu = document.querySelectorAll(".dropdown");
 const arrowSelection = document.querySelectorAll(".arrow");
 const navLink = document.querySelectorAll(".nav-link");
-console.log(navLink);
 
 function handleOnClick(event) {
   event.stopPropagation();
