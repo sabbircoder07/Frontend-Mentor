@@ -66,7 +66,7 @@ body {
 }
 
 .img-illustration-dashboard {
-  width: 55rem;
+  width: 60rem;
   height: auto;
 }
 
@@ -80,15 +80,15 @@ body {
 .logo {
   width: 100%;
   height: auto;
-  margin-top: 5.2rem;
-  margin-bottom: 2.8rem;
+  margin-top: 8.8rem;
+  margin-bottom: 3.2rem;
 }
 
 .main-heading {
   font-size: 4.8rem;
   font-weight: 300;
-  margin-bottom: 1.8rem;
   color: hsl(0, 0%, 59%);
+  margin-bottom: 2rem;
 }
 span {
   font-weight: 700;
@@ -96,7 +96,7 @@ span {
 }
 .header-text {
   font-size: 2rem;
-  margin-bottom: 2.8rem;
+  margin-bottom: 3.8rem;
 }
 
 .main {
@@ -104,14 +104,14 @@ span {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin-bottom: 5.8rem;
 }
 .call-to-action {
-  margin-bottom: 5rem;
+  margin-bottom: 5.8rem;
 }
 .call-to-action-form input,
 .call-to-action-form select {
-  width: 40rem;
+  width: 45rem;
   padding: 1.2rem 2.2rem 1.2rem 2.2rem;
   font-size: 2rem;
   font-family: inherit;
@@ -124,13 +124,13 @@ span {
 .input-container {
   display: flex;
   align-items: center;
-  gap: 1.8rem;
+  gap: 1rem;
   position: relative;
 }
 .error-icon {
   position: absolute;
   padding: 0 0 0 1.2rem;
-  left: 64%;
+  left: 65%;
   display: none;
 }
 
@@ -150,9 +150,9 @@ span {
   background: hsl(223, 87%, 63%);
   color: #fff4e6;
   font-size: 1.8rem;
-  padding: 1.2rem 3.2rem;
+  padding: 1.4rem 3.4rem;
   transition: all 1s;
-  border-radius: 4.2rem;
+  border-radius: 5.2rem;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -163,7 +163,7 @@ span {
 
 .error-message {
   padding: 10px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 300;
   color: #c92a2a;
 }
@@ -183,11 +183,11 @@ span {
   display: flex;
   text-align: bottom;
   justify-content: flex-end;
-  gap: 1rem;
+  gap: 0.8rem;
 }
 .fa {
-  padding: 0.8rem;
-  font-size: 2rem;
+  padding: 1rem;
+  font-size: 1.4rem;
   text-align: center;
   text-decoration: none;
   border: 1px solid hsl(223, 100%, 88%);
@@ -201,4 +201,9 @@ span {
 .fa:hover {
   color: hsl(223, 100%, 88%);
   background-color: hsl(223, 87%, 63%);
+}
+.copyright {
+  font-size: 1.4rem;
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 2rem;
 }
