@@ -1,3 +1,4 @@
+
 const submitBtn = document.querySelector(".btn-submit");
 const errorIcon = document.querySelector(".error-icon");
 const errorMessage = document.querySelector(".error-message");
