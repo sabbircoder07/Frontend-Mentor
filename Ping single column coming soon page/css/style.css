@@ -1,0 +1,204 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Blue: hsl(223, 87%, 63%)
+
+### Secondary
+
+- Pale Blue: hsl(223, 100%, 88%)
+- Light Red: hsl(354, 100%, 66%)
+
+### Neutral
+
+- Gray: hsl(0, 0%, 59%)
+- Very Dark Blue: hsl(209, 33%, 12%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 20px
+
+### Fonts
+
+- Family: [Libre Franklin](https://fonts.google.com/specimen/Libre+Franklin)
+- Weights: 300, 600, 700
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com)
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  line-height: 1;
+  font-weight: 300;
+  max-width: 144rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-illustration-dashboard {
+  width: 55rem;
+  height: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  margin-top: 5.2rem;
+  margin-bottom: 2.8rem;
+}
+
+.main-heading {
+  font-size: 4.8rem;
+  font-weight: 300;
+  margin-bottom: 1.8rem;
+  color: hsl(0, 0%, 59%);
+}
+span {
+  font-weight: 700;
+  color: hsl(209, 33%, 12%);
+}
+.header-text {
+  font-size: 2rem;
+  margin-bottom: 2.8rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.call-to-action {
+  margin-bottom: 5rem;
+}
+.call-to-action-form input,
+.call-to-action-form select {
+  width: 40rem;
+  padding: 1.2rem 2.2rem 1.2rem 2.2rem;
+  font-size: 2rem;
+  font-family: inherit;
+  color: inherit;
+  box-shadow: 0 0 0 1px hsl(223, 100%, 88%);
+  border: none;
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  position: relative;
+}
+.error-icon {
+  position: absolute;
+  padding: 0 0 0 1.2rem;
+  left: 64%;
+  display: none;
+}
+
+.call-to-action-form input::placeholder {
+  color: hsl(0, 0%, 59%);
+  font-size: 1.8rem;
+}
+
+.call-to-action-form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px hsl(223, 100%, 88%);
+  border: none;
+}
+
+.btn {
+  border: none;
+  background: hsl(223, 87%, 63%);
+  color: #fff4e6;
+  font-size: 1.8rem;
+  padding: 1.2rem 3.2rem;
+  transition: all 1s;
+  border-radius: 4.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: hsl(354, 100%, 66%);
+}
+
+.error-message {
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #c92a2a;
+}
+
+.invalid-email-id:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px hsl(354, 100%, 66%);
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+}
+.social-icon {
+  display: flex;
+  text-align: bottom;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.fa {
+  padding: 0.8rem;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid hsl(223, 100%, 88%);
+  color: hsl(223, 87%, 63%);
+  background: transparent;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  color: hsl(223, 100%, 88%);
+  background-color: hsl(223, 87%, 63%);
+}
