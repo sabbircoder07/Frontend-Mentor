@@ -187,7 +187,7 @@ span {
 }
 .fa {
   padding: 1rem;
-  font-size: 1.4rem;
+  font-size: 14px;
   text-align: center;
   text-decoration: none;
   border: 1px solid hsl(223, 100%, 88%);
@@ -203,7 +203,41 @@ span {
   background-color: hsl(223, 87%, 63%);
 }
 .copyright {
-  font-size: 1.4rem;
+  font-size: 14px;
   color: hsl(0, 0%, 59%);
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 550px) {
+  .logo {
+    margin-top: 6rem;
+  }
+  .main-heading {
+    font-size: 3.2rem;
+  }
+  .call-to-action-form input,
+  .call-to-action-form select {
+    width: 35rem;
+  }
+  .input-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .btn {
+    display: inline-block;
+    width: 100%;
+  }
+  .img-illustration-dashboard {
+    width: 35rem;
+  }
+  .error-icon {
+    position: absolute;
+    padding: 1.2rem 0 0 1rem;
+    left: 85%;
+    display: none;
+  }
+  .call-to-action,
+  .main {
+    margin-bottom: 5rem;
+  }
 }
