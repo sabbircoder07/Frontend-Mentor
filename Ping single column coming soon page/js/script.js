@@ -1,4 +1,3 @@
-
 const submitBtn = document.querySelector(".btn-submit");
 const errorIcon = document.querySelector(".error-icon");
 const errorMessage = document.querySelector(".error-message");
@@ -11,6 +10,7 @@ function isValidEmail(email) {
   if (result === true) {
     errorIcon.style.display = "none";
     emailID.classList.remove("invalid-email-id");
+    errorMessage.innerHTML = "";
   } else {
     emailID.classList.add("invalid-email-id");
     emailID.focus();
