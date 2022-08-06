@@ -55,7 +55,7 @@ body {
   align-items: center;
   justify-content: space-between;
   justify-items: center;
-  height: 15rem;
+  height: 10rem;
   padding: 0 5rem;
   color: hsl(0, 0%, 41%);
   margin-bottom: 3.8rem;
@@ -161,15 +161,15 @@ body {
 }
 .main {
   display: flex;
-  padding: 0 18rem;
+  padding: 0 12rem;
   justify-content: space-between;
-  gap: 12rem;
+  gap: 10rem;
 }
 .hero-heading {
-  font-size: 7.2rem;
+  font-size: 7.8rem;
   font-weight: 700;
   color: hsl(0, 0%, 8%);
-  margin-top: 10rem;
+  margin-top: 8rem;
   margin-bottom: 4.4rem;
 }
 .hero-text {
@@ -177,6 +177,7 @@ body {
   line-height: 1.8;
   color: hsl(0, 0%, 41%);
   margin-bottom: 4.4rem;
+  padding-right: 2rem;
 }
 
 .learn-more-btn:link,
