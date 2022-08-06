@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>
+      Sabbir Ahmed | Frontend Mentor | Intro section with dropdown navigation
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav-bar">
+        <div class="logo">
+          <img class="blog-logo" alt="logo" src="./images/logo.svg" />
+        </div>
+        <ul class="nav-list">
+          <li class="dropdown">
+            <a class="nav-link" href="#"
+              >Features<img
+                class="arrow"
+                src="./images/icon-arrow-down.svg"
+                alt="arrow"
+            /></a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#"
+                ><img
+                  class="menu-icon"
+                  src="./images/icon-todo.svg"
+                  alt="Todo
+                List"
+                />Todo List</a
+              >
+              <a class="dropdown-item" href="#"
+                ><img
+                  class="menu-icon"
+                  src="./images/icon-calendar.svg"
+                  alt="Calender"
+                />Calender</a
+              >
+              <a class="dropdown-item" href="#"
+                ><img
+                  class="menu-icon"
+                  src="./images/icon-reminders.svg"
+                  alt="Reminders"
+                />Reminders</a
+              >
+              <a class="dropdown-item" href="#">
+                <img
+                  class="menu-icon"
+                  src="./images/icon-planning.svg"
+                  alt="Planning"
+                />Planning</a
+              >
+            </div>
+          </li>
+          <li class="dropdown">
+            <a class="nav-link" href="#"
+              >Company<img
+                class="arrow"
+                src="./images/icon-arrow-down.svg"
+                alt="arrow"
+            /></a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">History</a>
+              <a class="dropdown-item" href="#">Our Team</a>
+              <a class="dropdown-item" href="#">Blog</a>
+            </div>
+          </li>
+          <li>
+            <a class="nav-link" href="#">Careers</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="login-option" href="#">Login</a>
+        <button class="sign-up-btn">Register</button>
+      </div>
+    </header>
+    <main class="main">
+      <div class="hero-details">
+        <h1 class="hero-heading">Make remote work</h1>
+        <p class="hero-text">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <div class="hero-btn">
+          <a class="btn learn-more-btn" href="#">Learn more</a>
+        </div>
+        <div class="our-client">
+          <img
+            clss="client-icon"
+            src="./images/client-databiz.svg"
+            alt="databiz"
+          />
+          <img
+            clss="client-icon"
+            src="./images/client-audiophile.svg"
+            alt="audiophile"
+          />
+          <img clss="client-icon" src="./images/client-maker.svg" alt="maker" />
+          <img clss="client-icon" src="./images/client-meet.svg" alt="meet" />
+        </div>
+      </div>
+      <div class="hero-image"></div>
+    </main>
+    <footer class="footer"></footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
