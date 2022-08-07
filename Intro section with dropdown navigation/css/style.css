@@ -58,13 +58,14 @@ body {
   height: 10rem;
   padding: 0 5rem;
   color: hsl(0, 0%, 41%);
-  margin-bottom: 3.8rem;
+  margin-bottom: 3.4rem;
 }
 
 .blog-logo {
   width: 100%;
   height: auto;
   cursor: pointer;
+  padding-right: 10px;
 }
 .nav-bar {
   display: flex;
@@ -130,7 +131,7 @@ body {
   display: block;
   text-decoration: none;
   color: hsl(0, 0%, 41%);
-  padding: 5px;
+  padding: 8px 5px 8px 5px;
   transition: all 0.4s;
 }
 
@@ -147,6 +148,11 @@ body {
   color: hsl(0, 0%, 41%);
 }
 
+.login-option:hover,
+.login-option:active {
+  color: hsl(0, 0%, 8%);
+}
+
 .sign-up-btn {
   border: none;
   font-size: 1.8rem;
@@ -159,25 +165,28 @@ body {
   cursor: pointer;
   transition: all 0.4s;
 }
+.sign-up-btn:hover {
+  color: hsl(0, 0%, 8%);
+}
 .main {
   display: flex;
-  padding: 0 12rem;
+  padding: 0 7rem 0 15rem;
   justify-content: space-between;
-  gap: 10rem;
+  gap: 12rem;
 }
 .hero-heading {
   font-size: 7.8rem;
   font-weight: 700;
   color: hsl(0, 0%, 8%);
-  margin-top: 8rem;
-  margin-bottom: 4.4rem;
+  margin-top: 15rem;
+  margin-bottom: 8rem;
 }
 .hero-text {
   font-size: 1.8rem;
   line-height: 1.8;
   color: hsl(0, 0%, 41%);
-  margin-bottom: 4.4rem;
-  padding-right: 2rem;
+  padding-right: 5rem;
+  margin-bottom: 8rem;
 }
 
 .learn-more-btn:link,
@@ -192,8 +201,14 @@ body {
   border-radius: 8px;
   transition: all 0.4s;
 }
+.learn-more-btn:hover,
+.learn-more-btn:active {
+  background-color: hsl(0, 0%, 100%);
+  border: 2px solid hsl(0, 0%, 41%);
+  color: hsl(0, 0%, 8%);
+}
 .hero-btn {
-  margin-bottom: 10rem;
+  margin-bottom: 20rem;
 }
 .our-client {
   display: flex;
@@ -206,5 +221,5 @@ body {
   background-position: center;
   background-size: contain;
   width: 100%;
-  height: auto;
+  height: 100vh;
 }
