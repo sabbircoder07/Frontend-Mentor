@@ -65,7 +65,7 @@ body {
   width: 100%;
   height: auto;
   cursor: pointer;
-  padding-right: 10px;
+  padding-right: 5px;
 }
 .nav-bar {
   display: flex;
@@ -208,7 +208,7 @@ body {
   color: hsl(0, 0%, 8%);
 }
 .hero-btn {
-  margin-bottom: 10rem;
+  margin-bottom: 15rem;
 }
 .our-client {
   display: flex;
