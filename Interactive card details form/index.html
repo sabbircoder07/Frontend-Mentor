@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>
+      Sabbir Ahmed | Frontend Mentor | Interactive card details form
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header"></header>
+    <main class="main">
+      <div class="card-design">
+        <div class="card-front">
+          <div class="design-header">
+            <div class="design-one"></div>
+            <div class="design-two"></div>
+          </div>
+          <div class="card-number">
+            <div class="card-number-part-one">0000</div>
+            <div class="card-number-part-one">0000</div>
+            <div class="card-number-part-one">0000</div>
+            <div class="card-number-part-one">0000</div>
+          </div>
+          <div class="card-footer">
+            <div calss="card-holder-name">SABBIR AHMED</div>
+            <div calss="card-exp-date">00/00</div>
+          </div>
+        </div>
+        <div class="card-back">
+          <p class="cvc-number-card-back">000</p>
+        </div>
+      </div>
+      <div class="card-information">
+        <form class="call-to-action-form" action="#">
+          <div class="input-details">
+            <div class="input-level">
+              <label for="cardholder-name">Cardholder Name</label>
+            </div>
+            <div class="input-container">
+              <input
+                id="cardholder-name"
+                class="cardholder-name"
+                type="text"
+                placeholder="e.g. Jane Appleseed"
+              />
+              <div class="error-message">
+                <p class="error-message-cardholder-name"></p>
+              </div>
+            </div>
+          </div>
+          <div class="input-details">
+            <div class="input-level">
+              <label for="card-number">Card Number</label>
+            </div>
+            <div class="input-container">
+              <input
+                id="card-number"
+                class="input-card-number"
+                type="text"
+                placeholder="e.g. 1234 5678 9123 0000"
+                maxlength="19"
+              />
+              <div class="error-message">
+                <p class="error-message-card-number"></p>
+              </div>
+            </div>
+          </div>
+          <div class="input-details input-details-extend">
+            <div class="date-part">
+              <div class="input-level">
+                <label for="exp-manth">Exp. Date (MM/YY)</label>
+              </div>
+              <div class="input-container input-container-extend">
+                <input
+                  id="exp-manth"
+                  class="exp-manth"
+                  type="text"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '1');"
+                  placeholder="MM"
+                  maxlength="2"
+                />
+                <input
+                  id="exp-year"
+                  class="exp-year"
+                  type="text"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '1');"
+                  placeholder="YY"
+                  maxlength="2"
+                />
+              </div>
+              <div class="error-message">
+                <p class="error-message-exp-date"></p>
+              </div>
+            </div>
+            <div class="cvc-part">
+              <div class="input-level">
+                <label for="cvc">CVC</label>
+              </div>
+              <div class="input-container">
+                <input
+                  id="cvc"
+                  class="cvc"
+                  type="text"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '1');"
+                  placeholder="e.g. 123"
+                  maxlength="3"
+                />
+                <div class="error-message">
+                  <p class="error-message-cvc"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-confirm">Confirm</button>
+        </form>
+        <div class="thank-you-message">
+          <img class="icon" src="./images/icon-complete.svg" alt="complete" />
+          <h1 class="tank-your-message">THANK YOU!</h1>
+          <p class="complete-text">You have added your card details</p>
+          <button class="btn btn-continue">Continue</button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
