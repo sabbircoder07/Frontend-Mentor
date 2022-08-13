@@ -1,0 +1,240 @@
+/*BELOW 1440px (Desktop-Laptop)  */
+@media (max-width: 90em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+/*BELOW 1200px (Landscape Tablets)  */
+@media (max-width: 75em) {
+  /* 9px / 16px */
+  html {
+    font-size: 56.25%;
+  }
+  .item-one,
+  .item-two,
+  .item-three,
+  .item-four,
+  .item-five,
+  .item-six {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .item-graphic-design,
+  .item-photography {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .about-company-header {
+    font-size: 3.4rem;
+  }
+  .testmonial {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+/*BELOW 944px (Tablets)  */
+@media (max-width: 59em) {
+  /* 8px / 16px */
+  html {
+    font-size: 50%;
+  }
+
+  .about-company {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-company .item-one {
+    order: 2;
+  }
+  .about-company .item-two {
+    order: 1;
+  }
+  .about-company .item-three {
+    order: 3;
+  }
+  .about-company .item-four {
+    order: 4;
+  }
+  .about-company .item-five {
+    order: 5;
+  }
+  .about-company .item-six {
+    order: 6;
+  }
+
+  .item-one,
+  .item-two,
+  .item-three,
+  .item-four,
+  .item-five,
+  .item-six {
+    width: 100%;
+    height: 60rem;
+    text-align: center;
+    padding-left: 10em;
+    padding-right: 10rem;
+  }
+  .testmonial {
+    flex-direction: column;
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .nav-bar {
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    top: 12%;
+    right: 8%;
+    flex-direction: column;
+    width: 75%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10rem;
+    transition: all 0.5s;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav--open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 3.8rem;
+  }
+  .nav-link-header {
+    font-size: 3rem !important;
+    font-weight: 700 !important;
+    color: hsl(232, 10%, 55%) !important;
+  }
+  .contact-btn {
+    padding: 2rem 2.8rem 2rem 2.8rem !important;
+    color: hsl(212, 27%, 19%) !important;
+    background-color: hsl(51, 100%, 49%) !important;
+  }
+}
+
+/*BELOW 700px (Small Tablets)  */
+@media (max-width: 48em) {
+  .nav-bar-section {
+    padding: 0 3rem;
+  }
+  .main-heading {
+    font-size: 3.8rem;
+    letter-spacing: 1rem;
+    margin-bottom: 6rem;
+  }
+
+  .item-one,
+  .item-two,
+  .item-three,
+  .item-four,
+  .item-five,
+  .item-six {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .item-graphic-design,
+  .item-photography {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .testimonial-section {
+    gap: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
+  .testmonial {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+/*BELOW 500px (Mobile)  */
+@media (max-width: 32em) {
+  .main-heading {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .item-one,
+  .item-two,
+  .item-three,
+  .item-four,
+  .item-five,
+  .item-six {
+    height: 40rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .item-graphic-design,
+  .item-photography {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 50rem;
+  }
+
+  .testimonial-section {
+    gap: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
+  .testimonial-details {
+    gap: 3.8rem;
+  }
+  .testimonial-image {
+    width: 10rem;
+  }
+  .testimonial-headig {
+    font-size: 2rem;
+    letter-spacing: 5px;
+  }
+
+  .testmonial {
+    gap: 3.8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  header {
+    background-image: url("../images/mobile/image-header.jpg");
+  }
+  .item-two {
+    background-image: url("../images/mobile/image-transform.jpg");
+    background-size: cover;
+  }
+  .item-three {
+    background-image: url("../images/mobile/image-stand-out.jpg");
+    background-size: cover;
+  }
+
+  .item-five {
+    background-image: url("../images/mobile/image-graphic-design.jpg");
+    background-size: cover;
+  }
+
+  .item-six {
+    background-image: url("../images/mobile/image-photography.jpg");
+    background-size: cover;
+  }
+}
