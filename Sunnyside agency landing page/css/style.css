@@ -79,11 +79,11 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 70rem;
+  height: 100rem;
 }
 
 .logo {
-  width: 100%;
+  width: 18rem;
   height: auto;
   cursor: pointer;
 }
@@ -93,7 +93,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
   justify-items: center;
-  height: 10rem;
+  height: 15rem;
   padding: 0 5rem;
   margin-bottom: 3.4rem;
 }
@@ -169,8 +169,8 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 1.4rem;
   color: hsl(0, 0%, 100%);
-  margin-top: 4rem;
-  margin-bottom: 5rem;
+  margin-top: 8rem;
+  margin-bottom: 13rem;
 }
 
 .arrow-down {
@@ -189,7 +189,7 @@ h1 {
 .item-five,
 .item-six {
   width: 50%;
-  height: 50rem;
+  height: 70rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -254,7 +254,7 @@ h1 {
 .graphic-design-header {
   font-size: 2.8rem;
   color: hsl(167, 40%, 24%);
-  margin-top: 25rem;
+  margin-top: 35rem;
 }
 
 .graphic-design-text {
