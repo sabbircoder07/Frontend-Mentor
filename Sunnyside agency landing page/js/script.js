@@ -19,3 +19,4 @@ btnMobileNav.addEventListener("click", handleOnClick);
 document.body.addEventListener("click", function (event) {
   navBar.classList.remove("nav--open");
 });
+
