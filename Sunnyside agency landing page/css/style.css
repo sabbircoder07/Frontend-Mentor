@@ -79,7 +79,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 70rem;
+  height: 90rem;
 }
 
 .logo {
@@ -162,14 +162,15 @@ h1 {
   justify-content: center;
 }
 .main-heading {
+  text-align: center;
   font-family: "Fraunces", serif;
   font-size: 5.8rem;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 1.4rem;
   color: hsl(0, 0%, 100%);
-  margin-top: 3rem;
-  margin-bottom: 5rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .arrow-down {
@@ -188,7 +189,7 @@ h1 {
 .item-five,
 .item-six {
   width: 50%;
-  height: 50rem;
+  height: 70rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -218,7 +219,7 @@ h1 {
   font-family: "Fraunces", serif;
   font-size: 4.4rem;
   font-weight: 700;
-  margin-bottom: 3rem;
+  margin-bottom: 3.8rem;
   color: hsl(212, 27%, 19%);
 }
 
@@ -244,8 +245,8 @@ h1 {
 .item-graphic-design,
 .item-photography {
   align-items: center;
-  padding-left: 12rem;
-  padding-right: 13rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
   text-align: center;
 }
 
@@ -253,7 +254,7 @@ h1 {
 .graphic-design-header {
   font-size: 2.8rem;
   color: hsl(167, 40%, 24%);
-  margin-top: 22rem;
+  margin-top: 40rem;
 }
 
 .graphic-design-text {
@@ -287,7 +288,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 4.2rem;
+  gap: 4.4rem;
   padding-left: 14rem;
   padding-right: 14rem;
 }
@@ -296,10 +297,10 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4.2rem;
+  gap: 4.4rem;
 }
 .testimonial-image {
-  width: 8rem;
+  width: 10rem;
   height: auto;
   border-radius: 50%;
 }
@@ -347,7 +348,7 @@ h1 {
 }
 .footer {
   background-color: #96f2d7;
-  padding: 4.2rem 0;
+  padding: 5.8rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -359,6 +360,7 @@ svg.footer-logo path {
 }
 .footer-logo {
   fill: hsl(167, 40%, 24%);
+  margin-bottom: 2rem;
 }
 
 .nav-bar-footer {
@@ -389,5 +391,5 @@ svg.footer-logo path {
   align-items: center;
   justify-content: center;
   gap: 2.8rem;
-  margin-top: 2.6rem;
+  margin-top: 6rem;
 }
