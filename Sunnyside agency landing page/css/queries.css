@@ -71,9 +71,9 @@
   .item-five,
   .item-six {
     width: 100%;
-    height: 70rem;
+    height: 50rem;
     text-align: center;
-    padding-left: 10em;
+    padding-left: 10rem;
     padding-right: 10rem;
   }
   .testmonial {
@@ -137,7 +137,7 @@
   .main-heading {
     font-size: 4.8rem;
     letter-spacing: 1rem;
-    margin-bottom: 12rem;
+    margin-bottom: 6rem;
   }
 
   .item-one,
@@ -177,8 +177,8 @@
   .main-heading {
     font-size: 5.4rem;
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
   }
 
   .item-one,
@@ -187,7 +187,7 @@
   .item-four,
   .item-five,
   .item-six {
-    height: 40rem;
+    height: 38rem;
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -196,7 +196,14 @@
   .item-photography {
     padding-left: 2rem;
     padding-right: 2rem;
-    height: 80rem;
+    height: 40rem;
+  }
+
+  .photography-header,
+  .graphic-design-header {
+    font-size: 2.8rem;
+    color: hsl(167, 40%, 24%);
+    margin-top: 18rem;
   }
 
   .testimonial-section {
@@ -224,25 +231,19 @@
 
   .header {
     background-image: url("../images/mobile/image-header.jpg");
-    height: 60rem;
   }
   .item-two {
     background-image: url("../images/mobile/image-transform.jpg");
-    background-size: cover;
   }
   .item-three {
     background-image: url("../images/mobile/image-stand-out.jpg");
-    background-size: cover;
   }
 
   .item-five {
     background-image: url("../images/mobile/image-graphic-design.jpg");
-    background-size: cover;
   }
 
   .item-six {
     background-image: url("../images/mobile/image-photography.jpg");
-    background-size: cover;
   }
 }
-
