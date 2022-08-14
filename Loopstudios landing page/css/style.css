@@ -80,7 +80,7 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: auto;
   padding: 0 13rem;
 }
 
@@ -137,11 +137,15 @@ h6 {
   stroke: hsl(0, 0%, 100%);
 }
 
+.hero-section {
+  padding-bottom: 15rem;
+}
+
 .hero {
   display: flex;
   width: 58%;
   border: 2px solid hsl(0, 0%, 100%);
-  padding: 2rem;
+  padding: 2.2rem;
   margin-top: 5rem;
 }
 
