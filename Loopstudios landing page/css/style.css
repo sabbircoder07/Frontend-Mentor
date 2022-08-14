@@ -1,0 +1,154 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- White: hsl(0, 0%, 100%)
+- Black: hsl(0, 0%, 0%)
+- Dark Gray: hsl(0, 0%, 55%)
+- Very Dark Gray: hsl(0, 0%, 41%)
+
+### Neutral
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Fonts
+
+- Family: [Alata](https://fonts.google.com/specimen/Alata)
+- Weight: 400
+
+- Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
+- Weight: 300
+
+## Icons
+
+We provide the required social icons. But, if you prefer, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com)
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1;
+  max-width: 144rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+}
+
+.header {
+  background-image: url("../images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding: 0 13rem;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.nav-bar-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+  height: 15rem;
+  margin-bottom: 3.4rem;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.8rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  font-size: 1.5rem;
+}
+
+.nav-link-header {
+  color: hsl(0, 0%, 100%) !important;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.mobile-nav-menu-icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  stroke: hsl(0, 0%, 100%);
+}
+
+.hero {
+  display: flex;
+  width: 58%;
+  border: 2px solid hsl(0, 0%, 100%);
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+.hero-heading {
+  color: hsl(0, 0%, 100%);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 7.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
