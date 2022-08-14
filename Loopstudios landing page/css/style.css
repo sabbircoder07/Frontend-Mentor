@@ -81,7 +81,7 @@ h6 {
   background-position: center;
   background-size: cover;
   height: auto;
-  padding: 0 13rem;
+  padding: 0 15rem;
 }
 
 .logo {
@@ -103,7 +103,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4.8rem;
+  gap: 3.8rem;
 }
 
 .nav-list {
@@ -116,7 +116,9 @@ h6 {
 
 .nav-link:link,
 .nav-link:visited {
+  font-family: "Alata", sans-serif;
   font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .nav-link-header {
@@ -145,14 +147,14 @@ h6 {
   display: flex;
   width: 58%;
   border: 2px solid hsl(0, 0%, 100%);
-  padding: 2.2rem;
-  margin-top: 5rem;
+  padding: 2.6rem;
+  margin-top: 5.8rem;
 }
 
 .hero-heading {
   color: hsl(0, 0%, 100%);
   font-family: "Josefin Sans", sans-serif;
-  font-size: 7.2rem;
+  font-size: 7rem;
   font-weight: 300;
   text-transform: uppercase;
 }
