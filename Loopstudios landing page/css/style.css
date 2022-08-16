@@ -57,10 +57,34 @@ a {
   text-decoration: none;
 }
 
+a {
+  display: inline-block;
+  position: relative;
+  color: hsl(0, 0%, 100%);
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  transform: scaleX(0);
+  height: 2px;
+  top: 2.2rem;
+  left: 25%;
+  background-color: hsl(0, 0%, 100%);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 body {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
   font-size: 1.5rem;
-  font-weight: 300;
   line-height: 1;
   max-width: 144rem;
 }
@@ -71,8 +95,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Alata", sans-serif;
-  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
 }
 
 .header {
@@ -81,7 +105,7 @@ h6 {
   background-position: center;
   background-size: cover;
   height: auto;
-  padding: 0 15rem;
+  padding: 0 15.2rem;
 }
 
 .logo {
@@ -95,8 +119,12 @@ h6 {
   align-items: center;
   justify-content: space-between;
   justify-items: center;
-  height: 15rem;
-  margin-bottom: 3.4rem;
+  height: 15.4rem;
+  margin-bottom: 3.8rem;
+}
+
+.nav-header {
+  display: none;
 }
 
 .nav-bar {
@@ -140,15 +168,15 @@ h6 {
 }
 
 .hero-section {
+  padding-top: 4rem;
   padding-bottom: 15rem;
 }
 
 .hero {
   display: flex;
-  width: 58%;
+  width: 65rem;
   border: 2px solid hsl(0, 0%, 100%);
-  padding: 2.6rem;
-  margin-top: 5.8rem;
+  padding: 2.8rem;
 }
 
 .hero-heading {
@@ -159,3 +187,218 @@ h6 {
   text-transform: uppercase;
 }
 
+.main {
+  padding: 0 15.2rem;
+}
+
+.about-company-section {
+  display: flex;
+  margin: 15rem 0;
+}
+
+.about-company-image {
+  background-image: url("../images/desktop/image-interactive.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 68%;
+  height: 50rem;
+  position: relative;
+}
+.about-company-details {
+  width: 37%;
+  padding: 8rem 0rem 0rem 6.4rem;
+  background-color: hsl(0, 0%, 100%);
+  position: absolute;
+  top: 100rem;
+  right: 14rem;
+  height: 40rem;
+}
+
+.about-company-heading {
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  margin-bottom: 2.8rem;
+}
+
+.about-company-text {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: hsl(0, 0%, 55%);
+}
+
+.our-creation-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15rem;
+}
+
+.our-creation {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.our-creation-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.our-creation-heading {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.btn-see-all {
+  background-color: hsl(0, 0%, 100%);
+  padding: 0.8rem 2.8rem 0.8rem 2.8rem;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 400;
+  border: 1px solid hsl(0, 0%, 55%);
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+.btn-see-all:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 0%);
+}
+
+.btn-see-all-extend {
+  margin-top: 2.8rem;
+  display: none;
+}
+.our-creation-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 2.4rem;
+  column-gap: 2.4rem;
+}
+
+.deep-earth,
+.night-arcade,
+.soccer-team-VR,
+.the-grid,
+.from-up-above-VR,
+.pocket-borealis,
+.the-curiosity,
+.make-it-fisheye {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.deep-earth {
+  background-image: url("../images/desktop/image-deep-earth.jpg");
+}
+
+.night-arcade {
+  background-image: url("../images/desktop/image-night-arcade.jpg");
+}
+.soccer-team-VR {
+  background-image: url("../images/desktop/image-soccer-team.jpg");
+}
+.the-grid {
+  background-image: url("../images/desktop/image-grid.jpg");
+}
+.from-up-above-VR {
+  background-image: url("../images/desktop/image-from-above.jpg");
+}
+
+.pocket-borealis {
+  background-image: url("../images/desktop/image-pocket-borealis.jpg");
+}
+.the-curiosity {
+  background-image: url("../images/desktop/image-curiosity.jpg");
+}
+
+.make-it-fisheye {
+  background-image: url("../images/desktop/image-fisheye.jpg");
+}
+
+.cration-text {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+  padding-left: 3rem;
+  padding-right: 4rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+}
+
+.cration-text--extend {
+  padding-right: 12rem !important;
+}
+
+.footer {
+  padding: 3rem 0;
+  background-color: hsl(0, 0%, 0%);
+}
+
+.footer-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15.2rem;
+}
+
+.company-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.nav-bar-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem !important;
+}
+.nav-list-footer {
+  flex-direction: row !important;
+  gap: 2rem !important;
+}
+.nav-link-footer {
+  color: hsl(0, 0%, 100%) !important;
+  font-size: 1.2rem !important;
+}
+
+.logo-footer {
+  width: 30%;
+  height: auto;
+  cursor: pointer;
+}
+
+.social-icon {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.social-icon img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.copyright-text {
+  color: hsl(0, 0%, 100%);
+}
+.copyright-text span {
+  content: "\00A9";
+}
+.company-details {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+}
