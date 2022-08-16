@@ -10,6 +10,17 @@
   html {
     font-size: 56.25%;
   }
+  .hero {
+    width: 60rem;
+  }
+  .hero-heading {
+    font-size: 6.4rem;
+  }
+  .about-company-details {
+    padding: 5rem 0rem 0rem 5rem;
+    right: 12rem;
+    height: 40rem;
+  }
 }
 
 /*BELOW 944px (Tablets)  */
@@ -18,12 +29,244 @@
   html {
     font-size: 50%;
   }
+  .btn-mobile-nav {
+    display: block;
+  }
+  .nav-header {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+  .logo-nav {
+    width: 70%;
+    height: auto;
+  }
+  .btn-icon-close {
+    background: hsl(0, 0%, 0%);
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav-bar {
+    background-color: hsl(0, 0%, 0%);
+    position: absolute;
+    top: 10rem;
+    right: 15rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 40rem;
+    height: 80vh;
+    display: flex;
+    padding: 2rem 2rem 0rem 2rem;
+    transition: all 0.5s;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav--open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 3rem;
+  }
+  .nav-link-header {
+    font-family: "Josefin Sans", sans-serif !important;
+    font-size: 2.2rem !important;
+    font-weight: 300 !important;
+    color: hsl(0, 0%, 100%) !important;
+    text-transform: uppercase;
+  }
+  .our-creation-details {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .cration-text {
+    font-size: 2.2rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
 }
 
 /*BELOW 760px (Small Tablets)  */
 @media (max-width: 48em) {
+  .nav-bar {
+    background-color: hsl(0, 0%, 0%);
+    position: absolute;
+    top: 8rem;
+    right: 8rem;
+  }
+  .header {
+    padding: 0 5rem;
+  }
+  .main {
+    padding: 0 5rem;
+  }
+  .footer-section {
+    padding: 0 5rem;
+  }
+  .hero {
+    width: 100%;
+  }
+  .about-company-section {
+    flex-direction: column;
+    margin: 8rem 0;
+  }
+  .our-creation-section {
+    margin-bottom: 8rem;
+  }
+  .about-company-image {
+    position: unset;
+    width: 100%;
+  }
+  .about-company-details {
+    position: unset;
+    width: 100%;
+    height: 15rem;
+    padding: 0rem;
+    margin-top: 3rem;
+  }
+  .about-company-heading {
+    margin-top: 2.8rem;
+  }
 }
 
 /*BELOW 500px (Mobile)  */
 @media (max-width: 32em) {
+  .header {
+    background-image: url("../images/mobile/image-hero.jpg");
+    padding: 0 3rem;
+  }
+  .main {
+    padding: 0 3rem;
+  }
+  .footer-section {
+    padding: 0 3rem;
+  }
+  .logo {
+    width: 60%;
+  }
+  .nav-bar {
+    background-color: hsl(0, 0%, 0%);
+    position: absolute;
+    top: 7rem;
+    right: 5rem;
+  }
+  .nav-bar-section {
+    height: 10rem;
+    margin-bottom: 3.8rem;
+  }
+  .hero {
+    width: 100%;
+    padding: 2rem;
+  }
+  .hero-heading {
+    font-size: 4.8rem;
+  }
+  .about-company-image {
+    background-image: url("../images/mobile/image-interactive.jpg");
+    width: 100%;
+    height: 40rem;
+  }
+
+  .our-creation {
+    gap: 4rem;
+  }
+
+  .our-creation-header {
+    justify-content: center;
+  }
+
+  .about-company-details {
+    width: 100%;
+    height: 25rem;
+  }
+  .about-company-heading {
+    text-align: center;
+    font-size: 3.8rem;
+    margin-bottom: 2rem;
+  }
+  .our-creation-details {
+    grid-template-columns: 1fr;
+  }
+  .deep-earth,
+  .night-arcade,
+  .soccer-team-VR,
+  .the-grid,
+  .from-up-above-VR,
+  .pocket-borealis,
+  .the-curiosity,
+  .make-it-fisheye {
+    height: 20rem;
+  }
+  .deep-earth {
+    background-image: url("../images/mobile/image-deep-earth.jpg");
+  }
+
+  .night-arcade {
+    background-image: url("../images/mobile/image-night-arcade.jpg");
+  }
+  .soccer-team-VR {
+    background-image: url("../images/mobile/image-soccer-team.jpg");
+  }
+  .the-grid {
+    background-image: url("../images/mobile/image-grid.jpg");
+  }
+  .from-up-above-VR {
+    background-image: url("../images/mobile/image-from-above.jpg");
+  }
+
+  .pocket-borealis {
+    background-image: url("../images/mobile/image-pocket-borealis.jpg");
+  }
+  .the-curiosity {
+    background-image: url("../images/mobile/image-curiosity.jpg");
+  }
+
+  .make-it-fisheye {
+    background-image: url("../images/mobile/image-fisheye.jpg");
+  }
+
+  .footer-section {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.8rem;
+  }
+
+  .logo-footer {
+    width: 100%;
+  }
+  .company-information {
+    align-items: center;
+    gap: 2rem;
+  }
+  .btn-see-all {
+    display: none;
+  }
+  .btn-see-all-extend {
+    display: block;
+  }
+
+  .cration-text {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+    padding-left: 3rem;
+    padding-right: 23rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+  }
+
+  .cration-text--extend {
+    padding-right: 25rem !important;
+  }
 }
