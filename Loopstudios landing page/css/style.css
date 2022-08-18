@@ -51,6 +51,8 @@ We provide the required social icons. But, if you prefer, you can use a font ico
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -167,6 +169,14 @@ h6 {
   stroke: hsl(0, 0%, 100%);
 }
 
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+}
+
 .hero-section {
   padding-top: 4rem;
   padding-bottom: 15rem;
@@ -276,8 +286,8 @@ h6 {
 .our-creation-details {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  row-gap: 2.4rem;
-  column-gap: 2.4rem;
+  row-gap: 2rem;
+  column-gap: 2rem;
 }
 
 .deep-earth,
@@ -291,7 +301,7 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 40rem;
+  height: 45rem;
   position: relative;
   cursor: pointer;
 }
