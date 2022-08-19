@@ -23,11 +23,20 @@
   }
 }
 
-/*BELOW 944px (Tablets)  */
-@media (max-width: 59em) {
+/*BELOW 950px (Tablets)  */
+@media (max-width: 60em) {
   /* 8px / 16px */
   html {
     font-size: 50%;
+  }
+  .header {
+    padding: 0 5rem;
+  }
+  .main {
+    padding: 0 5rem;
+  }
+  .footer-section {
+    padding: 0 5rem;
   }
   .btn-mobile-nav {
     display: block;
@@ -87,7 +96,7 @@
     text-transform: uppercase;
   }
   .our-creation-details {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .cration-text {
     font-size: 2.2rem;
@@ -122,6 +131,10 @@
   }
   .our-creation-section {
     margin-bottom: 8rem;
+  }
+
+  .our-creation-details {
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .about-company-image {
     position: unset;
@@ -254,17 +267,13 @@
   }
 
   .cration-text {
-    font-size: 2.8rem;
-    text-transform: uppercase;
-    color: hsl(0, 0%, 100%);
-    padding-left: 3rem;
-    padding-right: 23rem;
-    position: absolute;
+    font-size: 4rem;
+    padding-left: 4rem;
+    padding-right: 25rem;
     bottom: 2rem;
-    left: 0;
   }
 
   .cration-text--extend {
-    padding-right: 25rem !important;
+    padding-right: 35rem !important;
   }
 }
