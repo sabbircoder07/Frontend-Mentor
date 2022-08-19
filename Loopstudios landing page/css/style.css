@@ -147,7 +147,7 @@ h6 {
 .nav-link:link,
 .nav-link:visited {
   font-family: "Alata", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 400;
 }
 
@@ -192,7 +192,7 @@ h6 {
 .hero-heading {
   color: hsl(0, 0%, 100%);
   font-family: "Josefin Sans", sans-serif;
-  font-size: 7rem;
+  font-size: 7.2rem;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -248,7 +248,7 @@ h6 {
 .our-creation {
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 10rem;
 }
 
 .our-creation-header {
