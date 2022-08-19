@@ -16,10 +16,10 @@ allLinks.forEach(function (link) {
       const sectionElement = document.querySelector(href);
       sectionElement.scrollIntoView({ behavior: "smooth" });
     }
+    if (link.classList.contains("nav-link-header")) {
+      navBar.classList.toggle("nav--open");
+    }
   });
-  if (link.classList.contains("nav-link-header")) {
-    navBar.classList.toggle("nav--open");
-  }
 });
 
 document.querySelector(".current-year").textContent = new Date().getFullYear();
