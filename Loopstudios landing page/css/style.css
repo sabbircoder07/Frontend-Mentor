@@ -269,14 +269,16 @@ h6 {
   text-transform: uppercase;
   font-size: 1.8rem;
   font-weight: 400;
-  border: 1px solid hsl(0, 0%, 55%);
+  border: 2px solid hsl(0, 0%, 55%);
   letter-spacing: 5px;
   cursor: pointer;
+  transition: all 0.5s linear;
 }
 
 .btn-see-all:hover {
   color: hsl(0, 0%, 100%);
   background-color: hsl(0, 0%, 0%);
+  border: 2px solid hsl(0, 0%, 0%);
 }
 
 .btn-see-all-extend {
@@ -304,6 +306,8 @@ h6 {
   height: 45rem;
   position: relative;
   cursor: pointer;
+  color: hsl(0, 0%, 100%);
+  transition: all 0.5s linear;
 }
 
 .deep-earth {
@@ -337,7 +341,6 @@ h6 {
 .cration-text {
   font-size: 2.8rem;
   text-transform: uppercase;
-  color: hsl(0, 0%, 100%);
   padding-left: 3rem;
   padding-right: 4rem;
   position: absolute;
@@ -347,6 +350,31 @@ h6 {
 
 .cration-text--extend {
   padding-right: 12rem !important;
+}
+
+.deep-earth:hover {
+  opacity: 0.5;
+}
+.night-arcade:hover {
+  opacity: 0.5;
+}
+.soccer-team-VR:hover {
+  opacity: 0.5;
+}
+.the-grid:hover {
+  opacity: 0.5;
+}
+.from-up-above-VR:hover {
+  opacity: 0.5;
+}
+.pocket-borealis:hover {
+  opacity: 0.5;
+}
+.the-curiosity:hover {
+  opacity: 0.5;
+}
+.make-it-fisheye:hover {
+  opacity: 0.5;
 }
 
 .footer {
@@ -371,19 +399,19 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem !important;
+  gap: 1.8rem !important;
 }
 .nav-list-footer {
   flex-direction: row !important;
-  gap: 2rem !important;
+  gap: 1.8rem !important;
 }
 .nav-link-footer {
   color: hsl(0, 0%, 100%) !important;
-  font-size: 1.2rem !important;
+  font-size: 1.4rem !important;
 }
 
 .logo-footer {
-  width: 30%;
+  width: 40%;
   height: auto;
   cursor: pointer;
 }
@@ -395,8 +423,8 @@ h6 {
   justify-content: center;
 }
 .social-icon img {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 .copyright-text {
   color: hsl(0, 0%, 100%);
@@ -405,7 +433,7 @@ h6 {
   content: "\00A9";
 }
 .company-details {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
