@@ -226,7 +226,7 @@ h6 {
 }
 
 .about-company-heading {
-  font-size: 3.8rem;
+  font-size: 4rem;
   text-transform: uppercase;
   margin-bottom: 2.8rem;
 }
@@ -234,7 +234,7 @@ h6 {
 .about-company-text {
   font-family: "Alata", sans-serif;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.4;
   color: hsl(0, 0%, 55%);
 }
@@ -259,7 +259,7 @@ h6 {
 
 .our-creation-heading {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 3.8rem;
+  font-size: 4rem;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -284,6 +284,7 @@ h6 {
 .btn-see-all-extend {
   margin-top: 2.8rem;
   display: none;
+  border-radius: 5px;
 }
 .our-creation-details {
   display: grid;
@@ -303,7 +304,7 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 45rem;
+  height: 50rem;
   position: relative;
   cursor: pointer;
   color: hsl(0, 0%, 100%);
@@ -339,7 +340,7 @@ h6 {
 }
 
 .cration-text {
-  font-size: 2.8rem;
+  font-size: 3rem;
   text-transform: uppercase;
   padding-left: 3rem;
   padding-right: 4rem;
@@ -378,7 +379,7 @@ h6 {
 }
 
 .footer {
-  padding: 3rem 0;
+  padding: 5rem 0;
   background-color: hsl(0, 0%, 0%);
 }
 
