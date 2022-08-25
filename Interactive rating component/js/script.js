@@ -1,4 +1,5 @@
 const submitBtn = document.querySelector(".submit-button");
+const goBackBtn = document.querySelector(".back-button");
 const ratingDetails = document.querySelector(".rating-details");
 const thankyou = document.querySelector(".thank-you");
 const allRating = document.querySelectorAll(".rating");
@@ -29,3 +30,13 @@ function submitBtnHandleToClick(event) {
 }
 
 submitBtn.addEventListener("click", submitBtnHandleToClick);
+
+goBackBtn.addEventListener("click", function (event) {
+  ratingDetails.classList.remove("deactive");
+  ratingDetails.classList.add("active");
+  thankyou.classList.remove("active");
+  thankyou.classList.add("deactive");
+  allRating.forEach(function (element) {
+    element.classList.remove("selected-rating");
+  });
+});
