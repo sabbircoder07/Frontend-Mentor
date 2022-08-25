@@ -40,6 +40,10 @@ The designs were created to the following widths:
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Overpass", sans-serif;
   line-height: 1;
@@ -47,13 +51,9 @@ body {
   background-color: hsl(216, 12%, 8%);
 }
 
-html {
-  font-size: 62.5%;
-}
-
 .rating-section {
   max-width: 144rem;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -64,26 +64,48 @@ html {
   display: grid;
   grid-template-columns: 1fr;
   background-color: hsl(213, 19%, 18%);
-  border-radius: 11px;
-  padding: 2.4rem;
+  border-radius: 30px;
+  padding: 2.8rem;
+  backface-visibility: hidden;
 }
 .rating-icon {
-  width: 2.8rem;
-  height: 2.8rem;
-  background: hsl(213, 19%, 15%);
-  padding: 1.8rem;
+  background: #343a40;
+  padding: 1.4rem;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 3.2rem;
+  display: inline-block;
+  cursor: pointer;
+  animation: moveInUp 10s infinite alternate-reverse;
 }
 .rating-icon-img {
   width: 1.8rem;
   height: 1.8rem;
 }
+.rating-icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.rating-icon:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes moveInUp {
+  0% {
+    transform: translateX(20rem);
+  }
+  80% {
+    transform: translateY(-0.5rem);
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: translate(0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+}
+
 .rating-heading {
-  font-size: 3.4rem;
+  font-size: 3rem;
   color: hsl(0, 0%, 100%);
   margin-bottom: 2.6rem;
 }
@@ -102,25 +124,51 @@ html {
 }
 .rating,
 .rating:visited {
+  padding: 1.8rem 2.1rem;
+  display: inline-block;
   font-size: 1.8rem;
   font-weight: 700;
   color: hsl(217, 12%, 63%);
-  background-color: hsl(213, 19%, 15%);
-  height: 5.2rem;
-  width: 5.2rem;
-  padding: 2.2rem;
+  background-color: #343a40;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border: none;
   cursor: pointer;
+  position: relative;
+  transition: all 0.5s;
 }
 
-.rating:hover,
-.rating:active {
+.rating:hover {
   color: hsl(0, 0%, 100%);
+  background-color: hsl(217, 12%, 63%);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.rating:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.rating::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.rating::after {
   background-color: hsl(25, 97%, 53%);
+}
+
+.rating:hover::after {
+  transform: scaleX(1.3) scaleY(1.5);
+  opacity: 0;
 }
 
 .selected-rating {
@@ -129,29 +177,60 @@ html {
   transition: all 0.5s;
 }
 
-.btn,
+.btn:link,
 .btn:visited {
-  font-size: 1.5rem;
-  letter-spacing: 5px;
+  font-size: 1.8rem;
+  letter-spacing: 0.8rem;
   font-weight: 700;
   color: hsl(0, 0%, 100%);
   text-transform: uppercase;
   text-decoration: none;
   border: none;
-  display: block;
   width: 100%;
   background-color: hsl(25, 97%, 53%);
   text-align: center;
-  padding: 1.4rem 0;
-  border-radius: 25px;
+  padding: 1.8rem 0;
+  border-radius: 100px;
   cursor: pointer;
   transition: all 0.5s;
+  display: inline-block;
+  position: relative;
 }
 
-.btn:hover,
-.btn:active {
+.btn:hover {
   color: hsl(25, 97%, 53%);
   background-color: hsl(0, 0%, 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.submit-button::after {
+  background-color: hsl(25, 97%, 53%);
+}
+
+.btn:hover::after {
+  transform: scaleX(1.2) scaleY(1.3);
+  opacity: 0;
+}
+.back-button::after {
+  background-color: hsl(25, 97%, 53%);
 }
 .active {
   display: block;
@@ -174,15 +253,34 @@ html {
 }
 .rating-text-result {
   background-color: hsl(213, 19%, 15%);
-  padding: 1.4rem 1.8rem 1.2rem 1.8rem;
-  font-size: 1.5rem;
+  padding: 2rem;
+  display: inline;
+  font-size: 1.8rem;
   font-weight: 700;
   color: hsl(25, 97%, 53%);
   border-radius: 1.1rem;
+  backface-visibility: hidden;
 }
 
 .given-rating {
-  padding: 0 2px 0 2px;
+  padding: 0 2px;
+  display: inline-block;
+  animation: blinking 5s infinite ease-out;
+}
+
+@keyframes blinking {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  90% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .thank-you-header {
