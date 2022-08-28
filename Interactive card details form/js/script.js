@@ -1,4 +1,5 @@
 const btnConfirm = document.querySelector(".btn-confirm");
+const btncontinue = document.querySelector(".btn-continue");
 
 const cardholder_Name = document.querySelector("#cardholder-name");
 const card_Number = document.querySelector("#card-number");
@@ -126,7 +127,9 @@ function chekIsInputValid(
   return validationResult;
 }
 
-function handleToClick() {
+function handleToClick(event) {
+  event.stopPropagation();
+  event.preventDefault();
   const validation_result = chekIsInputValid(
     cardholder_Name.value.trim(),
     card_Number.value.trim(),
@@ -134,7 +137,6 @@ function handleToClick() {
     exp_year.value.trim(),
     cvc.value.trim()
   );
-  console.log(validation_result);
   if (validation_result === true) {
     thankYouMessage.style.display = "flex";
     callToActionForm.style.display = "none";
@@ -157,3 +159,6 @@ card_Number.addEventListener("keyup", function (e) {
 });
 
 btnConfirm.addEventListener("click", handleToClick);
+btncontinue.addEventListener("click", function () {
+  window.location.reload();
+});
