@@ -1,0 +1,219 @@
+/*BELOW 1440px (Desktop-Laptop)  */
+@media (max-width: 90em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+/*BELOW 1200px (Landscape Tablets)  */
+@media (max-width: 75em) {
+  /* 9px / 16px */
+  html {
+    font-size: 56.25%;
+  }
+  .card-information {
+    width: 60rem;
+  }
+}
+
+/*BELOW 950px (Tablets)  */
+@media (max-width: 60em) {
+  /* 8px / 16px */
+  html {
+    font-size: 50%;
+  }
+  .card-design {
+    width: 20%;
+    gap: 3.4rem;
+    padding-left: 25rem;
+  }
+  .card-back {
+    margin-left: 5rem;
+  }
+  .card-information {
+    width: 60rem;
+  }
+}
+
+/*BELOW 850px (Small Tablets)  */
+@media (max-width: 54em) {
+  .main {
+    flex-direction: column;
+    gap: 10rem;
+  }
+  .card-design {
+    background-image: url("../images/bg-main-mobile.png");
+    flex-direction: column-reverse;
+    min-width: 100vw;
+    min-height: 0;
+    height: 35rem;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0rem;
+    padding-left: 0rem;
+    padding-top: 2rem;
+    z-index: -99;
+  }
+  .card-back {
+    width: 45rem;
+    height: 25rem;
+    margin-left: 5rem;
+    position: absolute;
+    z-index: -2;
+  }
+  .card-front {
+    width: 45rem;
+    height: 25rem;
+    padding: 1.8rem;
+    position: relative;
+    top: 14.2rem;
+    left: -2.4rem;
+    z-index: -1;
+  }
+  .cvc-number-card-back {
+    font-size: 1.8rem;
+    right: 5rem;
+    top: 11.6rem;
+  }
+  .card-information {
+    align-items: center;
+    width: 100%;
+  }
+
+  .call-to-action-form {
+    width: 100%;
+  }
+  .call-to-action-form input,
+  .call-to-action-form select {
+    width: 100%;
+  }
+  .input-container--cvc {
+    width: 100%;
+  }
+  .btn {
+    width: 50rem;
+  }
+  .btn-confirm {
+    margin-right: 0rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/*BELOW 500px (Mobile)  */
+@media (max-width: 32em) {
+  .main {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .card-design {
+    background-image: url("../images/bg-main-mobile.png");
+    flex-direction: column-reverse;
+    min-width: 100vw;
+    height: 28rem;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0rem;
+    padding-left: 0rem;
+    z-index: -99;
+    padding: 2rem;
+  }
+  .card-back {
+    width: 30rem;
+    height: 18rem;
+    margin-left: 5rem;
+    position: absolute;
+    z-index: -2;
+  }
+  .card-front {
+    width: 30rem;
+    height: 18rem;
+    padding: 1.8rem;
+    position: relative;
+    top: 10rem;
+    left: -2.4rem;
+    z-index: -1;
+  }
+  .cvc-number-card-back {
+    font-size: 1.6rem;
+    right: 1rem;
+    top: 8rem;
+  }
+
+  .design-header {
+    gap: 0.8rem;
+    margin-bottom: 6.4rem;
+  }
+  .design-one {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .design-two {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .card-number {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin-bottom: 2.8rem;
+  }
+  .card-footer {
+    font-size: 1.6rem;
+  }
+  .card-information {
+    width: 100%;
+  }
+  .input-details {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .call-to-action-form {
+    width: 100%;
+    gap: 0;
+  }
+  .input-level {
+    font-size: 1.6rem;
+  }
+  .call-to-action-form input,
+  .call-to-action-form select {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+  }
+  .call-to-action-form input::placeholder {
+    font-size: 1.6rem;
+  }
+  .date-part {
+    width: 70%;
+  }
+  .input-container--cvc {
+    width: 100%;
+  }
+  .btn {
+    width: 90%;
+    margin-top: 0.5rem;
+  }
+
+  .btn-confirm {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .thank-you-message {
+    gap: 3.2rem;
+  }
+  .complete-text {
+    font-size: 2.2rem;
+    margin-bottom: 2.8rem;
+  }
+  .error-message-cvc,
+  .error-message-exp-date,
+  .error-message-card-number,
+  .error-message-cardholder-name {
+    font-size: 1.4rem;
+    width: 90%;
+    height: 0.8rem;
+    padding-left: 0.8rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1.8rem;
+  }
+}
