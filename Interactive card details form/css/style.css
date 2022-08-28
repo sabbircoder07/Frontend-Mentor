@@ -281,17 +281,17 @@ body {
   margin-top: 2px;
 
   animation-name: moveInLeft;
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-timing-function: ease-out;
 }
 
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-2rem);
+    transform: translateX(-4rem);
   }
   80% {
-    transform: translateX(2rem);
+    transform: translateX(4rem);
   }
   100% {
     opacity: 1;
