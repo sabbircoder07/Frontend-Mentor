@@ -52,7 +52,7 @@
     padding-left: 0rem;
     padding-top: 2rem;
     z-index: -99;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
   }
   .card-back {
     width: 45rem;
@@ -82,7 +82,7 @@
 
   .call-to-action-form {
     width: 100%;
-    gap: 2rem;
+    gap: 1rem;
   }
   .call-to-action-form input,
   .call-to-action-form select {
@@ -116,7 +116,7 @@
     gap: 0rem;
     padding-left: 0rem;
     z-index: -99;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
   }
   .card-back {
     width: 30rem;
@@ -170,7 +170,7 @@
 
   .call-to-action-form {
     width: 100%;
-    gap: 2rem;
+    gap: 1rem;
   }
   .input-level {
     font-size: 1.6rem;
