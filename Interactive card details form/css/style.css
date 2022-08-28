@@ -288,10 +288,10 @@ body {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-10rem);
+    transform: translateX(-2rem);
   }
   80% {
-    transform: translateX(10rem);
+    transform: translateX(2rem);
   }
   100% {
     opacity: 1;
@@ -307,7 +307,7 @@ body {
 
 .btn {
   font-size: 1.8rem;
-  width: 35rem;
+  width: 38rem;
   padding: 1.4rem;
   border: none;
   border-radius: 5px;
