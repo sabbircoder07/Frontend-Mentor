@@ -37,7 +37,9 @@ For the social icons, you can use a font icon library. Some suggestions can be f
 
 */
 
-* {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -49,99 +51,179 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   background-image: url("../images/bg-desktop.svg");
   background-position: unset;
   background-repeat: no-repeat;
   background-size: contain;
   line-height: 1.2;
-  font-weight: 400;
   background-color: hsl(257, 40%, 49%);
-  height: 100vh;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 .container {
   max-width: 144rem;
   margin: 0 auto;
-  height: auto;
 }
 
 .header {
-  height: 10.8rem;
-  padding: 0 5.8rem;
+  padding: 0 8rem;
 }
 
 .logo {
   width: 18%;
   height: auto;
-  padding-top: 5.2rem;
+  padding-top: 5.8rem;
 }
 
 .hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4.2rem;
-}
-.hero-image {
-  width: 80rem;
+  gap: 3.8rem;
 }
 .hero-img {
   width: 100%;
   height: auto;
-  padding: 8rem 0 0 6rem;
+  padding: 10rem 0 0 5rem;
 }
+
 .hero-details {
-  width: 65rem;
-  padding-right: 6rem;
+  width: 56rem;
+  padding-right: 5rem;
 }
 .main-header {
   font-family: "Poppins", sans-serif;
-  font-size: 4.2rem;
+  font-size: 4.4rem;
   font-weight: 600;
-  line-height: 1.4;
+  line-height: 1.6;
   color: #ffffff;
   margin-bottom: 1.8rem;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 .hero-text {
   font-size: 1.8rem;
   line-height: 1.8;
   color: #ffffff;
-  margin-bottom: 2.8rem;
+  margin-bottom: 1.6rem;
+
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(5rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 .btn {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 400;
   border: none;
   background-color: #ffffff;
-  padding: 1.4rem 4.2rem 1.4rem 4.2rem;
+  padding: 1.4rem 5.8rem;
   color: hsl(257, 40%, 49%);
   border-radius: 25px;
   cursor: pointer;
-  transition: all 0.3s;
+  position: relative;
+
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
 }
 
 .btn:hover {
+  transform: translateY(-0.3rem);
   background-color: hsl(300, 69%, 71%);
   color: #ffffff;
+  box-shadow: 0 1rem 2rem rgba(232, 130, 232, 0.5);
+}
+
+.btn:active {
+  transform: translateY(-1rem);
+  box-shadow: 0 1rem 2rem rgba(232, 130, 232, 0.5);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn::after {
+  background-color: #ffffff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
 }
 
 .footer {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-right: 9.8rem;
 }
 .social-icon {
   display: flex;
   text-align: bottom;
   justify-content: flex-end;
-  gap: 1.6rem;
-  margin-right: 4rem;
+  gap: 1rem;
+  margin-right: 8rem;
 }
 .fa {
-  padding: 1.4rem;
-  font-size: 2rem;
+  padding: 1rem;
+  display: inline-block;
+  font-size: 1.8rem;
   text-align: center;
   text-decoration: none;
   border: 1px solid #ffffff;
@@ -149,37 +231,18 @@ body {
   background: transparent;
   border-radius: 50%;
   transition: all 0.3s;
+  position: relative;
 }
 
 /* Add a hover effect if you want */
 .fa:hover {
+  transform: translateY(-0.3rem);
   border: 1px solid hsl(300, 69%, 71%);
   color: hsl(300, 69%, 71%);
+  box-shadow: 0 1rem 2rem rgba(232, 130, 232, 0.5);
 }
 
-@media screen and (max-width: 550px) {
-  html {
-    font-size: 50.5%;
-  }
-  body {
-    background-image: url("../images/bg-mobile.svg");
-  }
-  .header {
-    height: 10.8rem;
-    padding: 0 2.6rem;
-  }
-  .hero {
-    flex-direction: column;
-  }
-  .hero-img {
-    width: 100%;
-  }
-  .footer {
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2.2rem;
-  }
-  .hero-details {
-    text-align: center;
-  }
+.fa:active {
+  transform: translateY(-1rem);
+  box-shadow: 0 1rem 2rem rgba(232, 130, 232, 0.5);
 }
