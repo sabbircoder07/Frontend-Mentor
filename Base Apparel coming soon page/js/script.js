@@ -25,7 +25,14 @@ function handleToClick(event) {
   isValidEmail(emailID.value);
 }
 submitBtn.addEventListener("click", handleToClick);
-if (errorMessage.innerHTML !== "") {
-  emailID.addEventListener("focusout", handleToClick);
-  emailID.addEventListener("change", handleToClick);
-}
+
+emailID.addEventListener("focusout", function () {
+  if (errorMessage.innerHTML != "") {
+    isValidEmail(emailID.value);
+  }
+});
+emailID.addEventListener("change", function () {
+  if (errorMessage.innerHTML != "") {
+    isValidEmail(emailID.value);
+  }
+});
