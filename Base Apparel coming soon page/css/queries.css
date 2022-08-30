@@ -1,0 +1,139 @@
+/*BELOW 1440px (Desktop-Laptop)  */
+@media (max-width: 90em) {
+  html {
+    font-size: 62.5%;
+  }
+  .hero-image-mobile {
+    display: none;
+  }
+}
+/*BELOW 1200px (Landscape Tablets)  */
+@media (max-width: 75em) {
+  /* 9px / 16px */
+  html {
+    font-size: 56.25%;
+  }
+  .grid--2-cols {
+    grid-template-columns: 1.15fr 1fr;
+  }
+  .hero-image-mobile {
+    display: none;
+  }
+  .logo-img {
+    width: 40%;
+    padding-top: 10rem;
+  }
+  .hero-details-informations {
+    padding: 0rem 6rem 10rem 6rem;
+  }
+  .error-icon {
+    left: 60%;
+  }
+}
+
+/*BELOW 950px (Tablets)  */
+@media (max-width: 60em) {
+  /* 8px / 16px */
+  html {
+    font-size: 50%;
+  }
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo-img {
+    width: 35%;
+    padding-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .hero-image {
+    display: none;
+  }
+  .hero-details-informations {
+    background-image: none;
+    padding: 0;
+  }
+  .hero-image-mobile {
+    display: block;
+    background-image: url("../images/hero-mobile.jpg");
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60rem;
+    margin-bottom: 5rem;
+  }
+  .hero-heading {
+    padding: 0 10rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .hero-text {
+    padding: 0 10rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .call-to-action-form {
+    width: 100%;
+    padding: 0 15rem;
+  }
+  .error-message {
+    padding: 1rem 17rem;
+    margin-bottom: 5rem;
+  }
+  .error-icon {
+    left: 68%;
+  }
+}
+
+/*BELOW 760px (Small Tablets)  */
+@media (max-width: 48em) {
+  .hero-heading {
+    padding: 0 5rem;
+  }
+  .hero-text {
+    padding: 0 5rem;
+  }
+  .call-to-action-form {
+    padding: 0 5rem 0 8rem;
+  }
+  .error-message {
+    padding: 1rem 12rem;
+  }
+  .error-icon {
+    left: 65%;
+  }
+}
+
+/*BELOW 500px (Mobile)  */
+@media (max-width: 32em) {
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5rem;
+  }
+  .logo-img {
+    width: 40%;
+  }
+  .hero-image-mobile {
+    height: 40rem;
+  }
+  .call-to-action-form {
+    padding: 0 0 0 3rem;
+  }
+  .error-message {
+    padding: 1rem 5rem;
+    margin-bottom: 2rem;
+  }
+  .error-icon {
+    left: 58%;
+  }
+}
