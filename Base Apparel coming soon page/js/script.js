@@ -9,8 +9,7 @@ function isValidEmail(email) {
   let result = rex.test(String(email).toLowerCase().trim());
   if (result === true) {
     errorIcon.style.display = "none";
-    errorMessage.innerHTML = "Your email address is valid";
-    errorMessage.style.color = "#2f9e44";
+    errorMessage.innerHTML = "";
     emailID.classList.remove("invalid-email-id");
   } else {
     emailID.classList.add("invalid-email-id");
@@ -20,9 +19,13 @@ function isValidEmail(email) {
     errorMessage.innerHTML = "Please enter a valid email address";
   }
 }
-function handleToClick() {
+function handleToClick(event) {
+  event.stopPropagation();
+  event.preventDefault();
   isValidEmail(emailID.value);
 }
 submitBtn.addEventListener("click", handleToClick);
-emailID.addEventListener("focusout", handleToClick);
-emailID.addEventListener("change", handleToClick);
+if (errorMessage.innerHTML !== "") {
+  emailID.addEventListener("focusout", handleToClick);
+  emailID.addEventListener("change", handleToClick);
+}
