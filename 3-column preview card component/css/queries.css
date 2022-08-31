@@ -1,0 +1,58 @@
+/*BELOW 1440px (Desktop-Laptop)  */
+@media (max-width: 90em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+/*BELOW 1200px (Landscape Tablets)  */
+@media (max-width: 75em) {
+  /* 9px / 16px */
+  html {
+    font-size: 56.25%;
+  }
+  .container {
+    width: 85%;
+  }
+}
+
+/*BELOW 950px (Tablets)  */
+@media (max-width: 60em) {
+  /* 8px / 16px */
+  html {
+    font-size: 50%;
+  }
+  .container {
+    width: 90%;
+  }
+  .card {
+    padding: 4rem;
+  }
+}
+
+/*BELOW 760px (Small Tablets)  */
+@media (max-width: 48em) {
+  /* 8px / 16px */
+  html {
+    font-size: 50%;
+  }
+  .container {
+    width: 95%;
+  }
+  .card {
+    padding: 4rem;
+  }
+}
+
+/*BELOW 600px (Mobile)  */
+@media (max-width: 38em) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card {
+    padding: 5rem;
+  }
+}
