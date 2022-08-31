@@ -55,23 +55,23 @@ body {
 
 .card-section {
   max-width: 144rem;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 .container {
-  width: 100rem;
+  width: 66%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border-radius: 11px;
   overflow: hidden;
+  margin: 5rem 0;
 }
 
 .card {
-  padding: 5.2rem;
+  padding: 5rem;
 }
 .card-sedans {
   background-color: hsl(31, 77%, 52%);
@@ -85,64 +85,146 @@ body {
   background-color: hsl(179, 100%, 13%);
 }
 .card-img {
-  width: 5.8rem;
+  width: 7rem;
   height: auto;
   margin-bottom: 3.2rem;
+
+  animation: moveInRightCardImage 10s infinite alternate-reverse;
 }
+
+@keyframes moveInRightCardImage {
+  0% {
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-2rem);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
 .card-header {
   font-family: "Big Shoulders Display", cursive;
-  font-size: 3.2rem;
+  font-size: 3.4rem;
   font-weight: 700;
   text-transform: uppercase;
   color: hsl(0, 0%, 95%);
   margin-bottom: 3.8rem;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 .card-text {
   font-size: 1.5rem;
-  line-height: 1.6;
+  line-height: 1.8;
   color: hsla(0, 0%, 100%, 0.75);
   margin-bottom: 10rem;
+
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
-.btn:link,
-.btn:visited {
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.btn {
   text-decoration: none;
   background-color: hsl(0, 0%, 95%);
   padding: 1.2rem 2.4rem;
   border-radius: 25px;
   font-size: 1.8rem;
-  transition: all 0.3s;
+  position: relative;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn::after {
+  background-color: #2f9e44;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
 }
 
 .btn-sedans:link,
 .btn-sedans:visited {
   color: hsl(31, 77%, 52%);
-  transition: all 0.3s;
 }
 
-.btn-sedans:hover,
-.btn-sedans:active {
+.btn-sedans:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   background-color: hsl(31, 77%, 52%);
   color: hsla(0, 0%, 100%, 0.75);
   box-shadow: inset 0 0 0 2px hsla(0, 0%, 100%, 0.75);
 }
 
+.btn-sedans:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
 .btn-suvs:link,
 .btn-suvs:visited {
   color: hsl(184, 100%, 22%);
-  transition: all 0.3s;
+  z-index: 2;
 }
 
-.btn-suvs:hover,
-.btn-suvs:active {
+.btn-suvs:hover {
   background-color: hsl(184, 100%, 22%);
   color: hsla(0, 0%, 100%, 0.75);
   box-shadow: inset 0 0 0 2px hsla(0, 0%, 100%, 0.75);
 }
 
+.btn-suvs:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
 .btn-luxury:link,
 .btn-luxury:visited {
   color: hsl(179, 100%, 13%);
-  transition: all 0.3s;
+  z-index: 3;
 }
 
 .btn-luxury:hover,
@@ -152,27 +234,18 @@ body {
   box-shadow: inset 0 0 0 2px hsla(0, 0%, 100%, 0.75);
 }
 
-@media screen and (max-width: 450px) {
-  .container {
-    width: 90%;
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
   }
-  html {
-    font-size: 50%;
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
-  .container {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas:
-      "a"
-      "b"
-      "c";
-  }
-  .card-sedans {
-    grid-area: a;
-  }
-  .card-suvs {
-    grid-area: b;
-  }
-  .card-luxury {
-    grid-area: c;
-  }
+}
+
+.btn--animate {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
 }
