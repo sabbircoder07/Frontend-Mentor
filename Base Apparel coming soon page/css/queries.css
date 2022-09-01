@@ -14,17 +14,20 @@
     font-size: 56.25%;
   }
   .grid--2-cols {
-    grid-template-columns: 1.15fr 1fr;
+    grid-template-columns: 1.3fr 1fr;
   }
   .hero-image-mobile {
     display: none;
   }
   .logo-img {
     width: 40%;
-    padding-top: 10rem;
+    padding-top: 8rem;
+  }
+  .call-to-action-form {
+    width: 110%;
   }
   .hero-details-informations {
-    padding: 0rem 6rem 10rem 6rem;
+    padding: 0rem 10rem 10rem 10rem;
   }
   .error-icon {
     left: 60%;
@@ -33,10 +36,6 @@
 
 /*BELOW 950px (Tablets)  */
 @media (max-width: 60em) {
-  /* 8px / 16px */
-  html {
-    font-size: 50%;
-  }
   .grid--2-cols {
     grid-template-columns: 1fr;
   }
@@ -46,7 +45,7 @@
     justify-content: center;
   }
   .logo-img {
-    width: 35%;
+    width: 40%;
     padding-top: 5rem;
     margin-bottom: 5rem;
   }
@@ -75,22 +74,23 @@
     justify-content: center;
   }
   .hero-text {
+    font-size: 2rem;
     padding: 0 10rem;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 5rem;
-  }
-  .call-to-action-form {
-    width: 100%;
-    padding: 0 15rem;
-  }
-  .error-message {
-    padding: 1rem 17rem;
     margin-bottom: 5rem;
   }
   .error-icon {
     left: 68%;
+  }
+  .call-to-action-form {
+    width: 100%;
+    padding: 0 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .error-message {
+    padding: 1rem 17rem;
+    margin-bottom: 5rem;
   }
 }
 
@@ -109,7 +109,7 @@
     padding: 1rem 12rem;
   }
   .error-icon {
-    left: 65%;
+    left: 63%;
   }
 }
 
@@ -119,22 +119,32 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 5rem;
+    padding-left: 2rem;
   }
   .logo-img {
-    width: 40%;
+    width: 45%;
   }
   .hero-image-mobile {
-    height: 35rem;
+    height: 40rem;
+  }
+  .hero-text {
+    padding: 0 2rem;
+    text-align: center;
   }
   .call-to-action-form {
-    padding: 0 0 0 3rem;
+    width: 100%;
+    padding: 0;
+    padding-left: 5rem;
+    text-align: center;
   }
   .error-message {
-    padding: 1rem 5rem;
+    padding: 1rem 0 0 6rem;
     margin-bottom: 2rem;
   }
   .error-icon {
-    left: 58%;
+    left: 55%;
+  }
+  .btn {
+    padding: 1.6rem 3.6rem;
   }
 }
