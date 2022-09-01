@@ -37,7 +37,9 @@ The designs were created to the following widths:
 
 */
 
-* {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -70,34 +72,26 @@ body {
 }
 
 .grid--2-cols {
-  grid-template-columns: 1.3fr 1.1fr;
+  grid-template-columns: 1.4fr 1fr;
 }
 
 .hero-image-mobile {
   display: none;
 }
 
-.hero-image {
-  height: auto;
-  width: 100%;
-  background-image: url("../images/hero-desktop.jpg");
-  background-size: cover;
-  background-position: left top;
-  background-repeat: no-repeat;
-}
-
 .hero-details-informations {
   background-image: url("../images/bg-pattern-desktop.svg");
+  background-size: 100% 90%;
   background-repeat: no-repeat;
   background-position: top left;
-  padding: 5rem 10rem 0rem 10rem;
+  padding: 6rem 25rem 5rem 15rem;
 }
 
 .logo-img {
-  width: 40%;
+  width: 30%;
   height: auto;
-  margin-bottom: 15rem;
-  animation: moveInLogo 5s linear 2s infinite alternate;
+  margin-bottom: 10rem;
+  animation: moveInLogo 10s linear 2s infinite alternate;
 }
 
 @keyframes moveInLogo {
@@ -127,9 +121,9 @@ body {
 }
 
 .hero-heading {
-  font-size: 7.8rem;
+  font-size: 6.2rem;
   text-transform: uppercase;
-  letter-spacing: 1.6rem;
+  letter-spacing: 1.4rem;
   line-height: 1.2;
   margin-bottom: 2rem;
 
@@ -149,12 +143,11 @@ body {
 }
 
 .hero-text {
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 1.8;
   font-weight: 400;
   color: hsl(0, 36%, 70%);
-  margin-bottom: 7rem;
-
+  margin-bottom: 5rem;
   animation-name: moveInRight;
   animation-duration: 1s;
   animation-timing-function: ease-out;
@@ -199,12 +192,16 @@ body {
   }
 }
 
+.call-to-action-form {
+  width: 120%;
+}
+
 .call-to-action-form input,
 .call-to-action-form select {
   width: 100%;
-  padding: 2.4rem 2.6rem;
+  padding: 2.2rem 2.6rem;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-family: inherit;
   color: inherit;
   box-shadow: 0 0 0 2px #ffe3e3;
@@ -214,6 +211,7 @@ body {
 }
 
 .input-container {
+  width: 100%;
   display: flex;
   align-items: center;
   position: relative;
@@ -221,23 +219,23 @@ body {
 
 .error-icon {
   position: absolute;
-  padding: 0 0 0 1.2rem;
-  left: 63%;
+  padding: 0 0 0 1.4rem;
+  left: 57%;
   display: none;
 }
 .btn--form {
   position: absolute;
-  left: -5rem;
+  left: -7rem;
 }
 .call-to-action-form input::placeholder {
   color: hsl(0, 36%, 70%);
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 300;
 }
 
 .call-to-action-form *:focus {
   outline: none;
-  box-shadow: 0 0 0 2px #ffe3e3;
+  box-shadow: 0 0 0 1px #ffe3e3;
   border: none;
 }
 
@@ -246,19 +244,19 @@ body {
   background: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   color: #fff4e6;
   align-self: end;
-  padding: 2rem 5rem;
+  padding: 1.6rem 5rem;
   transition: all 1s;
   border-radius: 5rem;
   cursor: pointer;
   position: relative;
+  z-index: 2;
 }
 .btn:hover {
   background-color: hsl(0, 74%, 74%);
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 1rem hsl(0, 93%, 68%);
 }
 .btn:active {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem hsl(0, 93%, 68%);
 }
 
 .btn::after {
@@ -275,7 +273,7 @@ body {
 }
 
 .btn::after {
-  background-color: hsl(0, 74%, 74%);
+  background: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 }
 
 .btn:hover::after {
@@ -284,20 +282,20 @@ body {
 }
 
 .icon-arrow {
-  width: 1.8rem;
+  width: 1.6rem;
   height: auto;
 }
 .error-message {
   height: 4rem;
-  padding: 2rem 0 1rem 2rem;
-  font-size: 2rem;
+  padding: 1rem 0 0.5rem 2rem;
+  font-size: 1.6rem;
   font-weight: 400;
   color: #e03131;
 }
 
 .invalid-email-id:focus {
   outline: none;
-  box-shadow: 0 0 0 2px #e03131;
+  box-shadow: 0 0 0 1px #e03131;
 }
 
 .btn--animate {
@@ -305,3 +303,11 @@ body {
   animation-fill-mode: backwards;
 }
 
+.hero-image {
+  width: 100%;
+  height: auto;
+  background-image: url("../images/hero-desktop.jpg");
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
