@@ -44,10 +44,15 @@ For the social icons, you can use a font icon library. Some suggestions can be f
 - [Ionicons](https://ionicons.com)
 */
 
-* {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+a {
+  text-decoration: none;
 }
 
 html {
@@ -59,15 +64,11 @@ body {
   line-height: 1;
   font-weight: 300;
   max-width: 144rem;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.img-illustration-dashboard {
-  width: 65rem;
-  height: auto;
 }
 
 .header {
@@ -75,28 +76,123 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  backface-visibility: hidden;
 }
 
 .logo {
   width: 100%;
   height: auto;
-  margin-top: 8.8rem;
+  margin-top: 8rem;
   margin-bottom: 4.8rem;
+
+  animation: moveInSoon 10s ease-out 2s infinite backwards;
+}
+
+@keyframes moveInLogo {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
+  60% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  80% {
+    opacity: 0.8;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .main-heading {
   font-size: 4.8rem;
   font-weight: 300;
   color: hsl(0, 0%, 59%);
-  margin-bottom: 2.6rem;
+  margin-bottom: 2.8rem;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
-span {
+.launch-soon {
   font-weight: 700;
   color: hsl(209, 33%, 12%);
+
+  animation: moveInSoon 10s ease-out 1s infinite backwards;
 }
+
+@keyframes moveInSoon {
+  0% {
+    opacity: 0.1;
+    color: hsl(223, 87%, 63%);
+  }
+  20% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  40% {
+    opacity: 0.5;
+    transform: scale(0.9);
+    color: hsl(354, 100%, 66%);
+  }
+  60% {
+    opacity: 0.8;
+    transform: scale(1);
+    color: hsl(223, 87%, 63%);
+  }
+  80% {
+    opacity: 0.9;
+    transform: scale(1.2);
+    color: hsl(354, 100%, 66%);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .header-text {
   font-size: 2rem;
   margin-bottom: 4.8rem;
+
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 .main {
@@ -104,15 +200,16 @@ span {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 6.8rem;
+  margin-bottom: 6rem;
 }
 .call-to-action {
-  margin-bottom: 6.8rem;
+  margin-bottom: 6rem;
 }
 .call-to-action-form input,
 .call-to-action-form select {
-  width: 45rem;
-  padding: 1.2rem 2.2rem 1.2rem 2.2rem;
+  width: 40rem;
+  padding: 1.4rem 2.2rem;
+  display: inline-block;
   font-size: 2rem;
   font-family: inherit;
   color: inherit;
@@ -129,8 +226,18 @@ span {
 }
 .error-icon {
   position: absolute;
-  padding: 0 0 0 1.2rem;
-  left: 65%;
+  display: inline-block;
+  left: 60%;
+  display: none;
+}
+.fa-check {
+  position: absolute;
+  display: inline-block;
+  left: 60%;
+  color: hsl(223, 87%, 63%) !important;
+  background-color: none !important;
+  padding: 0 !important;
+  border: none !important;
   display: none;
 }
 
@@ -149,21 +256,70 @@ span {
   border: none;
   background: hsl(223, 87%, 63%);
   color: #fff4e6;
-  font-size: 1.8rem;
-  padding: 1.6rem 3.8rem;
+  font-size: 2rem;
+  padding: 1.6rem 4rem;
+  display: inline-block;
+  text-transform: capitalize;
+  letter-spacing: 2px;
   transition: all 1s;
-  border-radius: 5.2rem;
+  border-radius: 6rem;
   cursor: pointer;
-  transition: all 0.3s;
+  position: relative;
 }
 
 .btn:hover {
+  transform: translateY(-0.3rem);
+  background-color: hsl(354, 100%, 66%);
+  box-shadow: 0 1rem 2rem hsl(354, 100%, 66%);
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem hsl(354, 100%, 66%);
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.btn--animate {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.btn::after {
   background-color: hsl(354, 100%, 66%);
 }
 
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
 .error-message {
-  padding: 10px;
-  font-size: 1.8rem;
+  height: 1.8rem;
+  padding-top: 1rem;
+  padding-left: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 300;
   color: #c92a2a;
 }
@@ -171,6 +327,21 @@ span {
 .invalid-email-id:focus {
   outline: none;
   box-shadow: 0 0 0 1px hsl(354, 100%, 66%);
+}
+.illustration-dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-illustration-dashboard {
+  width: 60%;
+  height: auto;
+  cursor: pointer;
+  transition: all 1s;
+  overflow: hidden;
+}
+.img-illustration-dashboard:hover {
+  transform: scale(1.1);
 }
 .footer {
   display: flex;
@@ -187,7 +358,7 @@ span {
 }
 .fa {
   padding: 1rem;
-  font-size: 14px;
+  font-size: 2rem;
   text-align: center;
   text-decoration: none;
   border: 1px solid hsl(223, 100%, 88%);
@@ -201,43 +372,18 @@ span {
 .fa:hover {
   color: hsl(223, 100%, 88%);
   background-color: hsl(223, 87%, 63%);
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem hsl(223, 87%, 63%);
+}
+.fa:active {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 1rem 2rem hsl(223, 87%, 63%);
 }
 .copyright {
-  font-size: 14px;
+  font-size: 1.6rem;
   color: hsl(0, 0%, 59%);
   margin-bottom: 2rem;
 }
-
-@media screen and (max-width: 550px) {
-  .logo {
-    margin-top: 6rem;
-  }
-  .main-heading {
-    font-size: 3.2rem;
-  }
-  .call-to-action-form input,
-  .call-to-action-form select {
-    width: 35rem;
-  }
-  .input-container {
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .btn {
-    display: inline-block;
-    width: 100%;
-  }
-  .img-illustration-dashboard {
-    width: 35rem;
-  }
-  .error-icon {
-    position: absolute;
-    padding: 1.2rem 0 0 1rem;
-    left: 85%;
-    display: none;
-  }
-  .call-to-action,
-  .main {
-    margin-bottom: 5rem;
-  }
+.author-name {
+  color: hsl(223, 87%, 63%);
 }
