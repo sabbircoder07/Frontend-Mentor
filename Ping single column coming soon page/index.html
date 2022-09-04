@@ -21,13 +21,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
   </head>
   <body>
     <header class="header">
       <div class="ping-logo">
         <img class="logo" src="./images/logo.svg" alt="logo" />
       </div>
-      <h1 class="main-heading">We are launching <span>soon!</span></h1>
+      <h1 class="main-heading">
+        We are launching <span class="launch-soon">soon!</span>
+      </h1>
       <p class="header-text">Subscribe and get notified</p>
     </header>
     <main class="main">
@@ -37,17 +40,17 @@
             <input
               id="email-id"
               type="text"
-              placeholder="Your email address..."
-              required=""
-              oninvalid="this.setCustomValidity('Enter Your Email Address Here')"
-              oninput="this.setCustomValidity('')"
+              placeholder="Your Email Address!"
             />
             <img
               class="error-icon"
               src="./images/icon-error.svg"
               alt="error-icon"
             />
-            <button class="btn btn--form btn-submit">Notify Me</button>
+            <i class="fa fa-check" aria-hidden="true"></i>
+            <button class="btn btn--form btn-submit btn--animate">
+              Notify Me
+            </button>
           </div>
         </form>
         <p class="error-message"></p>
@@ -94,7 +97,15 @@
         ></a>
       </div>
       <div class="copyright">
-        &copy; Copyright Ping 2022. All rights reserved.
+        &copy; Copyright Ping
+        <a
+          href="https://www.linkedin.com/in/sabbir-ahmed-ru"
+          class="author-name"
+          aria-label="Read more about Seminole's new baby mayor"
+          target="_blank"
+        >
+          Sabbir Ahmed-</a
+        ><span class="year">2021</span>. All rights reserved.
       </div>
     </footer>
     <script src="./js/script.js"></script>
