@@ -1,0 +1,83 @@
+/*BELOW 1440px (Desktop-Laptop)  */
+@media (max-width: 90em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+/*BELOW 1200px (Landscape Tablets)  */
+@media (max-width: 75em) {
+  /* 9px / 16px */
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/*BELOW 950px (Tablets)  */
+@media (max-width: 60em) {
+  /* 8px / 16px */
+  html {
+    font-size: 50%;
+  }
+}
+
+/*BELOW 760px (Small Tablets)  */
+@media (max-width: 48em) {
+  .logo {
+    margin-top: 5rem;
+  }
+  .img-illustration-dashboard {
+    width: 75%;
+  }
+}
+
+/*BELOW 500px (Mobile)  */
+@media (max-width: 32em) {
+  .main-heading {
+    font-size: 3rem;
+  }
+  .header-text {
+    font-size: 1.6em;
+  }
+  .call-to-action {
+    width: 100%;
+    position: relative;
+  }
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 5rem;
+    width: 100%;
+  }
+  .error-icon {
+    left: 80%;
+    top: 7%;
+  }
+  .fa-check {
+    left: 80%;
+    top: 10%;
+  }
+  .error-message {
+    height: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    top: 7rem;
+    left: 25%;
+  }
+  .call-to-action-form input,
+  .call-to-action-form select {
+    width: 75%;
+  }
+  .btn {
+    width: 75%;
+  }
+  .img-illustration-dashboard {
+    width: 80%;
+  }
+
+  .copyright {
+    font-size: 1.4rem;
+  }
+}
